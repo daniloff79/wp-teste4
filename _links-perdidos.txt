@@ -1,0 +1,46 @@
+Erros de links perdidos
+
+1
+artigos/agenda_cultural
+
+2
+artigos/o_municipio
+
+3
+artigos/o_poder_legislativo
+
+4
+artigos/telefones_uteis
+
+5
+home/Default.aspx
+
+6
+artigos/estrutura_funcional
+
+7
+artigos/bairros_de_vinhedo *
+
+8
+presidente/atual
+
+9
+artigos/condominios_em_vinhedo * 
+
+10
+links/galeria_de_presidentes
+
+11
+links/prefeitura_de_vinhedo
+
+12
+artigos/pontos_turisticos
+
+13
+artigos/as_sessoes
+
+14
+artigos/a_mesa_diretora
+
+15
+artigos/tv_camara *
