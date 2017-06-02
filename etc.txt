@@ -1,0 +1,72 @@
+***
+Instalações:
+1- Plugin Compare do Notepad++ (https://sourceforge.net/projects/npp-compare/)
+2- Plugin JSTool do Notepad++ (https://sourceforge.net/projects/jsminnpp/)
+3- Microsoft HealthVault (https://www.healthvault.com/)
+
+Liberação de acesso aos sites:
+4- http://fullcalendar.io/
+5- http://compresscode.com/ (ou pelo menos http://csscompressor.com/)
+6- http://developers.facebook.com
+7- https://www.interaction-design.org
+8- https://material.io/
+
+https://helpx.adobe.com
+
+***
+1- Devemos pensar o projeto mobile first? No mínimo, pra ter essa resposta talvez fosse melhor ter dados do Analytics dos sites dos hospitais. E idealmente fazer um levantamento etnográfico (mesmo que breve), pra entender os usuários finais.
+> Mobile first sim. 
+> Analytics não sabe de onde.
+> Sem acesso ao usuário final, mas as diretores de cada especilidade. Não vale o custo do cognitive walkthrough.
+
+2- O usuário final irá ter uso exclusivo do sistema/app? Como ficam usuários menores de idade?
+> Só visuzalização de dados, alguns dados pelo rececptionista, outros pelo médico, outros pelo usuário.
+
+3- Ele mostra alguma coisa para médicos em consultas? Seria interessante deixar guardado medicações tomadas no passado e alergias?
+> Médico enxerga sistema pela número da carteirinha.
+
+4- De onde veio a linguagem visual do .doc? Qual a necessidade de um logo do lado esquerdo?
+>  Um por hospital
+
+5- Qual a razão do Fale Conosco ser um iframe com o site do hospital? 
+> Nenhuma.
+
+***
+Cache google geral
+<link rel='stylesheet' href='https://cdn.sstatic.net/Sites/webmasters/all.css'>
+
+Para o support
+<link rel='stylesheet' href='https://s.w.org/style/codex-wp4.css?'>
+<style>
+.bbp-topic-content, .bbp-reply-content { font-size: 1.5em; line-height: 2em; display: inline-block; }
+.bbp-topic-author, .bbp-reply-author  { display: inline-block; vertical-align: top; padding-right: 20px}
+</style>
+
+***
+webmaster-input
+***@24iNpuT2
+
+68562
+@a123456 --Atendimento OS / KEWIN
+
+chefiadegabinete
+75xPr3*s26
+
+***
+FEITO:
+(ver Excel)
+
+FAZENDO:
+48C - Otimizar função calendário - 180  + 150?
+48B - Tirar gambiarra de exibição de mês ERRO: não acerta ano! - 360 minutos + ? 
+
+PARA FAZER:
+55B- Incluir sitemap e analytics - 30 minutos + ?
+4B- Eportação de csv como pedido pelo Fabrício - 20 minutos + 20?
+56- Mudar e-mail de notificação de comentário - 40 minutos + 60?
+
+FAZER OU NÃO:
+16- Tirar hardcode dos nomes da mesa diretiva e listagem de partidos - 60 ?
+30- Bônus: LSightbox na area de post do Wordpress - 1500 ?
+32- Bônus: Não permitir um vereador em dois partidos - 60 ?
+43- Seleção inteligente de recorte da imagem do carrossel (como no Facebook) - 600 ?
