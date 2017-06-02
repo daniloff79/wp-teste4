@@ -57,11 +57,9 @@ FEITO:
 (ver Excel)
 
 FAZENDO:
-48C - Otimizar função calendário - 180  + 150?
-48B - Tirar gambiarra de exibição de mês ERRO: não acerta ano! - 360 minutos + ? 
+48B -  Tirar gambiarra de exibição de mês INCLUIR descritivo 1920 + 90?
 
 PARA FAZER:
-55B- Incluir sitemap e analytics - 30 minutos + ?
 4B- Eportação de csv como pedido pelo Fabrício - 20 minutos + 20?
 56- Mudar e-mail de notificação de comentário - 40 minutos + 60?
 
