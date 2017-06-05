@@ -1,0 +1,29 @@
+Choose for wp-fullcalendar/wp-fullcalendar.php on the right side.
+
+Look for public static function qtip_content()
+My version looks like;
+public static function qtip_content(){
+$content = ”;
+if( !empty($_REQUEST[‘post_id’]) ){
+$post = get_post($_REQUEST[‘post_id’]);
+if( $post->post_type == ‘attachment’ ){
+$content = wp_get_attachment_image($post->ID, ‘thumbnail’);
+}else{
+$content = ( !empty($post) ) ? $post->post_excerpt : ”;
+$ptitle = ( !empty($post) ) ? $post->post_title : ”;
+if( get_option(‘wpfc_qtips_image’,1) ){
+$post_image = get_the_post_thumbnail($post->ID, array(get_option(‘wpfc_qtip_image_w’,75),get_option(‘wpfc_qtip_image_h’,75)));
+if( !empty($post_image) ){
+$content = ‘<h3>’.$ptitle.'</h3><div style=”float:left; margin:0px 5px 5px 0px;”>’.$post_image.'</div><p style=”font-size: 14px;”>’.$content.'</p>’;
+}
+}
+}
+}
+echo apply_filters(‘wpfc_qtip_content’, $content);
+die();
+}
+
+***
+
+Find this line: $content = ( !empty($post) ) ? $post->post_content : ”;
+Replace it with this: $content = ( !empty($post) ) ? $post->post_excerpt : ”;
