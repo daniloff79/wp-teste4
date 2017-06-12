@@ -1,0 +1,307 @@
+﻿<!DOCTYPE html>
+<html lang="en-US" prefix="og: http://ogp.me/ns#">
+<head>
+	<meta charset="UTF-8" />
+	<title>Solving Connectivity Issues - MailChimp for WordPress</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="profile" href="http://gmpg.org/xfn/11" />
+	<link rel="pingback" href="https://kb.mc4wp.com/wp/xmlrpc.php" />
+	<link rel="shortcut icon" href="//da6afnknywi0s.cloudfront.net/app/themes/2017/assets/img/favicon.ico" />
+	
+<!-- This site is optimized with the Yoast SEO plugin v4.9 - https://yoast.com/wordpress/plugins/seo/ -->
+<link rel="canonical" href="https://kb.mc4wp.com/solving-connectivity-issues/" />
+<meta property="og:locale" content="en_US" />
+<meta property="og:type" content="article" />
+<meta property="og:title" content="Solving Connectivity Issues - MailChimp for WordPress" />
+<meta property="og:description" content="Having trouble setting up the connection between your WordPress site and the MailChimp servers? Don&#039;t worry, most of the times this is an easy fix. First of all, we should make sure that your webhost has the PHP CURL module installed and updated to a recent version and if they are not blocking requests to &hellip;" />
+<meta property="og:url" content="https://kb.mc4wp.com/solving-connectivity-issues/" />
+<meta property="og:site_name" content="MailChimp for WordPress" />
+<meta property="og:image" content="https://kb.mc4wp.com/app/uploads/2015/10/MailChimp-Plugin-License-Settings-MailChimp-for-WordPress-Lite-‹-Kinstantly-—-WordPress-2015-10-14-15-57-30.jpg" />
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:description" content="Having trouble setting up the connection between your WordPress site and the MailChimp servers? Don&#039;t worry, most of the times this is an easy fix. First of all, we should make sure that your webhost has the PHP CURL module installed and updated to a recent version and if they are not blocking requests to [&hellip;]" />
+<meta name="twitter:title" content="Solving Connectivity Issues - MailChimp for WordPress" />
+<meta name="twitter:image" content="https://kb.mc4wp.com/app/uploads/2015/10/MailChimp-Plugin-License-Settings-MailChimp-for-WordPress-Lite-‹-Kinstantly-—-WordPress-2015-10-14-15-57-30.jpg" />
+<!-- / Yoast SEO plugin. -->
+
+<link rel='dns-prefetch' href='//da6afnknywi0s.cloudfront.net' />
+<link rel='dns-prefetch' href='//s.w.org' />
+<link rel="alternate" type="application/rss+xml" title="MailChimp for WordPress &raquo; Solving Connectivity Issues Comments Feed" href="https://kb.mc4wp.com/solving-connectivity-issues/feed/" />
+		<script type="text/javascript">
+			window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/2.3\/72x72\/","ext":".png","svgUrl":"https:\/\/s.w.org\/images\/core\/emoji\/2.3\/svg\/","svgExt":".svg","source":{"concatemoji":"\/\/da6afnknywi0s.cloudfront.net\/wp\/wp-includes\/js\/wp-emoji-release.min.js?ver=4.8"}};
+			!function(a,b,c){function d(a){var b,c,d,e,f=String.fromCharCode;if(!k||!k.fillText)return!1;switch(k.clearRect(0,0,j.width,j.height),k.textBaseline="top",k.font="600 32px Arial",a){case"flag":return k.fillText(f(55356,56826,55356,56819),0,0),b=j.toDataURL(),k.clearRect(0,0,j.width,j.height),k.fillText(f(55356,56826,8203,55356,56819),0,0),c=j.toDataURL(),b===c&&(k.clearRect(0,0,j.width,j.height),k.fillText(f(55356,57332,56128,56423,56128,56418,56128,56421,56128,56430,56128,56423,56128,56447),0,0),b=j.toDataURL(),k.clearRect(0,0,j.width,j.height),k.fillText(f(55356,57332,8203,56128,56423,8203,56128,56418,8203,56128,56421,8203,56128,56430,8203,56128,56423,8203,56128,56447),0,0),c=j.toDataURL(),b!==c);case"emoji4":return k.fillText(f(55358,56794,8205,9794,65039),0,0),d=j.toDataURL(),k.clearRect(0,0,j.width,j.height),k.fillText(f(55358,56794,8203,9794,65039),0,0),e=j.toDataURL(),d!==e}return!1}function e(a){var c=b.createElement("script");c.src=a,c.defer=c.type="text/javascript",b.getElementsByTagName("head")[0].appendChild(c)}var f,g,h,i,j=b.createElement("canvas"),k=j.getContext&&j.getContext("2d");for(i=Array("flag","emoji4"),c.supports={everything:!0,everythingExceptFlag:!0},h=0;h<i.length;h++)c.supports[i[h]]=d(i[h]),c.supports.everything=c.supports.everything&&c.supports[i[h]],"flag"!==i[h]&&(c.supports.everythingExceptFlag=c.supports.everythingExceptFlag&&c.supports[i[h]]);c.supports.everythingExceptFlag=c.supports.everythingExceptFlag&&!c.supports.flag,c.DOMReady=!1,c.readyCallback=function(){c.DOMReady=!0},c.supports.everything||(g=function(){c.readyCallback()},b.addEventListener?(b.addEventListener("DOMContentLoaded",g,!1),a.addEventListener("load",g,!1)):(a.attachEvent("onload",g),b.attachEvent("onreadystatechange",function(){"complete"===b.readyState&&c.readyCallback()})),f=c.source||{},f.concatemoji?e(f.concatemoji):f.wpemoji&&f.twemoji&&(e(f.twemoji),e(f.wpemoji)))}(window,document,window._wpemojiSettings);
+		</script>
+		<style type="text/css">
+img.wp-smiley,
+img.emoji {
+	display: inline !important;
+	border: none !important;
+	box-shadow: none !important;
+	height: 1em !important;
+	width: 1em !important;
+	margin: 0 .07em !important;
+	vertical-align: -0.1em !important;
+	background: none !important;
+	padding: 0 !important;
+}
+</style>
+<link rel='stylesheet' id='mc4wp-2017-css'  href='//da6afnknywi0s.cloudfront.net/app/themes/2017/assets/css/bundle.css?ver=4.8' type='text/css' media='all' />
+<link rel='stylesheet' id='mailchimp-top-bar-css'  href='//da6afnknywi0s.cloudfront.net/app/plugins/mailchimp-top-bar/assets/css/bar.min.css?ver=1.2.16' type='text/css' media='all' />
+<link rel='stylesheet' id='wpkb-code-highlighting-css'  href='//da6afnknywi0s.cloudfront.net/app/plugins/wp-knowledge-base/assets/css/code-highlighting.min.css?ver=4.8' type='text/css' media='all' />
+<script type='text/javascript' src='//da6afnknywi0s.cloudfront.net/wp/wp-includes/js/jquery/jquery.js?ver=1.12.4'></script>
+<script type='text/javascript' src='//da6afnknywi0s.cloudfront.net/wp/wp-includes/js/jquery/jquery-migrate.min.js?ver=1.4.1'></script>
+<link rel='https://api.w.org/' href='https://kb.mc4wp.com/wp-json/' />
+<link rel="EditURI" type="application/rsd+xml" title="RSD" href="https://kb.mc4wp.com/wp/xmlrpc.php?rsd" />
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="https://kb.mc4wp.com/wp/wp-includes/wlwmanifest.xml" /> 
+<meta name="generator" content="WordPress 4.8" />
+<link rel='shortlink' href='https://kb.mc4wp.com/?p=94355' />
+<link rel="alternate" type="application/json+oembed" href="https://kb.mc4wp.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fkb.mc4wp.com%2Fsolving-connectivity-issues%2F" />
+<link rel="alternate" type="text/xml+oembed" href="https://kb.mc4wp.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fkb.mc4wp.com%2Fsolving-connectivity-issues%2F&#038;format=xml" />
+<style type="text/css">.wpkb-rating-options label { display: inline-block; margin-left: 5px; cursor: pointer; }</style><style type="text/css">
+.mctb-bar, .mctb-response, .mctb-close { background: #cc4444 !important; }
+.mctb-bar, .mctb-label, .mctb-close { color: #ffffff !important; }
+.mctb-button { background: #3f51b5 !important; border-color: #3f51b5 !important; }
+.mctb-email:focus { outline-color: #3f51b5 !important; }
+.mctb-button { color: #ffffff !important; }
+</style></head>
+<body>
+
+<header class="site-header" role="banner">
+
+  <div class="container clearfix">
+
+      <div class="site-header-1">
+        <h1 class="site-title" style="">
+		<a class="" href="https://kb.mc4wp.com">MailChimp for WordPress</a>
+        </h1>
+      </div>
+
+    <nav class="site-nav site-header-2" role="navigation">
+		<a href="https://mc4wp.com/pricing/">Pricing</a>
+		<a href="https://mc4wp.com/buy/" class="button button-secondary">Buy Plugin</a>
+    </nav>
+
+  </div>
+</header>
+
+<div class="container" role="main">
+<div class="row reverse-children">
+
+<div class="col col-4 first-child-no-margin">
+	<div class="post-breadcrumb small">
+		<div id="wpkb-breadcrumbs"><p class="breadcrumb wpkb-breadcrumb"><span class="wpkb-breadcrumb-prefix">You are here:</span> <span prefix="v: http://rdf.data-vocabulary.org/#"><span typeof="v:Breadcrumb"><a href="https://kb.mc4wp.com/" rel="v:url" property="v:title">Knowledge Base</a></span> &raquo; <span typeof="v:Breadcrumb"><a href="https://kb.mc4wp.com/category/general/" rel="v:url" property="v:title">General</a></span> &raquo; <span typeof="v:Breadcrumb"><a href="https://kb.mc4wp.com/category/troubleshooting/" rel="v:url" property="v:title">Troubleshooting</a></span> &raquo; <span typeof="v:Breadcrumb"><strong property="v:title">Solving Connectivity Issues</strong></span></span></p></div>	</div>
+
+	<hr class="small-margin" />
+
+	<div class="post-94355 wpkb-article type-wpkb-article status-publish hentry wpkb-category-troubleshooting">
+		<div class="post-title">
+			<h1>Solving Connectivity Issues<h1>
+		</div>
+		<div class="post-meta">	</div>
+		<div class="post-content">
+			<p>Having trouble setting up the connection between your WordPress site and the MailChimp servers? Don't worry, most of the times this is an easy fix.</p>
+<p>First of all, we should make sure that your webhost has the PHP CURL module installed and updated to a recent version and if they are not blocking requests to the MailChimp server. Here's a copy-and-paste message you can send your webhost for them to check. </p>
+<blockquote><p>
+I am currently installing code on my site which relies on the PHP CURL module. Can you please confirm the following things?</p>
+<p>- PHP CURL is installed and updated to at least version 7.35<br />
+- Requests to https://*.api.mailchimp.com/ are not blocked</p>
+<p>Thanks in advance!
+</p></blockquote>
+<p>Checking, and optionally acting on these things, should really be no more than a matter of minutes for your webhost.</p>
+<h3>Details on the various error messages</h3>
+<p><img src="https://kb.mc4wp.com/app/uploads/2015/10/MailChimp-Plugin-License-Settings-MailChimp-for-WordPress-Lite-‹-Kinstantly-—-WordPress-2015-10-14-15-57-30.jpg" alt="MailChimp &amp; Plugin License Settings - MailChimp for WordPress Lite ‹ Kinstantly — WordPress 2015-10-14 15-57-30" width="826" height="230" class="aligncenter size-full wp-image-97983" /></p>
+<h4>"Unable to connect"</h4>
+<p>This notice means that you have a very old version of PHP-CURL installed (over 5 years old, to be specific). </p>
+<p><strong>To fix it:</strong> ask your webhost to update cURL to at a more recent version, preferably  version 7.35 or up. </p>
+<h4>"Connection refused" or "Connection timed out"</h4>
+<p>These are firewall issues. Most likely, your webhost is blocking access to the MailChimp API servers. </p>
+<p>To fix it, you should ask your webhost for the following URL to be whitelisted:</p>
+<p><code>https://*.api.mailchimp.com</code></p>
+<p>If you are a user of our premium plugin, please ask them to whitelist the following address as well. This is the server address that is used for retrieving new plugin updates:</p>
+<p><code>https://www.mc4wp.com</code></p>
+<h4>"SSL certificate problem"</h4>
+<p>This means that something failed in setting up the encrypted connection with the MailChimp server. This is a known bug affecting WordPress 4.4 which will be fixed in WordPress 4.4.1.</p>
+<p>As a temporary workaround, you can add the following piece of code to your theme its `functions.php` file.</p>
+<pre><code class="php">add_filter( &#039;mc4wp_use_sslverify&#039;, &#039;__return_false&#039; );</code></pre>
+<h4>403 "Forbidden" or 503 "Service Unavailable"</h4>
+<p>This means that the IP address of your website is blacklisted by the Akamai firewall (because of poor reputation). Akamai is the firewall MailChimp and <strong>many</strong> other major websites use to protect their servers, which is why this is somewhat harder to fix.</p>
+<p>When this happens, we recommend you to change your IP address because having a bad reputation at Akamai does not just affect the MailChimp API. </p>
+<p>There are various ways to go about this.</p>
+<ul>
+<li>Ask your webhost for a new IP address.</li>
+<li>Migrate to a new webhost if your hosting company is unwilling to fulfill your request.</li>
+<li>
+Configure your server to connect to the MailChimp API server using a proxy.
+</li>
+</ul>
+<h3>Advanced</h3>
+<p>If you have SSH access to your server, running the following command provides a quick way to test if remote requests to the MailChimp server should actually work.</p>
+<p><code>curl -v https://<strong><em>us1</em></strong>.api.mailchimp.com/3.0/?apikey=<strong><em>test</em></strong></code><br />
+Replace <strong><em>us1</em></strong> with the characters in the end or your API key, after the minus sign.<br />
+Replace  <strong><em>test</em></strong> with everything in front of the minus sign of your API key.</p>
+<form method="POST" class="wpkb-rating">
+<p class="wpkb-rating-options">Was this article helpful? <label><input type="radio" name="rating" class="wpkb-rating-option wpkb-rating-5" value="5">Yes</label> &middot; <label><input type="radio" name="rating" class="wpkb-rating-option wpkb-rating-1" value="1">No</label></p>
+<div class="wpkb-rating-message">
+<p><label for="message">What was not helpful?</label><textarea id="message" rows="3" name="message" style="width: 100%;"></textarea></p>
+<p><input type="submit" value="Submit feedback" /></p>
+</div>
+<div style="position: absolute; left: -9999999px;"><input type="text" name="url" value="" /></div>
+<p><input type="hidden" name="id" value="94355" /><input type="hidden" name="wpkb_action" value="rate" /></form>
+		</div>
+	</div>
+	</div>
+<div class="col col-2">
+<aside id="secondary" class="sidebar first-child-no-margin" role="complementary"> 				
+	 				
+	<div class="widget medium-margin"> 
+		<h5 class="widget-title">Search</h5> 
+				<div class="wpkb-search">
+		<form action="" method="get" class="wpkb-search-form wpkb-quick-search-form">
+			<p>
+				<span class="wpkb-search-input">
+					<input type="text" name="wpkb-search" class="wpkb-search-term" placeholder="Quick Search" autocomplete="off" spellcheck="false" autocorrect="off" required />
+				</span>
+				<span class="wpkb-search-button" style="display: none;">
+					<input type="submit" value="Search" />
+				</span>
+			</p>
+		</form>
+		<div class="wpkb-search-results">
+		</div></div> 
+	</div> 				
+	<div class="widget medium-margin">
+		<h5 class="widget-title">Categories</h5> 
+		<ul class="nolist wpkb-categories"> 
+				<li class="cat-item cat-item-7"><a href="https://kb.mc4wp.com/category/getting-started/" >Getting Started</a>
+</li>
+	<li class="cat-item cat-item-63 current-cat-parent current-cat-ancestor"><a href="https://kb.mc4wp.com/category/general/" >General</a>
+<ul class='children'>
+	<li class="cat-item cat-item-117"><a href="https://kb.mc4wp.com/category/campaigns/" >Campaigns</a>
+</li>
+	<li class="cat-item cat-item-68 current-cat"><a href="https://kb.mc4wp.com/category/troubleshooting/" >Troubleshooting</a>
+</li>
+</ul>
+</li>
+	<li class="cat-item cat-item-141"><a href="https://kb.mc4wp.com/category/add-ons/" >Add-ons</a>
+<ul class='children'>
+	<li class="cat-item cat-item-150"><a href="https://kb.mc4wp.com/category/mailchimp-top-bar/" >MailChimp Top Bar</a>
+</li>
+	<li class="cat-item cat-item-140"><a href="https://kb.mc4wp.com/category/mailchimp-user-sync/" >MailChimp User Sync</a>
+</li>
+</ul>
+</li>
+	<li class="cat-item cat-item-170"><a href="https://kb.mc4wp.com/category/ecommerce360/" >eCommerce360</a>
+</li>
+	<li class="cat-item cat-item-20"><a href="https://kb.mc4wp.com/category/forms/" >Forms</a>
+<ul class='children'>
+	<li class="cat-item cat-item-19"><a href="https://kb.mc4wp.com/category/emails/" >Emails</a>
+</li>
+	<li class="cat-item cat-item-46"><a href="https://kb.mc4wp.com/category/styling-your-form/" >Styling Your Form</a>
+</li>
+</ul>
+</li>
+	<li class="cat-item cat-item-16"><a href="https://kb.mc4wp.com/category/integrations/" >Integrations</a>
+<ul class='children'>
+	<li class="cat-item cat-item-39"><a href="https://kb.mc4wp.com/category/comment-form/" >Comment Form</a>
+</li>
+	<li class="cat-item cat-item-14"><a href="https://kb.mc4wp.com/category/contact-form-7/" >Contact Form 7</a>
+</li>
+	<li class="cat-item cat-item-132"><a href="https://kb.mc4wp.com/category/registration-form/" >Registration Form</a>
+</li>
+	<li class="cat-item cat-item-111"><a href="https://kb.mc4wp.com/category/woocommerce/" >WooCommerce</a>
+</li>
+</ul>
+</li>
+	<li class="cat-item cat-item-40"><a href="https://kb.mc4wp.com/category/licenses/" >Licenses</a>
+</li>
+	<li class="cat-item cat-item-21"><a href="https://kb.mc4wp.com/category/multilingual/" >Multilingual</a>
+<ul class='children'>
+	<li class="cat-item cat-item-90"><a href="https://kb.mc4wp.com/category/wpml/" >WPML</a>
+</li>
+</ul>
+</li>
+		</ul> 
+	</div>
+</aside>
+</div><!-- /.col -->
+</div><!-- /.row -->
+
+
+</div>
+
+<footer class="site-footer " role="contentinfo">
+  <div class="container text-centered">
+	  <nav class="medium-margin" style="margin-top: 0;">
+	  <a href="https://mc4wp.com/account/">Your account</a> &middot; <a href="https://mc4wp.com/about/">About</a> &middot; <a href="https://mc4wp.com/pricing/">Pricing</a> &middot; <a href="https://mc4wp.com/kb/">Knowledge Base</a> &middot; <a href="https://mc4wp.com/blog/">Blog</a> &middot; <a href="https://mc4wp.com/terms/">Terms</a> &middot; <a href="https://mc4wp.com/contact/">Contact</a>
+	  </nav>
+	  <p class="medium-margin" style="line-height: 24px;">MailChimp for WordPress is a plugin by <a href="https://ibericode.com" rel="author"><img src="https://mc4wp.com/assets/img/ibericode-logo-white.png" alt="ibericode logo" style="vertical-align: middle; height: 24px; margin-left: 3px;" /></a></p>
+	  <p class="medium-margin" style="margin-bottom: 0;">This plugin is not developed by or affiliated with MailChimp in any way.</p>
+  </div>
+</footer>
+
+		<div id="mailchimp-top-bar" class="mctb mctb-sticky mctb-position-bottom mctb-medium">
+			<!-- MailChimp Top Bar v1.2.16 - https://wordpress.org/plugins/mailchimp-top-bar/ -->
+			<div class="mctb-bar" style="display: none">
+				<form method="post" >
+										<label class="mctb-label">Sign-up now - don't miss the fun!</label>
+										<input type="email" name="email" placeholder="Your email address.." class="mctb-email"  required />
+					<input type="text"  name="email_confirm" placeholder="Confirm your email" value="" autocomplete="off" tabindex="-1" class="mctb-email-confirm" />
+										<input type="submit" value="Subscribe" class="mctb-button" />
+					<input type="hidden" name="_mctb" value="1" />
+					<input type="hidden" name="_mctb_no_js" value="1" />
+					<input type="hidden" name="_mctb_timestamp" value="1497301234" />
+				</form>
+							</div>
+
+			<!-- / MailChimp Top Bar -->
+		</div>
+		<script type="text/javascript">(function() {
+	'use strict';
+
+	function act(e) {
+		if( this.checked && this.value > 3 ) {
+			this.form.submit();
+		} else {
+			var messageWrap = this.parentNode.parentNode.parentNode.querySelector('.wpkb-rating-message');
+			messageWrap.style.display = 'block';
+			messageWrap.querySelector('textarea').focus();
+		}
+	}
+
+	var messageWraps = document.querySelectorAll('.wpkb-rating-message');
+	[].forEach.call(messageWraps, function(e) { e.style.display = 'none'; });
+
+	var options = document.querySelectorAll( '.wpkb-rating-option' );
+	[].forEach.call(options, function(e) {
+		e.style.display = 'none';
+		e.addEventListener('change', act);
+	});
+})();</script><script type='text/javascript'>
+/* <![CDATA[ */
+var mctb = {"cookieLength":"90","icons":{"hide":"&#x25BC;","show":"&#x25B2;"},"position":"bottom","is_submitted":"","is_success":""};
+/* ]]> */
+</script>
+<script type='text/javascript' src='//da6afnknywi0s.cloudfront.net/app/plugins/mailchimp-top-bar/assets/js/script.min.js?ver=1.2.16'></script>
+<script type='text/javascript' src='//da6afnknywi0s.cloudfront.net/app/plugins/wp-knowledge-base/assets/js/code-highlighting.min.js?ver=4.8'></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var wpkb_algolia_config = {"app_id":"DA9YFSTRKA","api_key":"ce1c93fad15be2b70e0aa0b1c2e52d8e","index_name":"wpkb_articles"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='//da6afnknywi0s.cloudfront.net/app/plugins/wpkb-algolia-search/assets/js/search.js?ver=0.1'></script>
+<script type='text/javascript' src='//da6afnknywi0s.cloudfront.net/wp/wp-includes/js/wp-embed.min.js?ver=4.8'></script>
+		<script type="text/javascript">
+			hljs.initHighlightingOnLoad();
+		</script>
+		
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-15758173-48', 'auto');
+  ga('send', 'pageview');
+</script>
+</body>
+</html>
