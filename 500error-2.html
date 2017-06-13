@@ -1,0 +1,539 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" dir="ltr" lang="en-US">
+<head profile="http://gmpg.org/xfn/11">
+<meta charset="utf-8" />
+<!--
+<meta property="fb:page_id" content="6427302910" />
+-->
+<meta name="google-site-verification" content="7VWES_-rcHBcmaQis9mSYamPfNwE03f4vyTj4pfuAw0" />
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noodp">
+<title>Topic: internal server error (admin-ajax.php) &laquo;  WordPress.org Forums</title>
+<meta name="referrer" content="always">
+<link href="//s.w.org/wp-includes/css/dashicons.css?20160504" rel="stylesheet" type="text/css" />
+<link href='//fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,400,300,600&subset=latin,cyrillic-ext,greek-ext,greek,vietnamese,latin-ext,cyrillic' rel='stylesheet' type='text/css'>
+<link rel="stylesheet" href="//s.w.org/style/wp4.css?58" />
+<link media="only screen and (max-device-width: 480px)" href="//s.w.org/style/iphone.css?1" type="text/css" rel="stylesheet" />
+<link rel="shortcut icon" href="//s.w.org/favicon.ico?2" type="image/x-icon" />
+
+<link rel='stylesheet' id='dashicons-css'  href='https://wordpress.org/support/wp-includes/css/dashicons.min.css?ver=4.9-alpha-40893' type='text/css' media='all' />
+<link rel='stylesheet' id='admin-bar-css'  href='https://wordpress.org/support/wp-includes/css/admin-bar.min.css?ver=4.9-alpha-40893' type='text/css' media='all' />
+<link rel='stylesheet' id='bbp-default-css'  href='https://wordpress.org/support/wp-content/plugins/bbpress/templates/default/css/bbpress.min.css?ver=2.6-alpha-6091' type='text/css' media='screen' />
+<link rel='stylesheet' id='bb-base-css'  href='//bbpress.org/wp-content/themes/bb-base/style.css?ver=20160919' type='text/css' media='all' />
+<link rel='stylesheet' id='forum-wp4-style-css'  href='https://wordpress.org/support/wp-content/themes/pub/wporg-support/style.css?ver=20170420' type='text/css' media='all' />
+<script type='text/javascript' src='https://wordpress.org/support/wp-includes/js/jquery/jquery.js?ver=1.12.4'></script>
+<script type='text/javascript' src='https://wordpress.org/support/wp-includes/js/jquery/jquery-migrate.min.js?ver=1.4.1'></script>
+<link rel='https://api.w.org/' href='https://wordpress.org/support/wp-json/' />
+<link rel="EditURI" type="application/rsd+xml" title="RSD" href="https://wordpress.org/support/xmlrpc.php?rsd" />
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="https://wordpress.org/support/wp-includes/wlwmanifest.xml" /> 
+<meta name="generator" content="WordPress 4.9-alpha-40893" />
+<link rel="canonical" href="https://wordpress.org/support/topic/internal-server-error-admin-ajax-php/" />
+<link rel='shortlink' href='https://wordpress.org/support/?p=8425060' />
+
+</head>
+
+<body id="wordpress-org" class="topic bbpress topic-template-default single single-topic postid-8425060 admin-bar no-customize-support wporg-responsive wporg-support">
+<div id="wporg-header">
+	<div class="wrapper">
+		<a id="mobile-menu-button" class="" href="#" onclick="toggleMenu();"></a>
+	<h1><a href="//wordpress.org">WordPress.org</a></h1>				<div id="head-search">
+		<form action="//wordpress.org/search/do-search.php" method="get">
+			<label for="global-search" class="screen-reader-text">Search WordPress.org for:</label>
+			<input id="global-search" class="text" name="search" type="text" value="" maxlength="150" placeholder="Search WordPress.org" /> <input type="submit" class="button" value="" />
+		</form>
+		</div>
+				<div style="clear:both"></div>
+		
+<ul id="wporg-header-menu">
+<li><a href='//wordpress.org/showcase/' title='See some of the sites built on WordPress.'>Showcase</a></li>
+<li><a href='//wordpress.org/themes/' title='Find just the right look for your website.'>Themes</a></li>
+<li><a href='//wordpress.org/plugins/' title='Plugins can extend WordPress to do almost anything you can imagine.'>Plugins</a></li>
+<li><a href='//wordpress.org/mobile/' title='Take your website on the go!'>Mobile</a></li>
+<li><a href='//wordpress.org/support/' title='Forums, documentation, help.' class="current">Support</a><ul class="nav-submenu"><li><a href='//wordpress.org/support/' title='Support and discussion forums.'>Forums</a></li><li><a href='//codex.wordpress.org/Main_Page' title='Documentation, tutorials, best practices.'>Documentation</a></li></ul><div class="uparrow"></div></li>
+<li><a href='//make.wordpress.org/' title='Contribute your knowledge.'>Get Involved</a></li>
+<li><a href='//wordpress.org/about/' title='About the WordPress Organization, and where we&#039;re going.'>About</a></li>
+<li><a href='//wordpress.org/news/' title='Come here for the latest scoop.'>Blog</a></li>
+<li><a href='//wordpress.org/hosting/' title='Find a home for your blog.'>Hosting</a></li>
+<li id="download" class="button download-button"><a href='//wordpress.org/download/' title='Get it. Got it? Good.'>Download WordPress</a></li>
+</ul>
+		<div style="clear:both"></div>
+	</div>
+</div>
+
+
+
+<div id="page" class="site">
+	<a class="skip-link screen-reader-text" href="#main">Skip to content</a>
+
+	<div id="content" class="site-content">
+		<header id="masthead" class="site-header " role="banner">
+			<div class="site-branding">
+									<p class="site-title"><a href="https://wordpress.org/support/" rel="home">Support</a></p>
+
+					<nav id="site-navigation" class="main-navigation" role="navigation">
+						<button class="menu-toggle dashicons dashicons-arrow-down-alt2" aria-controls="primary-menu" aria-expanded="false" aria-label="Primary Menu"></button>
+						<div id="primary-menu" class="menu">
+							<ul>
+																<li class="page_item"><a href="https://wordpress.org/support/forums/">Forums</a></li>
+																<li class="page_item"><a href="https://codex.wordpress.org/Main_Page">Documentation</a></li>
+																<li class="page_item"><a href="https://make.wordpress.org/support/handbook/">Get Involved</a></li>
+																<li>
+
+<form role="search" method="get" class="search-form" action="https://wordpress.org/support/">
+	<label for="s" class="screen-reader-text">Search for:</label>
+		<input type="search" id="s" class="search-field" placeholder="Search forums" value="" name="s" />
+		<button class="button button-primary button-search"><i class="dashicons dashicons-search"></i><span class="screen-reader-text">Search forums</span></button>
+</form>
+
+</li>
+							</ul>
+						</div>
+					</nav><!-- #site-navigation -->
+							</div><!-- .site-branding -->
+		</header><!-- #masthead -->
+
+<main id="main" class="site-main" role="main">
+	
+	<div class="entry-content">
+		
+			
+<div class="bbp-breadcrumb"><p><a href="https://wordpress.org/support/" class="bbp-breadcrumb-home">Support</a> <span class="bbp-breadcrumb-sep">&raquo;</span> Plugin: <a href="https://wordpress.org/support/plugin/wpforo/" class="bbp-breadcrumb-forum">Forums - wpForo</a> <span class="bbp-breadcrumb-sep">&raquo;</span> <span class="bbp-breadcrumb-current">internal server error (admin-ajax.php)</span></p></div>
+<header class="page-header">
+	<h1 class="page-title">internal server error (admin-ajax.php)</h1>
+</header>
+
+<div id="bbpress-forums">
+
+	
+	
+		
+			
+
+<ul id="bbp-topic-8425060-lead" class="bbp-lead-topic">
+
+	<li class="bbp-body">
+
+		<div id="post-8425060" class="even bbp-parent-forum-21262 user-id-15182527 post-8425060 topic type-topic status-publish hentry">
+			
+			<div class="bbp-topic-author">
+
+				<span class="topic-resolved-indicator">Resolved</span>
+				<a href="https://wordpress.org/support/users/joydipkar73/" title="View joydipkar73&#039;s profile" class="bbp-author-avatar" rel="nofollow"><img alt='' src='https://secure.gravatar.com/avatar/06ab2a239a790fa5e0006c0305466f88?s=100&#038;d=retro&#038;r=g' srcset='https://secure.gravatar.com/avatar/06ab2a239a790fa5e0006c0305466f88?s=200&amp;d=retro&amp;r=g 2x' class='avatar avatar-100 photo' height='100' width='100' /></a><a href="https://wordpress.org/support/users/joydipkar73/" title="View joydipkar73&#039;s profile" class="bbp-author-name" rel="nofollow">joydipkar73</a>
+				<p class="bbp-user-nicename">(@joydipkar73)</p><br />
+				
+				<p class="bbp-topic-post-date"><a href="https://wordpress.org/support/topic/internal-server-error-admin-ajax-php/" title="#8425060" class="bbp-topic-permalink">7 months ago</a></p>
+
+				
+				
+			</div><!-- .bbp-topic-author -->
+
+			<div class="bbp-topic-content">
+
+				
+				<p>after i activated wpforo and went to menu to add forum page in menu i got internal server error (500) on admin-ajax.php.<br />
+I had to deactivate wpforo and then add menu and  then reactivate wpforo.<br />
+please help<br />
+using &#8216;modern&#8217; theme by webman</p>
+
+
+<ul id="bbp-topic-revision-log-8425060" class="bbp-topic-revision-log">
+
+	<li id="bbp-topic-revision-log-8425060-item-8425071" class="bbp-topic-revision-log-item">
+		This topic was modified 7 months ago by <a href="https://wordpress.org/support/users/joydipkar73/" title="View joydipkar73&#039;s profile">joydipkar73</a>.
+	</li>
+
+</ul>
+
+
+				
+			</div><!-- .bbp-topic-content -->
+
+			<span class="bbp-admin-links"></span>
+		</div><!-- #post-8425060 -->
+
+	</li><!-- .bbp-body -->
+
+</ul><!-- #topic-8425060-replies -->
+
+
+		
+		
+			
+<div class="bbp-pagination">
+	<div class="bbp-pagination-count">Viewing 5 replies - 1 through 5 (of 5 total)</div>
+	<div class="bbp-pagination-links"></div>
+</div>
+
+
+			
+<ul id="topic-8425060-replies" class="forums bbp-replies">
+
+	<li class="bbp-body">
+
+		
+			
+<div id="post-8425113" class="odd bbp-parent-forum-21262 bbp-parent-topic-8425060 bbp-reply-position-1 user-id-14094357 post-8425113 reply type-reply status-publish hentry by-plugin-contributor author-has-badge">
+
+	<div class="bbp-reply-author">
+
+		<span class="author-badge author-badge-plugin" title="This person is a contributor to this plugin">Plugin Contributor</span>
+		<a href="https://wordpress.org/support/users/gvectors-team/" title="View gVectors Team&#039;s profile" class="bbp-author-avatar" rel="nofollow"><img alt='' src='https://secure.gravatar.com/avatar/ef9012e6787b3e7a592b2ed6bb7ca6f3?s=100&#038;d=retro&#038;r=g' srcset='https://secure.gravatar.com/avatar/ef9012e6787b3e7a592b2ed6bb7ca6f3?s=200&amp;d=retro&amp;r=g 2x' class='avatar avatar-100 photo' height='100' width='100' /></a><a href="https://wordpress.org/support/users/gvectors-team/" title="View gVectors Team&#039;s profile" class="bbp-author-name" rel="nofollow">gVectors Team</a>
+		<p class="bbp-user-nicename">(@gvectors-team)</p>
+		
+		<div class="bbp-reply-meta">
+
+		<p class="bbp-reply-post-date"><a href="https://wordpress.org/support/topic/internal-server-error-admin-ajax-php/#post-8425113" title="#8425113" class="bbp-reply-permalink">7 months ago</a></p>
+
+		
+		
+		</div>
+
+	</div><!-- .bbp-reply-author -->
+
+	<div class="bbp-reply-content">
+
+		
+		<p>This is a WP/Hosting Server/PHP/MySQL specific issue. I&#8217;m sorry but I have no clue why it happens on your website. I only can recommend increase server resources, please send these data to your hosting service support and ask them to change PHP values to these:</p>
+<ul>
+<li>php_value max_input_vars 100000</li>
+<li>php_value max_execution_time 3000</li>
+<li>php_value memory_limit = 256M</li>
+</ul>
+
+		
+	</div><!-- .bbp-reply-content -->
+
+	
+	<span class="bbp-admin-links"></span>
+	
+</div><!-- #post-8425113 -->
+
+		
+			
+<div id="post-8425147" class="even bbp-parent-forum-21262 bbp-parent-topic-8425060 bbp-reply-position-2 user-id-15182527 topic-author post-8425147 reply type-reply status-publish hentry">
+
+	<div class="bbp-reply-author">
+
+		
+		<a href="https://wordpress.org/support/users/joydipkar73/" title="View joydipkar73&#039;s profile" class="bbp-author-avatar" rel="nofollow"><img alt='' src='https://secure.gravatar.com/avatar/06ab2a239a790fa5e0006c0305466f88?s=100&#038;d=retro&#038;r=g' srcset='https://secure.gravatar.com/avatar/06ab2a239a790fa5e0006c0305466f88?s=200&amp;d=retro&amp;r=g 2x' class='avatar avatar-100 photo' height='100' width='100' /></a><a href="https://wordpress.org/support/users/joydipkar73/" title="View joydipkar73&#039;s profile" class="bbp-author-name" rel="nofollow">joydipkar73</a>
+		<p class="bbp-user-nicename">(@joydipkar73)</p>
+		
+		<div class="bbp-reply-meta">
+
+		<p class="bbp-reply-post-date"><a href="https://wordpress.org/support/topic/internal-server-error-admin-ajax-php/#post-8425147" title="#8425147" class="bbp-reply-permalink">7 months ago</a></p>
+
+		
+		
+		</div>
+
+	</div><!-- .bbp-reply-author -->
+
+	<div class="bbp-reply-content">
+
+		
+		<p>i will do that  asap and will let u know<br />
+thanks for being so helpful.<br />
+being  such helpful increases the plugins  acceptability  10x.</p>
+
+		
+	</div><!-- .bbp-reply-content -->
+
+	
+	<span class="bbp-admin-links"></span>
+	
+</div><!-- #post-8425147 -->
+
+		
+			
+<div id="post-8427339" class="odd bbp-parent-forum-21262 bbp-parent-topic-8425060 bbp-reply-position-3 user-id-15182527 topic-author post-8427339 reply type-reply status-publish hentry">
+
+	<div class="bbp-reply-author">
+
+		
+		<a href="https://wordpress.org/support/users/joydipkar73/" title="View joydipkar73&#039;s profile" class="bbp-author-avatar" rel="nofollow"><img alt='' src='https://secure.gravatar.com/avatar/06ab2a239a790fa5e0006c0305466f88?s=100&#038;d=retro&#038;r=g' srcset='https://secure.gravatar.com/avatar/06ab2a239a790fa5e0006c0305466f88?s=200&amp;d=retro&amp;r=g 2x' class='avatar avatar-100 photo' height='100' width='100' /></a><a href="https://wordpress.org/support/users/joydipkar73/" title="View joydipkar73&#039;s profile" class="bbp-author-name" rel="nofollow">joydipkar73</a>
+		<p class="bbp-user-nicename">(@joydipkar73)</p>
+		
+		<div class="bbp-reply-meta">
+
+		<p class="bbp-reply-post-date"><a href="https://wordpress.org/support/topic/internal-server-error-admin-ajax-php/#post-8427339" title="#8427339" class="bbp-reply-permalink">7 months ago</a></p>
+
+		
+		
+		</div>
+
+	</div><!-- .bbp-reply-author -->
+
+	<div class="bbp-reply-content">
+
+		
+		<p>I just checked and my godaddy host will do that shortly.<br />
+But, in admin panel  (if wpForo plugin is installed) every ajax request is throwing 500 error.<br />
+I went to update a plugin but  it threw 500 error at once.<br />
+I had to disable the  wpForo and  the update was done.<br />
+Please help.<br />
+Do you think that this is still due to the low memory condition?<br />
+Can u pls suggest anything? Its  really very urgent.</p>
+
+		
+	</div><!-- .bbp-reply-content -->
+
+	
+	<span class="bbp-admin-links"></span>
+	
+</div><!-- #post-8427339 -->
+
+		
+			
+<div id="post-8427541" class="even bbp-parent-forum-21262 bbp-parent-topic-8425060 bbp-reply-position-4 user-id-14094357 post-8427541 reply type-reply status-publish hentry by-plugin-contributor author-has-badge">
+
+	<div class="bbp-reply-author">
+
+		<span class="author-badge author-badge-plugin" title="This person is a contributor to this plugin">Plugin Contributor</span>
+		<a href="https://wordpress.org/support/users/gvectors-team/" title="View gVectors Team&#039;s profile" class="bbp-author-avatar" rel="nofollow"><img alt='' src='https://secure.gravatar.com/avatar/ef9012e6787b3e7a592b2ed6bb7ca6f3?s=100&#038;d=retro&#038;r=g' srcset='https://secure.gravatar.com/avatar/ef9012e6787b3e7a592b2ed6bb7ca6f3?s=200&amp;d=retro&amp;r=g 2x' class='avatar avatar-100 photo' height='100' width='100' /></a><a href="https://wordpress.org/support/users/gvectors-team/" title="View gVectors Team&#039;s profile" class="bbp-author-name" rel="nofollow">gVectors Team</a>
+		<p class="bbp-user-nicename">(@gvectors-team)</p>
+		
+		<div class="bbp-reply-meta">
+
+		<p class="bbp-reply-post-date"><a href="https://wordpress.org/support/topic/internal-server-error-admin-ajax-php/#post-8427541" title="#8427541" class="bbp-reply-permalink">7 months ago</a></p>
+
+		
+		
+		</div>
+
+	</div><!-- .bbp-reply-author -->
+
+	<div class="bbp-reply-content">
+
+		
+		<p>I need PHP error reporting to be able help you. The 500 Internal Server error has 500 reasons, some of them I&#8217;ve already mentioned in my last post.<br />
+In order to detect the exact reason, please try to find error.log file or error reporting data which has been written on wpForo activation or usage. </p>
+
+		
+	</div><!-- .bbp-reply-content -->
+
+	
+	<span class="bbp-admin-links"></span>
+	
+</div><!-- #post-8427541 -->
+
+		
+			
+<div id="post-8427872" class="odd bbp-parent-forum-21262 bbp-parent-topic-8425060 bbp-reply-position-5 user-id-15182527 topic-author post-8427872 reply type-reply status-publish hentry">
+
+	<div class="bbp-reply-author">
+
+		
+		<a href="https://wordpress.org/support/users/joydipkar73/" title="View joydipkar73&#039;s profile" class="bbp-author-avatar" rel="nofollow"><img alt='' src='https://secure.gravatar.com/avatar/06ab2a239a790fa5e0006c0305466f88?s=100&#038;d=retro&#038;r=g' srcset='https://secure.gravatar.com/avatar/06ab2a239a790fa5e0006c0305466f88?s=200&amp;d=retro&amp;r=g 2x' class='avatar avatar-100 photo' height='100' width='100' /></a><a href="https://wordpress.org/support/users/joydipkar73/" title="View joydipkar73&#039;s profile" class="bbp-author-name" rel="nofollow">joydipkar73</a>
+		<p class="bbp-user-nicename">(@joydipkar73)</p>
+		
+		<div class="bbp-reply-meta">
+
+		<p class="bbp-reply-post-date"><a href="https://wordpress.org/support/topic/internal-server-error-admin-ajax-php/#post-8427872" title="#8427872" class="bbp-reply-permalink">7 months ago</a></p>
+
+		
+		
+		</div>
+
+	</div><!-- .bbp-reply-author -->
+
+	<div class="bbp-reply-content">
+
+		
+		<p>I checked every log files, but  no error is logged regarding wpForo or admin-ajax.php&#8230;<br />
+after a long brainstorming i upgraded from php 5.4 to php 5.6&#8230; and all is ok now!</p>
+
+		
+	</div><!-- .bbp-reply-content -->
+
+	
+	<span class="bbp-admin-links"></span>
+	
+</div><!-- #post-8427872 -->
+
+		
+	</li><!-- .bbp-body -->
+
+</ul><!-- #topic-8425060-replies -->
+
+
+			
+<div class="bbp-pagination">
+	<div class="bbp-pagination-count">Viewing 5 replies - 1 through 5 (of 5 total)</div>
+	<div class="bbp-pagination-links"></div>
+</div>
+
+
+		
+		
+
+	<div id="no-reply-8425060" class="bbp-no-reply">
+		<div class="bbp-template-notice">
+			<ul>
+				
+											<li>You must be <a href="https://login.wordpress.org/?redirect_to=https%3A%2F%2Fwordpress.org%2Fsupport%2Ftopic%2Finternal-server-error-admin-ajax-php%2F">logged in</a> to reply to this topic.</li>
+					
+							</ul>
+		</div>
+	</div>
+
+
+
+	
+	
+</div>
+
+			</div>
+
+	<div class="entry-meta sidebar">
+
+	
+		
+			
+		<div>
+			<h3>About this Plugin</h3>
+			<ul>
+								<li><style type='text/css'>#plugin-icon-wpforo { width:128px; height:128px; background-image: url(//ps.w.org/wpforo/assets/icon-128x128.png?rev=1603841); background-size:128px 128px; }@media only screen and (-webkit-min-device-pixel-ratio: 1.5) { #plugin-icon-wpforo { background-image: url(//ps.w.org/wpforo/assets/icon-256x256.png?rev=1603841); } }</style><div class='plugin-icon' id='plugin-icon-wpforo' style='float:left; margin: 3px 6px 6px 0px;'></div></li>
+								<li style="clear:both;"><a href="//wordpress.org/plugins/wpforo/">Forums - wpForo</a></li>
+								<li><a href="//wordpress.org/plugins/wpforo/faq/">Frequently Asked Questions</a></li>
+								<li><a href="https://wordpress.org/support/plugin/wpforo/">Support Threads</a></li>
+				<li><a href="https://wordpress.org/support/plugin/wpforo/active/">Active Topics</a></li>
+				<li><a href="https://wordpress.org/support/plugin/wpforo/unresolved/">Unresolved Topics</a></li>
+				<li><a href="https://wordpress.org/support/plugin/wpforo/reviews/">Reviews</a></li>
+							</ul>
+		</div>
+		
+			<div>
+									<!-- h3></h3-->
+				
+				<ul class="topic-info">
+					
+	<li class="topic-forum">In: <a href="https://wordpress.org/support/forum/plugins-and-hacks/">Plugins and Hacks</a></li>
+			<li class="reply-count">5 replies</li>
+				<li class="voice-count">2 participants</li>
+				<li class="topic-freshness-author">Last reply from: <a href="https://wordpress.org/support/users/joydipkar73/" title="View joydipkar73&#039;s profile" class="bbp-author-name" rel="nofollow">joydipkar73</a></li>
+				<li class="topic-freshness-time">Last activity: <a href="https://wordpress.org/support/topic/internal-server-error-admin-ajax-php/#post-8427872" title="Reply To: internal server error (admin-ajax.php)">7 months ago</a></li>
+				<li class="wp-version">4.6.1</li>
+							<li class="topic-resolved">Status: resolved</li>
+					
+					</ul>
+			</div>
+
+			<div>
+							</div>
+
+			<!--div>
+							</div-->
+
+			
+		
+		
+			<div>
+				<h4>Views</h4>
+				<ul class="topic-views">
+
+					
+						<li><a class="bbp-view-title" href="https://wordpress.org/support/view/popular/">Most popular topics</a></li>
+
+					
+						<li><a class="bbp-view-title" href="https://wordpress.org/support/view/no-replies/">Topics with no replies</a></li>
+
+					
+						<li><a class="bbp-view-title" href="https://wordpress.org/support/view/support-forum-mu/">Non-support topics</a></li>
+
+					
+						<li><a class="bbp-view-title" href="https://wordpress.org/support/view/support-forum-yes/">Resolved topics</a></li>
+
+					
+						<li><a class="bbp-view-title" href="https://wordpress.org/support/view/support-forum-no/">Unresolved topics</a></li>
+
+					
+						<li><a class="bbp-view-title" href="https://wordpress.org/support/view/all-topics/">All topics</a></li>
+
+					
+				</ul>
+			</div>
+
+		
+		
+	
+	
+</div>
+</main>
+
+
+</div><!-- #content -->
+
+<div id="wporg-footer">
+		<div class="wrapper">
+		<ul>
+			<li><a href="//wordpress.org/about/" title="An introduction to the WordPress project">About</a></li>
+			<li><a href="//wordpress.org/news/" title="News and Updates">Blog</a></li>
+			<li><a href="//wordpress.org/hosting/" title="Recommended web hosting providers">Hosting</a></li>
+			<li><a href="//jobs.wordpress.net/" title="Find or post WordPress jobs">Jobs</a></li>
+		</ul>
+
+		<ul>
+			<li><a href="//wordpress.org/support/" title="Forums, documentation, and other resources">Support</a></li>
+			<li><a href="//developer.wordpress.org" title="Resources for WordPress developers">Developers</a></li>
+			<li><a href="//make.wordpress.org/" title="Give back to WordPress through code, support, translation and more">Get Involved</a></li>
+			<li><a href="//learn.wordpress.org/" title="Workshops and training materials">Learn</a></li>
+		</ul>
+
+		<ul>
+			<li><a href="//wordpress.org/showcase/" title="Some of the best WordPress sites on the Web">Showcase</a></li>
+			<li><a href="//wordpress.org/plugins/" title="Add extra functionality to WordPress">Plugins</a></li>
+			<li><a href="//wordpress.org/themes/" title="Make your WordPress pretty">Themes</a></li>
+			<li><a href="//wordpress.org/ideas/" title="Share your ideas for improving WordPress">Ideas</a></li>
+		</ul>
+
+		<ul>
+			<li><a href="//central.wordcamp.org/" title="Find a WordPress event near you">WordCamp</a></li>
+			<li><a href="//wordpress.tv/" title="Videos, tutorials, and WordCamp sessions">WordPress.TV</a></li>
+			<li><a href="//buddypress.org/" title="A set of plugins to transform your WordPress into a social network">BuddyPress</a></li>
+			<li><a href="//bbpress.org/" title="Fast, slick forums built on WordPress">bbPress</a></li>
+		</ul>
+
+		<ul>
+			<li><a href="//wordpress.com/?ref=wporg-footer" title="Hassle-free WordPress hosting">WordPress.com</a></li>
+			<li><a href="//ma.tt/" title="Co-founder of WordPress, an example of what WordPress can do">Matt</a></li>
+			<li><a href="//wordpress.org/about/privacy/" title="WordPress.org Privacy Policy">Privacy</a></li>
+			<li><a href="//wordpress.org/about/license/" title="WordPress is open source software">License / GPLv2</a></li>
+		</ul>
+
+		<ul>
+			<li>
+				<iframe title="Follow @WordPress on Twitter" allowtransparency="true" frameborder="0" scrolling="no" src="//platform.twitter.com/widgets/follow_button.html?screen_name=WordPress&amp;show_count=false" style="width:135px; height:20px;"></iframe>
+			</li>
+			<li>
+				<iframe title="Like WordPress on Facebook" src="//www.facebook.com/plugins/like.php?app_id=121415197926116&amp;href=http%3A%2F%2Fwww.facebook.com%2Fwordpress&amp;send=false&amp;layout=button_count&amp;width=135&amp;show_faces=false&amp;action=like&amp;colorscheme=light&amp;font=lucida+grande&amp;height=21" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:135px; height:21px;" allowTransparency="true"></iframe>
+			</li>
+			<li>
+				<div class="g-plusone" data-size="medium" data-href="https://plus.google.com/+WordPress"></div>
+			</li>
+		</ul>
+	</div>
+	
+		<h6 class="aligncenter cip-image">Code is Poetry.</h6>
+</div>
+
+
+<script type='text/javascript' src='https://wordpress.org/support/wp-content/plugins/bbpress/templates/default/js/topic.min.js?ver=2.6-alpha-6091'></script>
+<script type='text/javascript' src='https://wordpress.org/support/wp-content/themes/pub/wporg-support/js/navigation.js?ver=20151217'></script>
+<script type='text/javascript' src='https://wordpress.org/support/wp-includes/js/wp-embed.min.js?ver=4.9-alpha-40893'></script>
+		<div id="wpadminbar" class="nojq nojs">
+							<a class="screen-reader-shortcut" href="#wp-toolbar" tabindex="1">Skip to toolbar</a>
+						<div class="quicklinks" id="wp-toolbar" role="navigation" aria-label="Toolbar" tabindex="0">
+				<ul id="wp-admin-bar-root-default" class="ab-top-menu">
+		<li id="wp-admin-bar-wp-logo" class="menupop"><a class="ab-item" aria-haspopup="true" href="https://wordpress.org/wp-admin/user/about.php"><span class="ab-icon"></span><span class="screen-reader-text">About WordPress</span></a><div class="ab-sub-wrapper"><ul id="wp-admin-bar-wp-logo-default" class="ab-submenu">
+		<li id="wp-admin-bar-about"><a class="ab-item" href="https://wordpress.org/wp-admin/user/about.php">About WordPress</a>		</li></ul><ul id="wp-admin-bar-wp-logo-external" class="ab-sub-secondary ab-submenu">
+		<li id="wp-admin-bar-wporg"><a class="ab-item" href="https://wordpress.org/">WordPress.org</a>		</li>
+		<li id="wp-admin-bar-documentation"><a class="ab-item" href="https://codex.wordpress.org/">Documentation</a>		</li>
+		<li id="wp-admin-bar-support-forums"><a class="ab-item" href="https://wordpress.org/support/">Support Forums</a>		</li>
+		<li id="wp-admin-bar-feedback"><a class="ab-item" href="https://wordpress.org/support/forum/requests-and-feedback">Feedback</a>		</li></ul></div>		</li></ul><ul id="wp-admin-bar-top-secondary" class="ab-top-secondary ab-top-menu">
+		<li id="wp-admin-bar-search" class="admin-bar-search"><div class="ab-item ab-empty-item" tabindex="-1"><form action="https://wordpress.org/support/" method="get" id="adminbarsearch"><input class="adminbar-input" name="s" id="adminbar-search" type="text" value="" maxlength="150" /><label for="adminbar-search" class="screen-reader-text">Search</label><input type="submit" class="adminbar-button" value="Search"/></form></div>		</li>
+		<li id="wp-admin-bar-log-in"><a class="ab-item" href="https://login.wordpress.org/?redirect_to=https%3A%2F%2Fwordpress.org%2Fsupport%2Ftopic%2Finternal-server-error-admin-ajax-php%2F">Log In</a>		</li>
+		<li id="wp-admin-bar-register"><a class="ab-item" href="https://login.wordpress.org/register">Register</a>		</li></ul>			</div>
+					</div>
+
+		</body>
+</html>

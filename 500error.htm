@@ -1,0 +1,588 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" dir="ltr" lang="en-US">
+<head profile="http://gmpg.org/xfn/11">
+<meta charset="utf-8" />
+<!--
+<meta property="fb:page_id" content="6427302910" />
+-->
+<meta name="google-site-verification" content="7VWES_-rcHBcmaQis9mSYamPfNwE03f4vyTj4pfuAw0" />
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noodp">
+<title>Topic: admin-ajax.php 500 Internal Server Error when viewing Media Library or Menus &laquo;  WordPress.org Forums</title>
+<meta name="referrer" content="always">
+<link href="//s.w.org/wp-includes/css/dashicons.css?20160504" rel="stylesheet" type="text/css" />
+<link href='//fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,400,300,600&subset=latin,cyrillic-ext,greek-ext,greek,vietnamese,latin-ext,cyrillic' rel='stylesheet' type='text/css'>
+<link rel="stylesheet" href="//s.w.org/style/wp4.css?58" />
+<link media="only screen and (max-device-width: 480px)" href="//s.w.org/style/iphone.css?1" type="text/css" rel="stylesheet" />
+<link rel="shortcut icon" href="//s.w.org/favicon.ico?2" type="image/x-icon" />
+
+<link rel='stylesheet' id='dashicons-css'  href='https://wordpress.org/support/wp-includes/css/dashicons.min.css?ver=4.9-alpha-40893' type='text/css' media='all' />
+<link rel='stylesheet' id='admin-bar-css'  href='https://wordpress.org/support/wp-includes/css/admin-bar.min.css?ver=4.9-alpha-40893' type='text/css' media='all' />
+<link rel='stylesheet' id='bbp-default-css'  href='https://wordpress.org/support/wp-content/plugins/bbpress/templates/default/css/bbpress.min.css?ver=2.6-alpha-6091' type='text/css' media='screen' />
+<link rel='stylesheet' id='bb-base-css'  href='//bbpress.org/wp-content/themes/bb-base/style.css?ver=20160919' type='text/css' media='all' />
+<link rel='stylesheet' id='forum-wp4-style-css'  href='https://wordpress.org/support/wp-content/themes/pub/wporg-support/style.css?ver=20170420' type='text/css' media='all' />
+<script type='text/javascript' src='https://wordpress.org/support/wp-includes/js/jquery/jquery.js?ver=1.12.4'></script>
+<script type='text/javascript' src='https://wordpress.org/support/wp-includes/js/jquery/jquery-migrate.min.js?ver=1.4.1'></script>
+<link rel='https://api.w.org/' href='https://wordpress.org/support/wp-json/' />
+<link rel="EditURI" type="application/rsd+xml" title="RSD" href="https://wordpress.org/support/xmlrpc.php?rsd" />
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="https://wordpress.org/support/wp-includes/wlwmanifest.xml" /> 
+<meta name="generator" content="WordPress 4.9-alpha-40893" />
+<link rel="canonical" href="https://wordpress.org/support/topic/admin-ajax-php-500-internal-server-error-when-viewing-media-library-or-menus/" />
+<link rel='shortlink' href='https://wordpress.org/support/?p=8475225' />
+
+<style type="text/css" media="print">#wpadminbar { display:none; }</style>
+<style type="text/css" media="screen">
+	html { margin-top: 32px !important; }
+	* html body { margin-top: 32px !important; }
+	@media screen and ( max-width: 782px ) {
+		html { margin-top: 46px !important; }
+		* html body { margin-top: 46px !important; }
+	}
+</style>
+
+</head>
+
+<body id="wordpress-org" class="topic bbpress topic-template-default single single-topic postid-8475225 admin-bar no-customize-support wporg-responsive wporg-support">
+<div id="wporg-header">
+	<div class="wrapper">
+		<a id="mobile-menu-button" class="" href="#" onclick="toggleMenu();"></a>
+	<h1><a href="//wordpress.org">WordPress.org</a></h1>				<div id="head-search">
+		<form action="//wordpress.org/search/do-search.php" method="get">
+			<label for="global-search" class="screen-reader-text">Search WordPress.org for:</label>
+			<input id="global-search" class="text" name="search" type="text" value="" maxlength="150" placeholder="Search WordPress.org" /> <input type="submit" class="button" value="" />
+		</form>
+		</div>
+				<div style="clear:both"></div>
+		
+<ul id="wporg-header-menu">
+<li><a href='//wordpress.org/showcase/' title='See some of the sites built on WordPress.'>Showcase</a></li>
+<li><a href='//wordpress.org/themes/' title='Find just the right look for your website.'>Themes</a></li>
+<li><a href='//wordpress.org/plugins/' title='Plugins can extend WordPress to do almost anything you can imagine.'>Plugins</a></li>
+<li><a href='//wordpress.org/mobile/' title='Take your website on the go!'>Mobile</a></li>
+<li><a href='//wordpress.org/support/' title='Forums, documentation, help.' class="current">Support</a><ul class="nav-submenu"><li><a href='//wordpress.org/support/' title='Support and discussion forums.'>Forums</a></li><li><a href='//codex.wordpress.org/Main_Page' title='Documentation, tutorials, best practices.'>Documentation</a></li></ul><div class="uparrow"></div></li>
+<li><a href='//make.wordpress.org/' title='Contribute your knowledge.'>Get Involved</a></li>
+<li><a href='//wordpress.org/about/' title='About the WordPress Organization, and where we&#039;re going.'>About</a></li>
+<li><a href='//wordpress.org/news/' title='Come here for the latest scoop.'>Blog</a></li>
+<li><a href='//wordpress.org/hosting/' title='Find a home for your blog.'>Hosting</a></li>
+<li id="download" class="button download-button"><a href='//wordpress.org/download/' title='Get it. Got it? Good.'>Download WordPress</a></li>
+</ul>
+		<div style="clear:both"></div>
+	</div>
+</div>
+
+
+
+<div id="page" class="site">
+	<a class="skip-link screen-reader-text" href="#main">Skip to content</a>
+
+	<div id="content" class="site-content">
+		<header id="masthead" class="site-header " role="banner">
+			<div class="site-branding">
+									<p class="site-title"><a href="https://wordpress.org/support/" rel="home">Support</a></p>
+
+					<nav id="site-navigation" class="main-navigation" role="navigation">
+						<button class="menu-toggle dashicons dashicons-arrow-down-alt2" aria-controls="primary-menu" aria-expanded="false" aria-label="Primary Menu"></button>
+						<div id="primary-menu" class="menu">
+							<ul>
+																<li class="page_item"><a href="https://wordpress.org/support/forums/">Forums</a></li>
+																<li class="page_item"><a href="https://codex.wordpress.org/Main_Page">Documentation</a></li>
+																<li class="page_item"><a href="https://make.wordpress.org/support/handbook/">Get Involved</a></li>
+																<li>
+
+<form role="search" method="get" class="search-form" action="https://wordpress.org/support/">
+	<label for="s" class="screen-reader-text">Search for:</label>
+		<input type="search" id="s" class="search-field" placeholder="Search forums" value="" name="s" />
+		<button class="button button-primary button-search"><i class="dashicons dashicons-search"></i><span class="screen-reader-text">Search forums</span></button>
+</form>
+
+</li>
+							</ul>
+						</div>
+					</nav><!-- #site-navigation -->
+							</div><!-- .site-branding -->
+		</header><!-- #masthead -->
+
+<main id="main" class="site-main" role="main">
+	
+	<div class="entry-content">
+		
+			
+<div class="bbp-breadcrumb"><p><a href="https://wordpress.org/support/" class="bbp-breadcrumb-home">Support</a> <span class="bbp-breadcrumb-sep">&raquo;</span> <a href="https://wordpress.org/support/forum/how-to-and-troubleshooting/" class="bbp-breadcrumb-forum">Fixing WordPress</a> <span class="bbp-breadcrumb-sep">&raquo;</span> <span class="bbp-breadcrumb-current">admin-ajax.php 500 Internal Server Error when viewing Media Library or Menus</span></p></div>
+<header class="page-header">
+	<h1 class="page-title">admin-ajax.php 500 Internal Server Error when viewing Media Library or Menus</h1>
+</header>
+
+<div id="bbpress-forums">
+
+	
+	
+		
+			
+
+<ul id="bbp-topic-8475225-lead" class="bbp-lead-topic">
+
+	<li class="bbp-body">
+
+		<div id="post-8475225" class="even bbp-parent-forum-21260 user-id-14555908 post-8475225 topic type-topic status-publish hentry">
+			
+			<div class="bbp-topic-author">
+
+				
+				<a href="https://wordpress.org/support/users/the-beallman/" title="View The Beallman&#039;s profile" class="bbp-author-avatar" rel="nofollow"><img alt='' src='https://secure.gravatar.com/avatar/737d239dc850f51accd12a6eef76663d?s=100&#038;d=retro&#038;r=g' srcset='https://secure.gravatar.com/avatar/737d239dc850f51accd12a6eef76663d?s=200&amp;d=retro&amp;r=g 2x' class='avatar avatar-100 photo' height='100' width='100' /></a><a href="https://wordpress.org/support/users/the-beallman/" title="View The Beallman&#039;s profile" class="bbp-author-name" rel="nofollow">The Beallman</a>
+				<p class="bbp-user-nicename">(@the-beallman)</p><br />
+				
+				<p class="bbp-topic-post-date"><a href="https://wordpress.org/support/topic/admin-ajax-php-500-internal-server-error-when-viewing-media-library-or-menus/" title="#8475225" class="bbp-topic-permalink">6 months, 3 weeks ago</a></p>
+
+				
+				
+			</div><!-- .bbp-topic-author -->
+
+			<div class="bbp-topic-content">
+
+				
+				<p>My website is <a href="http://www.audioverseawards.net/site/" rel="nofollow">http://www.audioverseawards.net/site/</a></p>
+<p>Recently, an error started occurring where the Grid view in my Media Library wouldn&#8217;t display. Instead, I just get a endless swirling icon. This issue also persists when I try editing Menus, and it will not let me add any links to the Menu. </p>
+<p>In my browser console, it shows that admin-ajax.php is encountering a 500 Internal Server Error, and that this is the culprit of the problem.</p>
+<p>I presumed the issue might be related to GoDaddy&#8217;s ModSecurity settings, but they were able to confirm that this was not an issue on their end, but rather an ajax issue on the website. With my knowledge of ajax being minuscule at best, I&#8217;m at a loss of where to even begin to fix this issue and Google isn&#8217;t being helpful.</p>
+<p>Any and all help is appreciated.</p>
+
+				
+			</div><!-- .bbp-topic-content -->
+
+			<span class="bbp-admin-links"></span>
+		</div><!-- #post-8475225 -->
+
+	</li><!-- .bbp-body -->
+
+</ul><!-- #topic-8475225-replies -->
+
+
+		
+		
+			
+<div class="bbp-pagination">
+	<div class="bbp-pagination-count">Viewing 6 replies - 1 through 6 (of 6 total)</div>
+	<div class="bbp-pagination-links"></div>
+</div>
+
+
+			
+<ul id="topic-8475225-replies" class="forums bbp-replies">
+
+	<li class="bbp-body">
+
+		
+			
+<div id="post-8475238" class="odd bbp-parent-forum-21260 bbp-parent-topic-8475225 bbp-reply-position-1 user-id-5941 post-8475238 reply type-reply status-publish hentry by-moderator author-has-badge">
+
+	<div class="bbp-reply-author">
+
+		<span class="author-badge author-badge-moderator" title="This person is a moderator on this forum">Moderator</span>
+		<a href="https://wordpress.org/support/users/macmanx/" title="View James Huff&#039;s profile" class="bbp-author-avatar" rel="nofollow"><img alt='' src='https://secure.gravatar.com/avatar/1471c4c2a4e85066091c378240ff24e3?s=100&#038;d=retro&#038;r=g' srcset='https://secure.gravatar.com/avatar/1471c4c2a4e85066091c378240ff24e3?s=200&amp;d=retro&amp;r=g 2x' class='avatar avatar-100 photo' height='100' width='100' /></a><a href="https://wordpress.org/support/users/macmanx/" title="View James Huff&#039;s profile" class="bbp-author-name" rel="nofollow">James Huff</a>
+		<p class="bbp-user-nicename">(@macmanx)</p>
+		
+		<div class="bbp-reply-meta">
+
+		<p class="bbp-reply-post-date"><a href="https://wordpress.org/support/topic/admin-ajax-php-500-internal-server-error-when-viewing-media-library-or-menus/#post-8475238" title="#8475238" class="bbp-reply-permalink">6 months, 3 weeks ago</a></p>
+
+		
+		
+		</div>
+
+	</div><!-- .bbp-reply-author -->
+
+	<div class="bbp-reply-content">
+
+		
+		<p>Internal server errors (error 500) are often caused by plugin or theme function conflicts, so if you have access to your admin panel, try deactivating all plugins. If that resolves the issue, reactivate each one individually until you find the cause.</p>
+<p>If that does not resolve the issue, try switching to the Twenty Sixteen theme to rule-out a theme-specific issue (theme functions can interfere like plugins).</p>
+<p>If that does not resolve the issue, it&#8217;s possible that a .htaccess rule could be the source of the problem.  To check for this, access your server via SFTP or FTP, or a file manager in your hosting account&#8217;s control panel, and rename the .htaccess file.  If you can&#8217;t find a .htaccess file, make sure that you have set your SFTP or FTP client to view invisible files.</p>
+<p>If you weren’t able to resolve the issue by either resetting your plugins and theme or renaming your .htaccess file, we may be able to help, but we&#8217;ll need a more detailed error message. Internal server errors are usually described in more detail in the server error log. If you have access to your server error log, generate the error again, note the date and time, then immediately check your server error log for any errors that occurred during that specific time period. If you don’t have access to your server error log, ask your hosting provider to look for you.</p>
+
+		
+	</div><!-- .bbp-reply-content -->
+
+	
+	<span class="bbp-admin-links"></span>
+	
+</div><!-- #post-8475238 -->
+
+		
+			
+<div id="post-8475263" class="even bbp-parent-forum-21260 bbp-parent-topic-8475225 bbp-reply-position-2 user-id-14555908 topic-author post-8475263 reply type-reply status-publish hentry">
+
+	<div class="bbp-reply-author">
+
+		
+		<a href="https://wordpress.org/support/users/the-beallman/" title="View The Beallman&#039;s profile" class="bbp-author-avatar" rel="nofollow"><img alt='' src='https://secure.gravatar.com/avatar/737d239dc850f51accd12a6eef76663d?s=100&#038;d=retro&#038;r=g' srcset='https://secure.gravatar.com/avatar/737d239dc850f51accd12a6eef76663d?s=200&amp;d=retro&amp;r=g 2x' class='avatar avatar-100 photo' height='100' width='100' /></a><a href="https://wordpress.org/support/users/the-beallman/" title="View The Beallman&#039;s profile" class="bbp-author-name" rel="nofollow">The Beallman</a>
+		<p class="bbp-user-nicename">(@the-beallman)</p>
+		
+		<div class="bbp-reply-meta">
+
+		<p class="bbp-reply-post-date"><a href="https://wordpress.org/support/topic/admin-ajax-php-500-internal-server-error-when-viewing-media-library-or-menus/#post-8475263" title="#8475263" class="bbp-reply-permalink">6 months, 3 weeks ago</a></p>
+
+		
+		
+		</div>
+
+	</div><!-- .bbp-reply-author -->
+
+	<div class="bbp-reply-content">
+
+		
+		<p>Disabling and re-enabling all plugins did the trick! Thank you!</p>
+<p>What would normally cause a conflict like that, if all of the plugins still work fine once re-enabled? </p>
+
+		
+	</div><!-- .bbp-reply-content -->
+
+	
+	<span class="bbp-admin-links"></span>
+	
+</div><!-- #post-8475263 -->
+
+		
+			
+<div id="post-8475276" class="odd bbp-parent-forum-21260 bbp-parent-topic-8475225 bbp-reply-position-3 user-id-14555908 topic-author post-8475276 reply type-reply status-publish hentry">
+
+	<div class="bbp-reply-author">
+
+		
+		<a href="https://wordpress.org/support/users/the-beallman/" title="View The Beallman&#039;s profile" class="bbp-author-avatar" rel="nofollow"><img alt='' src='https://secure.gravatar.com/avatar/737d239dc850f51accd12a6eef76663d?s=100&#038;d=retro&#038;r=g' srcset='https://secure.gravatar.com/avatar/737d239dc850f51accd12a6eef76663d?s=200&amp;d=retro&amp;r=g 2x' class='avatar avatar-100 photo' height='100' width='100' /></a><a href="https://wordpress.org/support/users/the-beallman/" title="View The Beallman&#039;s profile" class="bbp-author-name" rel="nofollow">The Beallman</a>
+		<p class="bbp-user-nicename">(@the-beallman)</p>
+		
+		<div class="bbp-reply-meta">
+
+		<p class="bbp-reply-post-date"><a href="https://wordpress.org/support/topic/admin-ajax-php-500-internal-server-error-when-viewing-media-library-or-menus/#post-8475276" title="#8475276" class="bbp-reply-permalink">6 months, 3 weeks ago</a></p>
+
+		
+		
+		</div>
+
+	</div><!-- .bbp-reply-author -->
+
+	<div class="bbp-reply-content">
+
+		
+		<p>Update: scratch that, it isn&#8217;t fixed. The issue is stemming from Jetpack. When Jetpack&#8217;s statistics are disabled, everything is fine. But when I enable statistics, the problem comes back.</p>
+
+		
+	</div><!-- .bbp-reply-content -->
+
+	
+	<span class="bbp-admin-links"></span>
+	
+</div><!-- #post-8475276 -->
+
+		
+			
+<div id="post-8475304" class="even bbp-parent-forum-21260 bbp-parent-topic-8475225 bbp-reply-position-4 user-id-5941 post-8475304 reply type-reply status-publish hentry by-moderator author-has-badge">
+
+	<div class="bbp-reply-author">
+
+		<span class="author-badge author-badge-moderator" title="This person is a moderator on this forum">Moderator</span>
+		<a href="https://wordpress.org/support/users/macmanx/" title="View James Huff&#039;s profile" class="bbp-author-avatar" rel="nofollow"><img alt='' src='https://secure.gravatar.com/avatar/1471c4c2a4e85066091c378240ff24e3?s=100&#038;d=retro&#038;r=g' srcset='https://secure.gravatar.com/avatar/1471c4c2a4e85066091c378240ff24e3?s=200&amp;d=retro&amp;r=g 2x' class='avatar avatar-100 photo' height='100' width='100' /></a><a href="https://wordpress.org/support/users/macmanx/" title="View James Huff&#039;s profile" class="bbp-author-name" rel="nofollow">James Huff</a>
+		<p class="bbp-user-nicename">(@macmanx)</p>
+		
+		<div class="bbp-reply-meta">
+
+		<p class="bbp-reply-post-date"><a href="https://wordpress.org/support/topic/admin-ajax-php-500-internal-server-error-when-viewing-media-library-or-menus/#post-8475304" title="#8475304" class="bbp-reply-permalink">6 months, 3 weeks ago</a></p>
+
+		
+		
+		</div>
+
+	</div><!-- .bbp-reply-author -->
+
+	<div class="bbp-reply-content">
+
+		
+		<p>Hm, that&#8217;s rather odd. There&#8217;s a few million sites running Jetpack Stats without the issue, otherwise I&#8217;d expect it would have been addressed by now.</p>
+<p>Do you have the same issue with *only* the Jetpack plugin (along with its Stats module) active?</p>
+
+		
+	</div><!-- .bbp-reply-content -->
+
+	
+	<span class="bbp-admin-links"></span>
+	
+</div><!-- #post-8475304 -->
+
+		
+			
+<div id="post-8475749" class="odd bbp-parent-forum-21260 bbp-parent-topic-8475225 bbp-reply-position-5 user-id-14555908 topic-author post-8475749 reply type-reply status-publish hentry">
+
+	<div class="bbp-reply-author">
+
+		
+		<a href="https://wordpress.org/support/users/the-beallman/" title="View The Beallman&#039;s profile" class="bbp-author-avatar" rel="nofollow"><img alt='' src='https://secure.gravatar.com/avatar/737d239dc850f51accd12a6eef76663d?s=100&#038;d=retro&#038;r=g' srcset='https://secure.gravatar.com/avatar/737d239dc850f51accd12a6eef76663d?s=200&amp;d=retro&amp;r=g 2x' class='avatar avatar-100 photo' height='100' width='100' /></a><a href="https://wordpress.org/support/users/the-beallman/" title="View The Beallman&#039;s profile" class="bbp-author-name" rel="nofollow">The Beallman</a>
+		<p class="bbp-user-nicename">(@the-beallman)</p>
+		
+		<div class="bbp-reply-meta">
+
+		<p class="bbp-reply-post-date"><a href="https://wordpress.org/support/topic/admin-ajax-php-500-internal-server-error-when-viewing-media-library-or-menus/#post-8475749" title="#8475749" class="bbp-reply-permalink">6 months, 3 weeks ago</a></p>
+
+		
+		
+		</div>
+
+	</div><!-- .bbp-reply-author -->
+
+	<div class="bbp-reply-content">
+
+		
+		<p>Now that I have things up and running, I won&#8217;t be able to check in earnest for two weeks without breaking critical areas of the site (we&#8217;re in the middle of running awards show). But I did some tests via <a href="http://FTP.." rel="nofollow">http://FTP..</a>. disabling all the plugins I&#8217;m able to without breaking the site did not correct the problem. Only when I shut down Jetpack did the problem subside. </p>
+
+		
+	</div><!-- .bbp-reply-content -->
+
+	
+	<span class="bbp-admin-links"></span>
+	
+</div><!-- #post-8475749 -->
+
+		
+			
+<div id="post-8476033" class="even bbp-parent-forum-21260 bbp-parent-topic-8475225 bbp-reply-position-6 user-id-5941 post-8476033 reply type-reply status-publish hentry by-moderator author-has-badge">
+
+	<div class="bbp-reply-author">
+
+		<span class="author-badge author-badge-moderator" title="This person is a moderator on this forum">Moderator</span>
+		<a href="https://wordpress.org/support/users/macmanx/" title="View James Huff&#039;s profile" class="bbp-author-avatar" rel="nofollow"><img alt='' src='https://secure.gravatar.com/avatar/1471c4c2a4e85066091c378240ff24e3?s=100&#038;d=retro&#038;r=g' srcset='https://secure.gravatar.com/avatar/1471c4c2a4e85066091c378240ff24e3?s=200&amp;d=retro&amp;r=g 2x' class='avatar avatar-100 photo' height='100' width='100' /></a><a href="https://wordpress.org/support/users/macmanx/" title="View James Huff&#039;s profile" class="bbp-author-name" rel="nofollow">James Huff</a>
+		<p class="bbp-user-nicename">(@macmanx)</p>
+		
+		<div class="bbp-reply-meta">
+
+		<p class="bbp-reply-post-date"><a href="https://wordpress.org/support/topic/admin-ajax-php-500-internal-server-error-when-viewing-media-library-or-menus/#post-8476033" title="#8476033" class="bbp-reply-permalink">6 months, 3 weeks ago</a></p>
+
+		
+		
+		</div>
+
+	</div><!-- .bbp-reply-author -->
+
+	<div class="bbp-reply-content">
+
+		
+		<p>Ok, I recommend continuing on with <a href="https://jetpack.com/contact-support/" rel="nofollow">https://jetpack.com/contact-support/</a> on Friday.</p>
+
+		
+	</div><!-- .bbp-reply-content -->
+
+	
+	<span class="bbp-admin-links"></span>
+	
+</div><!-- #post-8476033 -->
+
+		
+	</li><!-- .bbp-body -->
+
+</ul><!-- #topic-8475225-replies -->
+
+
+			
+<div class="bbp-pagination">
+	<div class="bbp-pagination-count">Viewing 6 replies - 1 through 6 (of 6 total)</div>
+	<div class="bbp-pagination-links"></div>
+</div>
+
+
+		
+		
+
+	<div id="no-reply-8475225" class="bbp-no-reply">
+		<div class="bbp-template-notice">
+			<ul>
+				
+											<li>You must be <a href="https://login.wordpress.org/?redirect_to=https%3A%2F%2Fwordpress.org%2Fsupport%2Ftopic%2Fadmin-ajax-php-500-internal-server-error-when-viewing-media-library-or-menus%2F">logged in</a> to reply to this topic.</li>
+					
+							</ul>
+		</div>
+	</div>
+
+
+
+	
+	
+</div>
+
+			</div>
+
+	<div class="entry-meta sidebar">
+
+	
+		
+			
+			<div>
+									<!-- h3></h3-->
+				
+				<ul class="topic-info">
+					
+	<li class="topic-forum">In: <a href="https://wordpress.org/support/forum/how-to-and-troubleshooting/">Fixing WordPress</a></li>
+			<li class="reply-count">6 replies</li>
+				<li class="voice-count">2 participants</li>
+				<li class="topic-freshness-author">Last reply from: <a href="https://wordpress.org/support/users/macmanx/" title="View James Huff&#039;s profile" class="bbp-author-name" rel="nofollow">James Huff</a></li>
+				<li class="topic-freshness-time">Last activity: <a href="https://wordpress.org/support/topic/admin-ajax-php-500-internal-server-error-when-viewing-media-library-or-menus/#post-8476033" title="Reply To: admin-ajax.php 500 Internal Server Error when viewing Media Library or Menus">6 months, 3 weeks ago</a></li>
+				<li class="wp-version">4.6.1</li>
+							<li class="topic-resolved">Status: not resolved</li>
+					
+					</ul>
+			</div>
+
+			<div>
+							</div>
+
+			<!--div>
+							</div-->
+
+			
+		
+		
+			<div>
+				<h4>Views</h4>
+				<ul class="topic-views">
+
+					
+						<li><a class="bbp-view-title" href="https://wordpress.org/support/view/popular/">Most popular topics</a></li>
+
+					
+						<li><a class="bbp-view-title" href="https://wordpress.org/support/view/no-replies/">Topics with no replies</a></li>
+
+					
+						<li><a class="bbp-view-title" href="https://wordpress.org/support/view/support-forum-mu/">Non-support topics</a></li>
+
+					
+						<li><a class="bbp-view-title" href="https://wordpress.org/support/view/support-forum-yes/">Resolved topics</a></li>
+
+					
+						<li><a class="bbp-view-title" href="https://wordpress.org/support/view/support-forum-no/">Unresolved topics</a></li>
+
+					
+						<li><a class="bbp-view-title" href="https://wordpress.org/support/view/all-topics/">All topics</a></li>
+
+					
+				</ul>
+			</div>
+
+		
+		
+	
+	
+</div>
+</main>
+
+
+</div><!-- #content -->
+
+<div id="wporg-footer">
+		<div class="wrapper">
+		<ul>
+			<li><a href="//wordpress.org/about/" title="An introduction to the WordPress project">About</a></li>
+			<li><a href="//wordpress.org/news/" title="News and Updates">Blog</a></li>
+			<li><a href="//wordpress.org/hosting/" title="Recommended web hosting providers">Hosting</a></li>
+			<li><a href="//jobs.wordpress.net/" title="Find or post WordPress jobs">Jobs</a></li>
+		</ul>
+
+		<ul>
+			<li><a href="//wordpress.org/support/" title="Forums, documentation, and other resources">Support</a></li>
+			<li><a href="//developer.wordpress.org" title="Resources for WordPress developers">Developers</a></li>
+			<li><a href="//make.wordpress.org/" title="Give back to WordPress through code, support, translation and more">Get Involved</a></li>
+			<li><a href="//learn.wordpress.org/" title="Workshops and training materials">Learn</a></li>
+		</ul>
+
+		<ul>
+			<li><a href="//wordpress.org/showcase/" title="Some of the best WordPress sites on the Web">Showcase</a></li>
+			<li><a href="//wordpress.org/plugins/" title="Add extra functionality to WordPress">Plugins</a></li>
+			<li><a href="//wordpress.org/themes/" title="Make your WordPress pretty">Themes</a></li>
+			<li><a href="//wordpress.org/ideas/" title="Share your ideas for improving WordPress">Ideas</a></li>
+		</ul>
+
+		<ul>
+			<li><a href="//central.wordcamp.org/" title="Find a WordPress event near you">WordCamp</a></li>
+			<li><a href="//wordpress.tv/" title="Videos, tutorials, and WordCamp sessions">WordPress.TV</a></li>
+			<li><a href="//buddypress.org/" title="A set of plugins to transform your WordPress into a social network">BuddyPress</a></li>
+			<li><a href="//bbpress.org/" title="Fast, slick forums built on WordPress">bbPress</a></li>
+		</ul>
+
+		<ul>
+			<li><a href="//wordpress.com/?ref=wporg-footer" title="Hassle-free WordPress hosting">WordPress.com</a></li>
+			<li><a href="//ma.tt/" title="Co-founder of WordPress, an example of what WordPress can do">Matt</a></li>
+			<li><a href="//wordpress.org/about/privacy/" title="WordPress.org Privacy Policy">Privacy</a></li>
+			<li><a href="//wordpress.org/about/license/" title="WordPress is open source software">License / GPLv2</a></li>
+		</ul>
+
+		<ul>
+			<li>
+				<iframe title="Follow @WordPress on Twitter" allowtransparency="true" frameborder="0" scrolling="no" src="//platform.twitter.com/widgets/follow_button.html?screen_name=WordPress&amp;show_count=false" style="width:135px; height:20px;"></iframe>
+			</li>
+			<li>
+				<iframe title="Like WordPress on Facebook" src="//www.facebook.com/plugins/like.php?app_id=121415197926116&amp;href=http%3A%2F%2Fwww.facebook.com%2Fwordpress&amp;send=false&amp;layout=button_count&amp;width=135&amp;show_faces=false&amp;action=like&amp;colorscheme=light&amp;font=lucida+grande&amp;height=21" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:135px; height:21px;" allowTransparency="true"></iframe>
+			</li>
+			<li>
+				<script src="https://apis.google.com/js/platform.js" async defer></script>
+				<div class="g-plusone" data-size="medium" data-href="https://plus.google.com/+WordPress"></div>
+			</li>
+		</ul>
+	</div>
+	
+		<h6 class="aligncenter cip-image">Code is Poetry.</h6>
+</div>
+
+
+<script type="text/javascript">
+  var _qevents = _qevents || [];
+  (function() {
+   var elem = document.createElement('script');
+   elem.src = (document.location.protocol == "https:" ? "https://secure" : "http://edge")
+               + ".quantserve.com/quant.js";
+   elem.async = true;
+   elem.type = "text/javascript";
+   var scpt = document.getElementsByTagName('script')[0];
+   scpt.parentNode.insertBefore(elem, scpt);
+  })();
+</script>
+<script type="text/javascript">_qevents.push( { qacct:"p-18-mFEk4J448M"} );</script>
+<noscript><img src="//pixel.quantserve.com/pixel/p-18-mFEk4J448M.gif" style="display: none;" border="0" height="1" width="1" alt=""/></noscript>
+<!-- 20 queries. 2.813 seconds -->
+<script type="text/javascript" src="//gravatar.com/js/gprofiles.js"></script>
+
+<script type="text/javascript">
+(function($){
+$(document).ready(function() {
+	$('#footer a').click(function() {
+		if (this.href.indexOf('wordpress.org') == -1 && this.href.indexOf('http') == 0) {
+			recordOutboundLink(this, 'Outbound Links', this.href);
+			return false;
+		}
+	});
+});
+})(jQuery);
+</script>
+<script type='text/javascript' src='https://wordpress.org/support/wp-includes/js/admin-bar.min.js?ver=4.9-alpha-40893'></script>
+<script type='text/javascript' src='https://wordpress.org/support/wp-content/plugins/wporg-bbp-version-dropdown/wporg-bbp-version-dropdown.js?ver=20160729'></script>
+<script type='text/javascript' src='https://wordpress.org/support/wp-content/plugins/bbpress/templates/default/js/editor.min.js?ver=2.6-alpha-6091'></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var bbpTopicJS = {"bbp_ajaxurl":"https:\/\/wordpress.org\/support\/topic\/admin-ajax-php-500-internal-server-error-when-viewing-media-library-or-menus\/?bbp-ajax=true","generic_ajax_error":"Something went wrong. Refresh your browser and try again.","is_user_logged_in":"","fav_nonce":"0d809d0106","subs_nonce":"c66e318ec4"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='https://wordpress.org/support/wp-content/plugins/bbpress/templates/default/js/topic.min.js?ver=2.6-alpha-6091'></script>
+<script type='text/javascript' src='https://wordpress.org/support/wp-content/themes/pub/wporg-support/js/navigation.js?ver=20151217'></script>
+<script type='text/javascript' src='https://wordpress.org/support/wp-includes/js/wp-embed.min.js?ver=4.9-alpha-40893'></script>
+		<div id="wpadminbar" class="nojq nojs">
+							<a class="screen-reader-shortcut" href="#wp-toolbar" tabindex="1">Skip to toolbar</a>
+						<div class="quicklinks" id="wp-toolbar" role="navigation" aria-label="Toolbar" tabindex="0">
+				<ul id="wp-admin-bar-root-default" class="ab-top-menu">
+		<li id="wp-admin-bar-wp-logo" class="menupop"><a class="ab-item" aria-haspopup="true" href="https://wordpress.org/wp-admin/user/about.php"><span class="ab-icon"></span><span class="screen-reader-text">About WordPress</span></a><div class="ab-sub-wrapper"><ul id="wp-admin-bar-wp-logo-default" class="ab-submenu">
+		<li id="wp-admin-bar-about"><a class="ab-item" href="https://wordpress.org/wp-admin/user/about.php">About WordPress</a>		</li></ul><ul id="wp-admin-bar-wp-logo-external" class="ab-sub-secondary ab-submenu">
+		<li id="wp-admin-bar-wporg"><a class="ab-item" href="https://wordpress.org/">WordPress.org</a>		</li>
+		<li id="wp-admin-bar-documentation"><a class="ab-item" href="https://codex.wordpress.org/">Documentation</a>		</li>
+		<li id="wp-admin-bar-support-forums"><a class="ab-item" href="https://wordpress.org/support/">Support Forums</a>		</li>
+		<li id="wp-admin-bar-feedback"><a class="ab-item" href="https://wordpress.org/support/forum/requests-and-feedback">Feedback</a>		</li></ul></div>		</li></ul><ul id="wp-admin-bar-top-secondary" class="ab-top-secondary ab-top-menu">
+		<li id="wp-admin-bar-search" class="admin-bar-search"><div class="ab-item ab-empty-item" tabindex="-1"><form action="https://wordpress.org/support/" method="get" id="adminbarsearch"><input class="adminbar-input" name="s" id="adminbar-search" type="text" value="" maxlength="150" /><label for="adminbar-search" class="screen-reader-text">Search</label><input type="submit" class="adminbar-button" value="Search"/></form></div>		</li>
+		<li id="wp-admin-bar-log-in"><a class="ab-item" href="https://login.wordpress.org/?redirect_to=https%3A%2F%2Fwordpress.org%2Fsupport%2Ftopic%2Fadmin-ajax-php-500-internal-server-error-when-viewing-media-library-or-menus%2F">Log In</a>		</li>
+		<li id="wp-admin-bar-register"><a class="ab-item" href="https://login.wordpress.org/register">Register</a>		</li></ul>			</div>
+					</div>
+
+		</body>
+</html>
