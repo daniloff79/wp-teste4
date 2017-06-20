@@ -1,0 +1,263 @@
+<html lang="en-US" class=""><!--<![endif]--><head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width">
+	<title>AJAX call triggers 500 internal server error | OOPS TECH BLOG</title>
+	<link rel="profile" href="http://gmpg.org/xfn/11">
+	<link rel="pingback" href="http://blog.weston-fl.com/xmlrpc.php">
+	<!--[if lt IE 9]>
+	<script src="http://blog.weston-fl.com/wp-content/themes/twentyfourteen/js/html5.js"></script>
+	<![endif]-->
+			<meta name="verify-v1" content="m7Ix5BFmaOBH1+NEUIBtK9sR7s86h+Of4O1zObdGhrE=">
+	<meta content="http://schemas.microsoft.com/intellisense/ie5" name="vs_targetSchema">
+	<meta http-equiv="Expires" content="Dec 31,2013 10:10:10">
+	<meta content="www.oopstechblog.com" name="AUTHOR">
+	<meta content="Weston Digital Solutions 1998-2014. All rights reserved." name="COPYRIGHT">
+	<meta content="New York, USA 01-01-2014" name="DATE">
+	<meta name="google-site-verification" content="tMPJ96h4Y-ujy-27QPK14L-1R0KnpA_90FwVOKBeiIo">
+	<meta content="INDEX" name="Robots">
+	<meta name="y_key" content="8cb271f50d394c70"> 
+	<meta name="msvalidate.01" content="24E018493FFDE8F15AA59C9DB021B8C6">
+	
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+	<meta name="mobile-web-app-capable" content="yes">
+	
+	<link rel="icon" href="/favicon.png" type="image/png">
+	<link rel="shortcut icon" sizes="32x32" href="/favicon.ico" type="image/ico">
+	<link rel="shortcut icon" sizes="128x128" href="/images/wdslogo-128.png" type="image/png">
+	<link rel="shortcut icon" sizes="196x196" href="/images/wdslogo-196.png" type="image/png">
+	<link rel="shortcut icon" sizes="256x256" href="/images/wdslogo-256.png" type="image/png">
+    <link rel="apple-touch-icon" href="/images/wdslogo-129.png" type="image/png">
+	<link rel="apple-touch-icon-precomposed" sizes="128x128" href="/images/wdslogo-128.png" type="image/png">
+	<link rel="apple-touch-startup-image" href="/images/wdslogo-256.png" type="image/png">
+	
+	<link rel="alternate" type="application/rss+xml" title="RSS 2.0" href="http://blog.weston-fl.com/feed/">
+	<link rel="alternate" type="text/xml" title="RSS .92" href="http://blog.weston-fl.com/feed/rss/">
+	<link rel="alternate" type="application/atom+xml" title="Atom 1.0" href="http://blog.weston-fl.com/feed/atom/">
+
+	
+<!-- All in One SEO Pack 2.3.12.2.1 by Michael Torbert of Semper Fi Web Design[310,378] -->
+<meta name="description" content="When the JQuery AJAX post call is made with a well formatted data on the front-end, it fails with a server error message '500 internal server error'.">
+
+<link rel="canonical" href="http://blog.weston-fl.com/ajax-call-triggers-500-internal-server-error/">
+<!-- /all in one seo pack -->
+<link rel="dns-prefetch" href="//fonts.googleapis.com">
+<link rel="dns-prefetch" href="//s.w.org">
+<link href="https://fonts.gstatic.com" crossorigin="" rel="preconnect">
+<link rel="alternate" type="application/rss+xml" title="OOPS TECH BLOG » Feed" href="http://blog.weston-fl.com/feed/">
+<link rel="alternate" type="application/rss+xml" title="OOPS TECH BLOG » Comments Feed" href="http://blog.weston-fl.com/comments/feed/">
+		<script async="" src="//www.google-analytics.com/analytics.js"></script><script src="https://pagead2.googlesyndication.com/pub-config/r20160913/ca-pub-9965181222229899.js"></script><script type="text/javascript">
+			window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/2.2.1\/72x72\/","ext":".png","svgUrl":"https:\/\/s.w.org\/images\/core\/emoji\/2.2.1\/svg\/","svgExt":".svg","source":{"concatemoji":"http:\/\/blog.weston-fl.com\/wp-includes\/js\/wp-emoji-release.min.js?ver=4.7.2"}};
+			!function(a,b,c){function d(a){var b,c,d,e,f=String.fromCharCode;if(!k||!k.fillText)return!1;switch(k.clearRect(0,0,j.width,j.height),k.textBaseline="top",k.font="600 32px Arial",a){case"flag":return k.fillText(f(55356,56826,55356,56819),0,0),!(j.toDataURL().length<3e3)&&(k.clearRect(0,0,j.width,j.height),k.fillText(f(55356,57331,65039,8205,55356,57096),0,0),b=j.toDataURL(),k.clearRect(0,0,j.width,j.height),k.fillText(f(55356,57331,55356,57096),0,0),c=j.toDataURL(),b!==c);case"emoji4":return k.fillText(f(55357,56425,55356,57341,8205,55357,56507),0,0),d=j.toDataURL(),k.clearRect(0,0,j.width,j.height),k.fillText(f(55357,56425,55356,57341,55357,56507),0,0),e=j.toDataURL(),d!==e}return!1}function e(a){var c=b.createElement("script");c.src=a,c.defer=c.type="text/javascript",b.getElementsByTagName("head")[0].appendChild(c)}var f,g,h,i,j=b.createElement("canvas"),k=j.getContext&&j.getContext("2d");for(i=Array("flag","emoji4"),c.supports={everything:!0,everythingExceptFlag:!0},h=0;h<i.length;h++)c.supports[i[h]]=d(i[h]),c.supports.everything=c.supports.everything&&c.supports[i[h]],"flag"!==i[h]&&(c.supports.everythingExceptFlag=c.supports.everythingExceptFlag&&c.supports[i[h]]);c.supports.everythingExceptFlag=c.supports.everythingExceptFlag&&!c.supports.flag,c.DOMReady=!1,c.readyCallback=function(){c.DOMReady=!0},c.supports.everything||(g=function(){c.readyCallback()},b.addEventListener?(b.addEventListener("DOMContentLoaded",g,!1),a.addEventListener("load",g,!1)):(a.attachEvent("onload",g),b.attachEvent("onreadystatechange",function(){"complete"===b.readyState&&c.readyCallback()})),f=c.source||{},f.concatemoji?e(f.concatemoji):f.wpemoji&&f.twemoji&&(e(f.twemoji),e(f.wpemoji)))}(window,document,window._wpemojiSettings);
+		</script><script src="http://blog.weston-fl.com/wp-includes/js/wp-emoji-release.min.js?ver=4.7.2" type="text/javascript" defer=""></script>
+		<style type="text/css">
+img.wp-smiley,
+img.emoji {
+	display: inline !important;
+	border: none !important;
+	box-shadow: none !important;
+	height: 1em !important;
+	width: 1em !important;
+	margin: 0 .07em !important;
+	vertical-align: -0.1em !important;
+	background: none !important;
+	padding: 0 !important;
+}
+</style>
+<link rel="stylesheet" id="jsticket-style-css" href="http://blog.weston-fl.com/wp-content/plugins/js-support-ticket/includes/css/style.css?ver=4.7.2" type="text/css" media="all">
+<link rel="stylesheet" id="jsticket-bootstarp-css" href="http://blog.weston-fl.com/wp-content/plugins/js-support-ticket/includes/css/bootstrap.min.css?ver=4.7.2" type="text/css" media="all">
+<link rel="stylesheet" id="sidebar-login-css" href="http://blog.weston-fl.com/wp-content/plugins/sidebar-login/assets/css/sidebar-login.css?ver=2.7.3" type="text/css" media="all">
+<link rel="stylesheet" id="parent-style-css" href="http://blog.weston-fl.com/wp-content/themes/twentyfourteen/style.css?ver=4.7.2" type="text/css" media="all">
+<link rel="stylesheet" id="wds_font_open_sans-css" href="http://fonts.googleapis.com/css?family=Open+Sans%3A300italic%2C400italic%2C600italic%2C700italic%2C800italic%2C400%2C300%2C600%2C700%2C800&amp;ver=4.7.2" type="text/css" media="all">
+<link rel="stylesheet" id="wds_spop-css" href="http://blog.weston-fl.com/css/spop.min.css?ver=4.7.2" type="text/css" media="all">
+<link rel="stylesheet" id="twentyfourteen-lato-css" href="https://fonts.googleapis.com/css?family=Lato%3A300%2C400%2C700%2C900%2C300italic%2C400italic%2C700italic&amp;subset=latin%2Clatin-ext" type="text/css" media="all">
+<link rel="stylesheet" id="genericons-css" href="http://blog.weston-fl.com/wp-content/themes/twentyfourteen/genericons/genericons.css?ver=3.0.3" type="text/css" media="all">
+<link rel="stylesheet" id="twentyfourteen-style-css" href="http://blog.weston-fl.com/wp-content/themes/twentyfourteen-child/style.css?ver=4.7.2" type="text/css" media="all">
+<!--[if lt IE 9]>
+<link rel='stylesheet' id='twentyfourteen-ie-css'  href='http://blog.weston-fl.com/wp-content/themes/twentyfourteen/css/ie.css?ver=20131205' type='text/css' media='all' />
+<![endif]-->
+<link rel="stylesheet" id="PI_stt_front-css" href="http://blog.weston-fl.com/wp-content/plugins/simple-twitter-tweets/css/stt.min.css?ver=4.7.2" type="text/css" media="all">
+<link rel="stylesheet" id="codecolorer-css" href="http://blog.weston-fl.com/wp-content/plugins/codecolorer/codecolorer.css?ver=0.9.9" type="text/css" media="screen">
+<script type="text/javascript" src="http://blog.weston-fl.com/wp-includes/js/jquery/jquery.js?ver=1.12.4"></script>
+<script type="text/javascript" src="http://blog.weston-fl.com/wp-includes/js/jquery/jquery-migrate.min.js?ver=1.4.1"></script>
+<script type="text/javascript" src="http://blog.weston-fl.com/wp-content/plugins/js-support-ticket/includes/js/common.js?ver=4.7.2"></script>
+<script type="text/javascript" src="http://blog.weston-fl.com/wp-content/plugins/sidebar-login/assets/js/jquery.blockUI.min.js?ver=2.70"></script>
+<script type="text/javascript">
+/* <![CDATA[ */
+var sidebar_login_params = {"ajax_url":"http:\/\/blog.weston-fl.com\/wp-admin\/admin-ajax.php","force_ssl_admin":"0","is_ssl":"0","i18n_username_required":"Please enter your username","i18n_password_required":"Please enter your password","error_class":"sidebar_login_error"};
+/* ]]> */
+</script>
+<script type="text/javascript" src="http://blog.weston-fl.com/wp-content/plugins/sidebar-login/assets/js/sidebar-login.min.js?ver=2.7.3"></script>
+<script type="text/javascript" src="http://blog.weston-fl.com/wp-content/themes/twentyfourteen-child/js/adsense.js?ver=4.7.2"></script>
+<link rel="https://api.w.org/" href="http://blog.weston-fl.com/wp-json/">
+<link rel="EditURI" type="application/rsd+xml" title="RSD" href="http://blog.weston-fl.com/xmlrpc.php?rsd">
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="http://blog.weston-fl.com/wp-includes/wlwmanifest.xml"> 
+<link rel="prev" title="Debugging web sites remotely on iOS device" href="http://blog.weston-fl.com/debugging-web-sites-running-on-ios-device/">
+<meta name="generator" content="WordPress 4.7.2">
+<link rel="shortlink" href="http://blog.weston-fl.com/?p=3771">
+<link rel="alternate" type="application/json+oembed" href="http://blog.weston-fl.com/wp-json/oembed/1.0/embed?url=http%3A%2F%2Fblog.weston-fl.com%2Fajax-call-triggers-500-internal-server-error%2F">
+<link rel="alternate" type="text/xml+oembed" href="http://blog.weston-fl.com/wp-json/oembed/1.0/embed?url=http%3A%2F%2Fblog.weston-fl.com%2Fajax-call-triggers-500-internal-server-error%2F&amp;format=xml">
+		<!-- Page specific resources -->
+	<script src="/js/wds-aes.js"></script>
+	<script src="/js/bootstrap.min.js"></script>
+	<script src="/js/jquery.validate.min.js"></script>
+	<script src="/js/spop.min.js"></script>
+	<script src="/js/modals.js"></script>
+	<script src="/js/jquery.cookiesdirective.js"></script>
+</head>
+
+<body class="post-template-default single single-post postid-3771 single-format-standard group-blog masthead-fixed singular" oncopy="return false;" oncut="return false;" oncontextmenu="return false;" ondragstart="return false;" onselectstart="return false;">
+<div id="page" class="hfeed site">
+	
+	<header id="masthead" class="site-header" role="banner">
+		<div class="header-main">
+			<h1 class="site-title"><a href="http://blog.weston-fl.com/" rel="home">OOPS TECH BLOG</a></h1>
+			<div class="search-toggle">
+				<a href="#search-container" class="screen-reader-text">Search</a>
+			</div>
+
+			<nav id="primary-navigation" class="site-navigation primary-navigation" role="navigation">
+				<button class="menu-toggle">Primary Menu</button>
+				<a class="screen-reader-text skip-link" href="#content">Skip to content</a>
+				<div class="menu-top-right-menu-container"><ul id="menu-top-right-menu" class="nav-menu"><li id="menu-item-3339" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-home menu-item-3339"><a href="http://blog.weston-fl.com/">Home</a></li>
+<li id="menu-item-3209" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3209"><a href="http://blog.weston-fl.com/about/">About us</a></li>
+<li id="menu-item-3210" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3210"><a href="http://blog.weston-fl.com/contact-us/">Contact us</a></li>
+<li id="menu-item-3208" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3208"><a href="http://blog.weston-fl.com/downloads/">Support</a></li>
+<li id="menu-item-3338" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3338"><a href="http://blog.weston-fl.com/support-ticket-controlpanel/">Submit a ticket</a></li>
+</ul></div>			</nav>
+		</div>
+
+		<div id="search-container" class="search-box-wrapper hide">
+			<div class="search-box">
+				<form role="search" method="get" class="search-form" action="http://blog.weston-fl.com/">
+				<label>
+					<span class="screen-reader-text">Search for:</span>
+					<input type="search" class="search-field" placeholder="Search …" value="" name="s">
+				</label>
+				<input type="submit" class="search-submit" value="Search">
+			</form>			</div>
+		</div>
+	</header><!-- #masthead -->
+
+	<div id="main" class="site-main">
+
+	<div id="primary" class="content-area">
+		<div id="content" class="site-content" role="main">
+			
+<article id="post-3771" class="post-3771 post type-post status-publish format-standard hentry category-programming">
+	
+	<header class="entry-header">
+		<h1 class="entry-title">AJAX call triggers 500 internal server error</h1>	</header><!-- .entry-header -->
+
+		<div class="entry-content">
+		<h3>Question</h3><p>Having a problem with <strong>WordPress</strong> <strong>Ajax</strong> calls. In the development environment and in the admin mode on the production server, the ajax works perfectly. When the JQuery post call is made by the same code and with the same, well formatted, request data on the front-end, it fails. Debugged the client side and got the same server response with both the Safari Web Inspector and the Chrome Developer tools. The error message is <strong>Internal Server Error (500)</strong>. What’s going on with IIS 10.0 ? How to set up IIS to accept front-end Ajax calls? Should I install Ajax.Net ?</p>
+<span id="more-3771"></span>
+<h3>Solution</h3>
+<p>AJAX (Asynchronous JavaScript And XML) is a client-side technology. On the server side the <strong>IIS can’t distinguish between normal web page and AJAX POST, GET requests</strong>. There is no need to ‘setup’ your IIS or Apache for AJAX. jQuery is nothing else than an easy-to-use wrapper for the native JavaScript. ASP.NET AJAX is a set of technologies to add AJAX support to ASP.NET. It integrates client script libraries with the ASP.NET. It has nothing to do with your PHP WordPress side.</p><p>
+</p>500 internal server error is an irritating all-you-cannot-eat message. To trace the error, first <strong>look at the logs of IIS</strong> to discover something more about the infamous error, and second, <strong>find and look at the WordPress plugins and themes</strong>, ie. the PHP code. The typical cause is <strong>conflicts between plugins</strong> and/or themes, including child theme with your code. It’s true for other technologies as well, <strong>always look at the web site installation, identify possible conficts, and check out your server side code.</strong><p></p>
+<h3>IIS detailed error log</h3>
+<p>1. On Windows Server 2008/2012 you can use Advanced Logging option of IIS 7.5 or 8. You may need to download and install it <a href="https://www.microsoft.com/en-us/download/details.aspx?id=7211" title="IIS Advanced Logging" target="_blank"> from Microsoft.</a> Check out the latest version if it’s already available for IIS 10.</p><p>
+</p><p>2. Go to the server. Just to be sure, look at the folders of PHP and website if permissions are set properly. <strong>Open IIS Manager</strong>, select server and website. Enable <strong>Trace Logging for Failed Requests</strong> regardless of the use of the Advanced Logging option. In the Actions pane at the Configure group, click Failed Request Tracing and set the directory you will use:</p>
+<p><img src="/images/oopstech-iis-detailed-error-trace.jpg" width="640" height="auto" alt="IIS trace error"></p>
+<p>3. Open your web browser and load the website. When needed, activate whatever you need to run the AJAX call, for example click on a button if that initiate the call. <strong>Recheck AJAX ‘data’ request if it’s really formatted well</strong>.</p>
+<p>4. Go back to the server, find the log directory where you will be greated by a couple of large xml files. Open the latest one the IIS generated when serving your site’s request. If you run into an access error, copy the file into a folder where you have open/read permissions. Well, you’ll spend some time to locate the line you really wanted to see. Like this:</p>
+<p><img src="/images/oopstech-iis-detailed-error.jpg" width="640" height="auto" alt="IIS trace error"></p>
+<p>Now we know that in this case the 500 error is triggered by ‘Reached the end of the file’. That rarely means the PHP had problems reading a physical file though.</p>
+<h3>WP plugin conflicts at handling AJAX calls</h3>
+<p>1. <strong>Must do checklist</strong></p>
+<p>– Step A: disable all other plugins or themes.</p>
+<p>– Step B: reload the web site on the client side. Check out if the 500 error pops up. If not, activate the next plugin.</p>
+<p>– Step C: go back to Step B and repeat it until the suspect has been caught. If you are lucky.</p>
+<p>If not, your code is likely in conflict with WordPress (PHP installation) or parent theme.</p>
+<p>2. <strong>PHP, WordPress and your code</strong></p><p>
+</p><p>Probably you are unlucky and found nothing so far. Switch on WP debug mode (wp-config.php) and see if it helps locate suspects:</p>
+
+<div class="codecolorer-container text mac-classic commentcode" style="overflow:auto;white-space:nowrap;"><div class="text codecolorer">// Enable WP_DEBUG mode<br>
+define( 'WP_DEBUG', true );<br>
+// Debug log file is /wp-content/debug.log:<br>
+define( 'WP_DEBUG_LOG', true );<br>
+// Disable display of errors and warnings not to distract visitors any longer<br>
+define( 'WP_DEBUG_DISPLAY', false );<br>
+ini_set( 'display_errors', 0 );<br>
+// Use developer versions of core JS and CSS files when you need so<br>
+// define( 'SCRIPT_DEBUG', true );</div></div>
+
+<p>Likely found something relevant here.</p>
+<p><strong>3. admin-ajax.php</strong></p>
+<p>You may want to diagnose and look at <strong>admin-ajax.php</strong> to see how server responses (How ? Use Chrome Developer tools for example). Initially admin-ajax.php was used for autosave, post locking and log-in expiration warnings. <strong>You will notice third party plugins polling this file frequently</strong>, thinking it’s a horse race, that may cause problems without any code error, but doing nothing good at all. Each POST request had a corresponding PHP script execution on the server using expensive CPU time.</p><p>
+</p><p><strong>4. Your code</strong></p>
+<p> We all have bad days and write bad codes, and sometimes need another two eyes to catch the obvious. Invite someone to look at your code and offer a free cup of tea.</p>	</div><!-- .entry-content -->
+	</article><!-- #post-## -->
+		</div><!-- #content -->
+	</div><!-- #primary -->
+
+<!-- #content-sidebar --><div id="secondary">
+		<h2 class="site-description">Blog for us</h2>
+	
+		<nav role="navigation" class="navigation site-navigation secondary-navigation">
+		<div class="menu-left-menu-container"><ul id="menu-left-menu" class="menu"><li id="menu-item-3470" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-3470"><a href="http://blog.weston-fl.com/category/apple/ios-apple/">iOS</a></li>
+<li id="menu-item-3365" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-3365"><a href="http://blog.weston-fl.com/category/apple/xcode-apple/">Xcode</a></li>
+<li id="menu-item-3367" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-3367"><a href="http://blog.weston-fl.com/category/google-2/android/">Android</a></li>
+<li id="menu-item-3368" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-3368"><a href="http://blog.weston-fl.com/category/programming/java/">Java</a></li>
+<li id="menu-item-3366" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-3366"><a href="http://blog.weston-fl.com/category/microsoft/windows-microsoft/">Windows</a></li>
+<li id="menu-item-3369" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-3369"><a href="http://blog.weston-fl.com/category/programming/c/">C#</a></li>
+<li id="menu-item-3469" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-3469"><a href="http://blog.weston-fl.com/category/raspberry-pi/">Raspberry Pi</a></li>
+</ul></div>	</nav>
+	
+		<div id="primary-sidebar" class="primary-sidebar widget-area" role="complementary">
+		<aside id="text-4" class="widget widget_text"><h1 class="widget-title">Previous posts</h1>			<div class="textwidget">Use Search to find previous posts. OS updates and software changes are frequent. Yesterday's hardware is obsolate. Always check out the date. </div>
+		</aside>	</div><!-- #primary-sidebar -->
+	</div><!-- #secondary -->
+
+		</div><!-- #main -->
+
+		<footer id="colophon" class="site-footer" role="contentinfo">
+
+			
+			<div class="site-info">
+				<a href="https://www.weston-fl.com" target="_blank" hreflang="en" title="Web design, programming, ios, android, wordpress services in Weston, Florida">
+					© Copyright Weston Digital Solutions™ 1999-2017. All rights reserved.
+				</a>
+				&nbsp;·&nbsp;<a href="https://weston-fl.com/legal-notes/" hreflang="en" target="_blank" title="Legal Notes from Weston Digital Solutions">Terms &amp; Conditions</a>
+				&nbsp;·&nbsp;<a href="mailto:webmaster@weston-fl.com" hreflang="en" target="_blank" title="Contact webmaster for issues with this web site">Webmaster</a>
+			</div><!-- .site-info -->
+		</footer><!-- #colophon -->
+	</div><!-- #page -->
+
+	<!-- begin visitor maps  -->
+<script type="text/javascript">
+//<![CDATA[
+function wo_map_console(url) {
+  window.open(url,"wo_map_console","height=650,width=800,toolbar=no,statusbar=no,scrollbars=yes").focus();
+}
+//]]>
+</script>
+<!-- end visitor maps -->
+<!-- Powered by WPtouch Pro: 3.7.1 --><script type="text/javascript" src="http://blog.weston-fl.com/wp-content/themes/twentyfourteen/js/functions.js?ver=20150315"></script>
+<script type="text/javascript" src="http://blog.weston-fl.com/wp-includes/js/wp-embed.min.js?ver=4.7.2"></script>
+	
+	<!-- <div id="starfieldstamp">
+       <script type="text/javascript" src="https://seal.starfieldtech.com/getSeal?sealID=qVt0FLoX3NGBLk4YdctA3oOeI0IgdwCFa6t8qEM6rICqUWHBHA"></script>
+    </div> -->
+	<div id="footer-adsense">
+		<script async="" src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+					<!-- Bottom wide -->
+			<div style="width:728px;height:90px;display:block;margin:auto;">
+			<ins class="adsbygoogle" style="display:inline-block;width:728px;height:90px" data-ad-client="ca-pub-9965181222229899" data-ad-slot="0210421682" data-adsbygoogle-status="done"><ins id="aswift_1_expand" style="display:inline-table;border:none;height:90px;margin:0;padding:0;position:relative;visibility:visible;width:728px;background-color:transparent"><ins id="aswift_1_anchor" style="display:block;border:none;height:90px;margin:0;padding:0;position:relative;visibility:visible;width:728px;background-color:transparent"><iframe width="728" height="90" frameborder="0" marginwidth="0" marginheight="0" vspace="0" hspace="0" allowtransparency="true" scrolling="no" allowfullscreen="true" onload="var i=this.id,s=window.google_iframe_oncopy,H=s&amp;&amp;s.handlers,h=H&amp;&amp;H[i],w=this.contentWindow,d;try{d=w.document}catch(e){}if(h&amp;&amp;d&amp;&amp;(!d.body||!d.body.firstChild)){if(h.call){setTimeout(h,0)}else if(h.match){try{h=s.upd(h,i)}catch(e){}w.location.replace(h)}}" id="aswift_1" name="aswift_1" style="left:0;position:absolute;top:0;width:728px;height:90px;"></iframe></ins></ins></ins>
+			</div>
+				<script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+	</div>
+	<!-- Footer JS -->
+	<script src="/js/page-footer.js"></script>
+    <!-- Google analytics -->
+	<script>
+	  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+	  ga('create', 'UA-12133008-6', 'oopstechblog.com');
+	  ga('send', 'pageview');
+	</script>
+
+
+</body></html>
