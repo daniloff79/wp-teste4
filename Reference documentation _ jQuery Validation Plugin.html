@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<!--[if IE 7]>
+<html class="ie ie7" lang="en-US">
+<![endif]-->
+<!--[if IE 8]>
+<html class="ie ie8" lang="en-US">
+<![endif]-->
+<!--[if !(IE 7) | !(IE 8)  ]><!-->
+<html lang="en-US">
+<!--<![endif]-->
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width"/>
+<title>Reference documentation | jQuery Validation Plugin</title>
+<link rel="profile" href="http://gmpg.org/xfn/11"/>
+<link rel="pingback" href="https://jqueryvalidation.org/xmlrpc.php"/>
+<!--[if lt IE 9]>
+<script src="https://jqueryvalidation.org/wp-content/themes/twentytwelve/js/html5.js" type="text/javascript"></script>
+<![endif]-->
+<link rel='dns-prefetch' href='//fonts.googleapis.com'/>
+<link rel='dns-prefetch' href='//s.w.org'/>
+<link rel="alternate" type="application/rss+xml" title="jQuery Validation Plugin &raquo; Feed" href="https://jqueryvalidation.org/feed/"/>
+<link rel="alternate" type="application/rss+xml" title="jQuery Validation Plugin &raquo; Comments Feed" href="https://jqueryvalidation.org/comments/feed/"/>
+<script type="text/javascript">
+			window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/2.2.1\/72x72\/","ext":".png","svgUrl":"https:\/\/s.w.org\/images\/core\/emoji\/2.2.1\/svg\/","svgExt":".svg","source":{"concatemoji":"https:\/\/jqueryvalidation.org\/wp-includes\/js\/wp-emoji-release.min.js?ver=4.7.5"}};
+			!function(a,b,c){function d(a){var b,c,d,e,f=String.fromCharCode;if(!k||!k.fillText)return!1;switch(k.clearRect(0,0,j.width,j.height),k.textBaseline="top",k.font="600 32px Arial",a){case"flag":return k.fillText(f(55356,56826,55356,56819),0,0),!(j.toDataURL().length<3e3)&&(k.clearRect(0,0,j.width,j.height),k.fillText(f(55356,57331,65039,8205,55356,57096),0,0),b=j.toDataURL(),k.clearRect(0,0,j.width,j.height),k.fillText(f(55356,57331,55356,57096),0,0),c=j.toDataURL(),b!==c);case"emoji4":return k.fillText(f(55357,56425,55356,57341,8205,55357,56507),0,0),d=j.toDataURL(),k.clearRect(0,0,j.width,j.height),k.fillText(f(55357,56425,55356,57341,55357,56507),0,0),e=j.toDataURL(),d!==e}return!1}function e(a){var c=b.createElement("script");c.src=a,c.defer=c.type="text/javascript",b.getElementsByTagName("head")[0].appendChild(c)}var f,g,h,i,j=b.createElement("canvas"),k=j.getContext&&j.getContext("2d");for(i=Array("flag","emoji4"),c.supports={everything:!0,everythingExceptFlag:!0},h=0;h<i.length;h++)c.supports[i[h]]=d(i[h]),c.supports.everything=c.supports.everything&&c.supports[i[h]],"flag"!==i[h]&&(c.supports.everythingExceptFlag=c.supports.everythingExceptFlag&&c.supports[i[h]]);c.supports.everythingExceptFlag=c.supports.everythingExceptFlag&&!c.supports.flag,c.DOMReady=!1,c.readyCallback=function(){c.DOMReady=!0},c.supports.everything||(g=function(){c.readyCallback()},b.addEventListener?(b.addEventListener("DOMContentLoaded",g,!1),a.addEventListener("load",g,!1)):(a.attachEvent("onload",g),b.attachEvent("onreadystatechange",function(){"complete"===b.readyState&&c.readyCallback()})),f=c.source||{},f.concatemoji?e(f.concatemoji):f.wpemoji&&f.twemoji&&(e(f.twemoji),e(f.wpemoji)))}(window,document,window._wpemojiSettings);
+		</script>
+<style type="text/css">img.wp-smiley,img.emoji{display:inline!important;border:none!important;box-shadow:none!important;height:1em!important;width:1em!important;margin:0 .07em!important;vertical-align:-0.1em!important;background:none!important;padding:0!important;}</style>
+<link rel='stylesheet' id='twentytwelve-fonts-css' href='https://fonts.googleapis.com/css?family=Open+Sans:400italic,700italic,400,700&#038;subset=latin,latin-ext' type='text/css' media='all'/>
+<link rel='stylesheet' id='twentytwelve-style-css' href='https://jqueryvalidation.org/wp-content/themes/jqueryvalidation/style.css?ver=4.7.5' type='text/css' media='all'/>
+<!--[if lt IE 9]>
+<link rel='stylesheet' id='twentytwelve-ie-css'  href='https://jqueryvalidation.org/wp-content/themes/twentytwelve/css/ie.css?ver=20121010' type='text/css' media='all' />
+<![endif]-->
+<script type='text/javascript' src='https://jqueryvalidation.org/wp-includes/js/jquery/jquery.js?ver=1.12.4'></script>
+<script type='text/javascript' src='https://jqueryvalidation.org/wp-includes/js/jquery/jquery-migrate.min.js?ver=1.4.1'></script>
+<script type='text/javascript' src='https://jqueryvalidation.org/wp-content/plugins/google-analyticator/external-tracking.min.js?ver=6.5.2'></script>
+<link rel='https://api.w.org/' href='https://jqueryvalidation.org/wp-json/'/>
+<link rel="EditURI" type="application/rsd+xml" title="RSD" href="https://jqueryvalidation.org/xmlrpc.php?rsd"/>
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="https://jqueryvalidation.org/wp-includes/wlwmanifest.xml"/>
+<meta name="generator" content="WordPress 4.7.5"/>
+<link rel="canonical" href="https://jqueryvalidation.org/reference/"/>
+<link rel='shortlink' href='https://jqueryvalidation.org/?p=6'/>
+<link rel="alternate" type="application/json+oembed" href="https://jqueryvalidation.org/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fjqueryvalidation.org%2Freference%2F"/>
+<link rel="alternate" type="text/xml+oembed" href="https://jqueryvalidation.org/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fjqueryvalidation.org%2Freference%2F&#038;format=xml"/>
+<style type="text/css">.recentcomments a{display:inline!important;padding:0!important;margin:0!important;}</style>
+ 
+<script type="text/javascript">
+    var analyticsFileTypes = ['js','zip'];
+    var analyticsSnippet = 'enabled';
+    var analyticsEventTracking = 'enabled';
+</script>
+<script type="text/javascript">
+	var _gaq = _gaq || [];
+  
+	_gaq.push(['_setAccount', 'UA-41158714-1']);
+    _gaq.push(['_addDevId', 'i9k95']); // Google Analyticator App ID with Google
+    _gaq.push(['_gat._anonymizeIp']);
+	_gaq.push(['_trackPageview']);
+
+	(function() {
+		var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+		                ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+		                var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+	})();
+</script>
+</head>
+<body class="page-template-default page page-id-6 custom-font-enabled">
+<div id="page" class="hfeed site">
+<header id="masthead" class="site-header" role="banner">
+<hgroup>
+<h1 class="site-title"><a href="https://jqueryvalidation.org/" title="jQuery Validation Plugin" rel="home">jQuery Validation Plugin</a></h1>
+<h2 class="site-description">Form validation with jQuery</h2>
+</hgroup>
+<nav id="site-navigation" class="main-navigation" role="navigation">
+<h3 class="menu-toggle">Menu</h3>
+<a class="assistive-text" href="#content" title="Skip to content">Skip to content</a>
+<div class="nav-menu"><ul>
+<li><a href="https://jqueryvalidation.org/">Home</a></li><li class="page_item page-item-45"><a href="https://jqueryvalidation.org/contribute/">Contribute</a></li>
+<li class="page_item page-item-4"><a href="https://jqueryvalidation.org/documentation/">Documentation</a></li>
+<li class="page_item page-item-6 current_page_item"><a href="https://jqueryvalidation.org/reference/">Reference documentation</a></li>
+</ul></div>
+</nav> 
+</header> 
+<div id="main" class="wrapper">
+<div id="primary" class="site-content">
+<div id="content" role="main">
+<article id="post-6" class="post-6 page type-page status-publish hentry">
+<header class="entry-header">
+<h1 class="entry-title">Reference documentation</h1>
+</header>
+<div class="entry-content">
+<h1 class="toc-linked"><a href="#goals" id="goals" class="icon-link toc-link"><span class="visuallyhidden">link</span></a> Goals</h1>
+<p>The ultimate goal of this plugin is to make working with forms more fun for everyone. By improving the interaction, it is easier and less annoying for the user to fill out the form and submit it.</p>
+<p>To achieve this, it is important that the plugin is actually deployed on websites around the world, so a lot of focus is spent on making it easy for developers &#8211; that&apos;s you &#8211; to use the plugin.</p>
+<p>The plugin can never replace serverside validation and doesn&apos;t intend to do so. Having both in place gives you the necessary security for your application, as well as improved usability.</p>
+<h1 class="toc-linked"><a href="#markup-recommendations" id="markup-recommendations" class="icon-link toc-link"><span class="visuallyhidden">link</span></a> Markup recommendations</h1>
+<p>Mandated: A &apos;name&apos; attribute is required for all input elements needing validation, and the plugin will not work without this. A &apos;name&apos; attribute must also be unique to the form, as this is how the plugin keeps track of all input elements. However, each group of radio or checkbox elements will share the same &apos;name&apos; since the value of this grouping represents a single piece of the form data.</p>
+<p>Optionally: Each input can have a label associated with it, where the &apos;for&apos; attribute of the label refers to the &apos;id&apos; attribute of the input. It&apos;s also a common practice to have &apos;id&apos; and &apos;name&apos; attributes with the same value, although keep in mind that since this plugin does not use the &apos;id&apos; attribute, this is not mandatory.</p>
+<div class="syntaxhighlighter xml nogutter">
+<table>
+<tbody>
+<tr>
+<td class="gutter">
+<div class="line n1">1</div>
+<div class="line n2">2</div>
+</td>
+<td class="code">
+<pre><div class="container"><div class="line"><code><span class="tag">&lt;<span class="title">label</span> <span class="attribute">for</span>=<span class="value">&quot;firstname&quot;</span>&gt;</span>Firstname<span class="tag">&lt;/<span class="title">label</span>&gt;</span></code></div></div><div class="container"><div class="line"><code><span class="tag">&lt;<span class="title">input</span> <span class="attribute">id</span>=<span class="value">&quot;firstname&quot;</span> <span class="attribute">name</span>=<span class="value">&quot;fname&quot;</span>&gt;</span></code></div></div></pre>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<h1 class="toc-linked"><a href="#methods" id="methods" class="icon-link toc-link"><span class="visuallyhidden">link</span></a> Methods</h1>
+<p>A validation method implements the logic to validate any element. Provided are a set of default validation methods, such as required. Apart from required itself and equalTo, all validation methods declare an element valid when it has no value at all. That way an email field is optional unless required is specified. You can specify an element input to contain a valid email address, or nothing at all. Use <a href="/jQuery.validator.addMethod/">jQuery.validator.addMethod</a> to implement custom methods.</p>
+<h1 class="toc-linked"><a href="#rules" id="rules" class="icon-link toc-link"><span class="visuallyhidden">link</span></a> Rules</h1>
+<p>A validation rule applies one or more validation methods to an input element. You can specify validation rules via metadata or via plugin settings (option <code>rules</code>). The decision is often influenced by serverside infrastructure. If a web framework is used, it is often easier to use metadata, which is also good for fast prototyping. Plugin settings produce cleaner markup, though valid markup results from both.</p>
+<h2 class="toc-linked"><a href="#fields-with-complex-names-brackets-dots" id="fields-with-complex-names-brackets-dots" class="icon-link toc-link"><span class="visuallyhidden">link</span></a> Fields with complex names (brackets, dots)</h2>
+<p>If your form consists of fields using names that aren&apos;t legal JavaScript identifiers, you have to quote those names when using the <code>rules</code> option:</p>
+<div class="syntaxhighlighter javascript nogutter">
+<table>
+<tbody>
+<tr>
+<td class="gutter">
+<div class="line n1">1</div>
+<div class="line n2">2</div>
+<div class="line n3">3</div>
+<div class="line n4">4</div>
+<div class="line n5">5</div>
+<div class="line n6">6</div>
+<div class="line n7">7</div>
+<div class="line n8">8</div>
+<div class="line n9">9</div>
+<div class="line n10">10</div>
+</td>
+<td class="code">
+<pre><div class="container"><div class="line"><code> $(<span class="string">&quot;#myform&quot;</span>).validate({</code></div></div><div class="container"><div class="line"><code>   rules: {</code></div></div><div class="container"><div class="line"><code>     <span class="comment">// no quoting necessary</span></code></div></div><div class="container"><div class="line"><code>     name: <span class="string">&quot;required&quot;</span>,</code></div></div><div class="container"><div class="line"><code>     <span class="comment">// quoting necessary!</span></code></div></div><div class="container"><div class="line"><code>     <span class="string">&quot;user[email]&quot;</span>: <span class="string">&quot;email&quot;</span>,</code></div></div><div class="container"><div class="line"><code>     <span class="comment">// dots need quoting, too!</span></code></div></div><div class="container"><div class="line"><code>     <span class="string">&quot;user.address.street&quot;</span>: <span class="string">&quot;required&quot;</span></code></div></div><div class="container"><div class="line"><code>   }</code></div></div><div class="container"><div class="line"><code> });</code></div></div></pre>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<h2 class="toc-linked"><a href="#refactoring-rules" id="refactoring-rules" class="icon-link toc-link"><span class="visuallyhidden">link</span></a> Refactoring rules</h2>
+<p>Whenever you have multiple fields with the same rules and messages, refactoring those can reduce a lot of duplication. Using addMethod and addClassRules are most effective for that.</p>
+<p>Let&apos;s consider an example where you have ten customer fields, each required and with a minlength of 2. You need custom messages for both rules. To avoid having to specify those rules and messages again and again, we can alias existing methods with different messages and group them into a single class:</p>
+<div class="syntaxhighlighter javascript nogutter">
+<table>
+<tbody>
+<tr>
+<td class="gutter">
+<div class="line n1">1</div>
+<div class="line n2">2</div>
+<div class="line n3">3</div>
+<div class="line n4">4</div>
+<div class="line n5">5</div>
+<div class="line n6">6</div>
+<div class="line n7">7</div>
+<div class="line n8">8</div>
+<div class="line n9">9</div>
+</td>
+<td class="code">
+<pre><div class="container"><div class="line"><code> <span class="comment">// alias required to cRequired with new message</span></code></div></div><div class="container"><div class="line"><code> $.validator.addMethod(<span class="string">&quot;cRequired&quot;</span>, $.validator.methods.required,</code></div></div><div class="container"><div class="line"><code>   <span class="string">&quot;Customer name required&quot;</span>);</code></div></div><div class="container"><div class="line"><code> <span class="comment">// alias minlength, too</span></code></div></div><div class="container"><div class="line"><code> $.validator.addMethod(<span class="string">&quot;cMinlength&quot;</span>, $.validator.methods.minlength,</code></div></div><div class="container"><div class="line"><code>   <span class="comment">// leverage parameter replacement for minlength, {0} gets replaced with 2</span></code></div></div><div class="container"><div class="line"><code>   $.validator.format(<span class="string">&quot;Customer name must have at least {0} characters&quot;</span>));</code></div></div><div class="container"><div class="line"><code> <span class="comment">// combine them both, including the parameter for minlength</span></code></div></div><div class="container"><div class="line"><code> $.validator.addClassRules(<span class="string">&quot;customer&quot;</span>, { cRequired: <span class="literal">true</span>, cMinlength: <span class="number">2</span> });</code></div></div></pre>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<p>With that in place, we can add a class customer to all customer fields and be done with it:</p>
+<div class="syntaxhighlighter xml nogutter">
+<table>
+<tbody>
+<tr>
+<td class="gutter">
+<div class="line n1">1</div>
+<div class="line n2">2</div>
+<div class="line n3">3</div>
+</td>
+<td class="code">
+<pre><div class="container"><div class="line"><code> <span class="tag">&lt;<span class="title">input</span> <span class="attribute">name</span>=<span class="value">&quot;customer1&quot;</span> <span class="attribute">class</span>=<span class="value">&quot;customer&quot;</span>&gt;</span></code></div></div><div class="container"><div class="line"><code> <span class="tag">&lt;<span class="title">input</span> <span class="attribute">name</span>=<span class="value">&quot;customer2&quot;</span> <span class="attribute">class</span>=<span class="value">&quot;customer&quot;</span>&gt;</span></code></div></div><div class="container"><div class="line"><code> <span class="tag">&lt;<span class="title">input</span> <span class="attribute">name</span>=<span class="value">&quot;customer3&quot;</span> <span class="attribute">class</span>=<span class="value">&quot;customer&quot;</span>&gt;</span></code></div></div></pre>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<p>You can also reuse existing methods inside other custom methods, to reuse certain implementations. For example, if you&apos;re writing a custom method for validating email addresses inside a single field, you could call the existing email method for each email:</p>
+<div class="syntaxhighlighter javascript nogutter">
+<table>
+<tbody>
+<tr>
+<td class="gutter">
+<div class="line n1">1</div>
+</td>
+<td class="code">
+<pre><div class="container"><div class="line"><code>jQuery.validator.methods.email.call(<span class="keyword">this</span>, email, element)</code></div></div></pre>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<h1 class="toc-linked"><a href="#error-messages" id="error-messages" class="icon-link toc-link"><span class="visuallyhidden">link</span></a> Error messages</h1>
+<p>An error message displays a hint for the user about invalid elements, and what is wrong. There are four ways to provide error messages. Via the title attribute of the input element to validate, via data attributes, via error labels and via plugin settings (option <code>messages</code>).</p>
+<p>All validation rules included here provide a default error message which you can use for prototyping, because it is used when no specific message is provided.</p>
+<p>The priorities are as follows: A custom message (passed by plugin options), the element&apos;s title, the default message.</p>
+<p>When using data attributes, you can set a generic message for all rules, or specific messages per rule:</p>
+<div class="syntaxhighlighter xml nogutter">
+<table>
+<tbody>
+<tr>
+<td class="gutter">
+<div class="line n1">1</div>
+<div class="line n2">2</div>
+</td>
+<td class="code">
+<pre><div class="container"><div class="line"><code><span class="tag">&lt;<span class="title">input</span> <span class="attribute">required</span> <span class="attribute">data-msg</span>=<span class="value">&quot;Please fill this field&quot;</span>&gt;</span></code></div></div><div class="container"><div class="line"><code><span class="tag">&lt;<span class="title">input</span> <span class="attribute">data-rule-minlength</span>=<span class="value">&quot;2&quot;</span> <span class="attribute">data-rule-maxlength</span>=<span class="value">&quot;4&quot;</span> <span class="attribute">data-msg-minlength</span>=<span class="value">&quot;At least two chars&quot;</span> <span class="attribute">data-msg-maxlength</span>=<span class="value">&quot;At most fours chars&quot;</span>&gt;</span></code></div></div></pre>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<h1 class="toc-linked"><a href="#error-message-display" id="error-message-display" class="icon-link toc-link"><span class="visuallyhidden">link</span></a> Error message display</h1>
+<p>Error messages are handled via label elements with an additional class (option <code>errorClass</code>). The link between the message and the invalid element is provided via the labels for attribute. When provided in the markup, they are shown and hidden accordingly, and otherwise created on demand. By default, labels are created after the invalid element, this is also customizable (option <code>errorPlacement</code>). It is also possible to put them into an error container (option <code>errorLabelContainer</code>). To use a different element then a label, specify the <code>errorElement</code> option.</p>
+<h1 class="toc-linked"><a href="#general-messages" id="general-messages" class="icon-link toc-link"><span class="visuallyhidden">link</span></a> General messages</h1>
+<p>In addition to field-specific messages you can display a general &quot;your form is invalid, please fix the highlighted fields!&quot; message in a container anywhere on your page, eg. above the form (option <code>errorContainer</code>). The container is shown and hidden when errors occur and are fixed accordingly. The container for error labels (option <code>errorLabelContainer</code>) can also be nested inside the error container.</p>
+<h1 class="toc-linked"><a href="#focusing-of-invalid-elements" id="focusing-of-invalid-elements" class="icon-link toc-link"><span class="visuallyhidden">link</span></a> Focusing of invalid elements</h1>
+<p>By default, the first invalid element in a form is focused after submitting a form with invalid elements. To prevent confusion on the behalf of the user, the plugin remembers the element that had focus when the form was submitted, and refocuses that element. That way the user can try to fill out elements of the form at the end, without being forced to focus them again and again. This can be disabled (option <code>focusInvalid</code>).</p>
+<h1 class="toc-linked"><a href="#form-submit" id="form-submit" class="icon-link toc-link"><span class="visuallyhidden">link</span></a> Form submit</h1>
+<p>By default, the form submission is prevented when the form is invalid, and submitted as normal when it is valid. You can also handle the submission manually (option <code>submitHandler</code>).</p>
+<h2 class="toc-linked"><a href="#skipping-validation-on-submit" id="skipping-validation-on-submit" class="icon-link toc-link"><span class="visuallyhidden">link</span></a> Skipping validation on submit</h2>
+<p>To skip validation while still using a submit-button, add the attribte &quot;formnovalidate&quot; to that input:</p>
+<div class="syntaxhighlighter xml nogutter">
+<table>
+<tbody>
+<tr>
+<td class="gutter">
+<div class="line n1">1</div>
+<div class="line n2">2</div>
+</td>
+<td class="code">
+<pre><div class="container"><div class="line"><code> <span class="tag">&lt;<span class="title">input</span> <span class="attribute">type</span>=<span class="value">&quot;submit&quot;</span> <span class="attribute">name</span>=<span class="value">&quot;go&quot;</span> <span class="attribute">value</span>=<span class="value">&quot;Submit&quot;</span>&gt;</span></code></div></div><div class="container"><div class="line"><code> <span class="tag">&lt;<span class="title">input</span> <span class="attribute">type</span>=<span class="value">&quot;submit&quot;</span> <span class="attribute">formnovalidate</span> <span class="attribute">name</span>=<span class="value">&quot;cancel&quot;</span> <span class="attribute">value</span>=<span class="value">&quot;Cancel&quot;</span>&gt;</span></code></div></div></pre>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<p>This used to work by adding <code>class=&quot;cancel&quot;</code> to the input, this is now deprecated.</p>
+<p><a href="https://jqueryvalidation.org/files/demo/errorcontainer-demo.html">Demo for the cancel button</a></p>
+<h1 class="toc-linked"><a href="#validation-event" id="validation-event" class="icon-link toc-link"><span class="visuallyhidden">link</span></a> Validation event</h1>
+<p>By default, forms are validated on submit, triggered by the user clicking the submit button or pressing enter when a form input is focused (option <code>onsubmit</code>). In addition, once a field was highlighted as being invalid, it is validated whenever the user types something in the field (option <code>onkeyup</code>). When the user enters something invalid into a valid field, it is also validated when the field loses focus (option <code>onfocusout</code>).</p>
+<p>The goal of these interactions is to provide feedback as early as possible, whilst avoiding user annoyance. Displaying error messages before the user had the chance to even type something is not helpful.</p>
+<h1 class="toc-linked"><a href="#developing-and-debugging-a-form" id="developing-and-debugging-a-form" class="icon-link toc-link"><span class="visuallyhidden">link</span></a> Developing and debugging a form</h1>
+<p>While developing and debugging the form, you should set the <code>debug</code> option to true. That prevents form submission on both valid and invalid forms and outputs some helpful messages to window.console (available via Firebug or Firebug Lite) that help debugging. When you have everything set up and don&apos;t get any error messages displayed, check if your rules all accept empty elements as valid (like email or url methods).</p>
+<p>Some issues are caused by certain form element&apos;s names. A name you should avoid is &quot;submit&quot; (for submit buttons and anything else). Browsers expose form elements as properties of the form element, by their name, in this case hiding native methods like submit(). Just don&apos;t use name=&quot;submit&quot; and you&apos;re good.</p>
+<h1 class="toc-linked"><a href="#validating-multiple-forms-on-one-page" id="validating-multiple-forms-on-one-page" class="icon-link toc-link"><span class="visuallyhidden">link</span></a> Validating multiple forms on one page</h1>
+<p>The plugin can handle only one form per call. In case you have multiple forms on a single page which you want to validate, you have to initialise them all individually:</p>
+<div class="syntaxhighlighter javascript nogutter">
+<table>
+<tbody>
+<tr>
+<td class="gutter">
+<div class="line n1">1</div>
+<div class="line n2">2</div>
+<div class="line n3">3</div>
+</td>
+<td class="code">
+<pre><div class="container"><div class="line"><code>$( <span class="string">&quot;form&quot;</span> ).each( <span class="keyword">function</span>() {</code></div></div><div class="container"><div class="line"><code>  $( <span class="keyword">this</span> ).validate( options );</code></div></div><div class="container"><div class="line"><code>} );</code></div></div></pre>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<p>You can avoid having to duplicate the plugin settings by modifying the defaults, using <a href="/jQuery.validator.setDefaults/">jQuery.validator.setDefaults</a> to override multiple settings at once.</p>
+</div> 
+<footer class="entry-meta">
+</footer> 
+</article> 
+</div> 
+</div> 
+<div id="secondary" class="widget-area" role="complementary">
+<aside id="search-2" class="widget widget_search"><form role="search" method="get" id="searchform" class="searchform" action="https://jqueryvalidation.org/">
+<div>
+<label class="screen-reader-text" for="s">Search for:</label>
+<input type="text" value="" name="s" id="s"/>
+<input type="submit" id="searchsubmit" value="Search"/>
+</div>
+</form></aside> <aside id="recent-posts-2" class="widget widget_recent_entries"> <h3 class="widget-title">Recent Posts</h3> <ul>
+<li>
+<a href="https://jqueryvalidation.org/Validator.destroy/">Validator.destroy()</a>
+</li>
+<li>
+<a href="https://jqueryvalidation.org/step-method/">step method</a>
+</li>
+<li>
+<a href="https://jqueryvalidation.org/normalizer/">normalizer</a>
+</li>
+<li>
+<a href="https://jqueryvalidation.org/jQuery.validator.methods/">jQuery.validator.methods</a>
+</li>
+<li>
+<a href="https://jqueryvalidation.org/require_from_group-method/">require_from_group method</a>
+</li>
+</ul>
+</aside> <aside id="recent-comments-2" class="widget widget_recent_comments"><h3 class="widget-title">Recent Comments</h3><ul id="recentcomments"></ul></aside><aside id="archives-2" class="widget widget_archive"><h3 class="widget-title">Archives</h3> <ul>
+<li><a href='https://jqueryvalidation.org/2017/02/'>February 2017</a></li>
+<li><a href='https://jqueryvalidation.org/2016/02/'>February 2016</a></li>
+<li><a href='https://jqueryvalidation.org/2015/11/'>November 2015</a></li>
+<li><a href='https://jqueryvalidation.org/2014/01/'>January 2014</a></li>
+<li><a href='https://jqueryvalidation.org/2013/05/'>May 2013</a></li>
+</ul>
+</aside><aside id="categories-2" class="widget widget_categories"><h3 class="widget-title">Categories</h3> <ul>
+<li class="cat-item cat-item-2"><a href="https://jqueryvalidation.org/category/methods/">Methods</a>
+</li>
+<li class="cat-item cat-item-4"><a href="https://jqueryvalidation.org/category/plugin/" title="All jQuery methods that the plugin adds, available on all jQuery objects.">Plugin Methods</a>
+</li>
+<li class="cat-item cat-item-6"><a href="https://jqueryvalidation.org/category/selectors/">Selectors</a>
+</li>
+<li class="cat-item cat-item-5"><a href="https://jqueryvalidation.org/category/validator/" title="Methods available on the Validator object returned by the validate method.">Validator</a>
+</li>
+</ul>
+</aside><aside id="meta-2" class="widget widget_meta"><h3 class="widget-title">Meta</h3> <ul>
+<li><a href="https://jqueryvalidation.org/wp-login.php">Log in</a></li>
+<li><a href="https://jqueryvalidation.org/feed/">Entries <abbr title="Really Simple Syndication">RSS</abbr></a></li>
+<li><a href="https://jqueryvalidation.org/comments/feed/">Comments <abbr title="Really Simple Syndication">RSS</abbr></a></li>
+<li><a href="https://wordpress.org/" title="Powered by WordPress, state-of-the-art semantic personal publishing platform.">WordPress.org</a></li> </ul>
+</aside> </div> 
+</div> 
+<footer id="colophon" role="contentinfo">
+<div class="site-info">
+<a href="http://wordpress.org/" title="Semantic Personal Publishing Platform">Proudly powered by WordPress</a>
+</div> 
+</footer> 
+</div> 
+<script src="https://code.jquery.com/jquery-1.9.1.min.js"></script>
+<script src="https://jqueryvalidation.org/wp-content/themes/jqueryvalidation/anchorify.min.js"></script>
+<script src="https://jqueryvalidation.org/wp-content/themes/jqueryvalidation/api-demo.js"></script>
+<script type='text/javascript' src='https://jqueryvalidation.org/wp-content/themes/twentytwelve/js/navigation.js?ver=1.0'></script>
+<script type='text/javascript' src='https://jqueryvalidation.org/wp-includes/js/wp-embed.min.js?ver=4.7.5'></script>
+ 
+<script type="text/javascript">
+  var _paq = _paq || [];
+  _paq.push(['trackPageView']);
+  _paq.push(['enableLinkTracking']);
+  (function() {
+    var u=(("https:" == document.location.protocol) ? "https" : "http") + "://stats.ballensiefen.net/";
+    _paq.push(['setTrackerUrl', u+'piwik.php']);
+    _paq.push(['setSiteId', 94]);
+    var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0]; g.type='text/javascript';
+    g.defer=true; g.async=true; g.src=u+'piwik.js'; s.parentNode.insertBefore(g,s);
+  })();
+</script>
+<noscript><p><img src="https://stats.ballensiefen.net/piwik.php?idsite=94" style="border:0;" alt=""/></p></noscript>
+ 
+</body>
+</html>
