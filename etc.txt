@@ -1,18 +1,168 @@
-Vou analisar. Mas jÃ¡ estamos trabalhando em algumas frentes!!! Fique tranquilo! Obrigado pela colaboraÃ§Ã£o.
-____
+[gallery link="file" ids="136"]
 
-Mandei as sugestÃµes abaixo pro DP faz dois dias:
+https://www.youtube.com/embed/mQR6Le48-JY ?loop=1&playlist=S6hBQJIn7VQ&rel=0
 
-1- Algum evento, como almoÃ§o, de integraÃ§Ã£o de todas as Ã¡reas (mensalmente ou bimestralmente);
-2- SeminÃ¡rios e/ou debates entre Ã¡reas prÃ³ximas, com potencial de sinergia, para melhor conhecimento dos projetos da empresa e possÃ­vel surgimento de melhorias e novas ideias;
-3- AvaliaÃ§Ã£o 360Â° com cada colaborador, pelo menos a cada 6 meses;
-4- Possiblidade de compensaÃ§Ã£o de emendas em blocos de 30min ou 1h30 e nÃ£o apenas 1h ou 2h;
-5- Possibilidade de compensar atrasos (ou adiantamentos) de atÃ© 15 minutos no mesmo dia; 
+***
 
-Tem algo que eu possa fazer para tentar fazer alguma delas ser aceita? Posso tentar desenhar telas mais fÃ¡ceis para o DP usar (no caso dos itens 4 e 5).
+Limit Login Attempts
+7MPRZSH
 
-E outra: fui proibido de pegar cafÃ© sem aÃ§Ãºcar na outra sala. O que Ã© mais fÃ¡cil:
+***
+PROXY
 
-a- Eu trazer uma garrafa pequena minha para ser feita apenas uma xÃ­cara de cafÃ© sem aÃ§Ãºcar? Se necessÃ¡rio trago atÃ© mesmo o cafÃ© em pÃ³.
-b- Pedir para trocar o cafÃ© da sala de adoÃ§ado por sem aÃ§Ãºcar?
-c- Tentar descobrir quem fez a reclamaÃ§Ã£o e negociar com ela?
+prodweb;prodweb.input.com.vc;winhosp38.input.com.vc;prog1.input.com.vc;172.16.5.*;192.167.0.*
+
+***
+ERRO 500 e site fora do ar
+
+https://stackoverflow.com/questions/24935325/php-cgi-crash-on-iis
+http://prodweb:343/wp-admin/admin-ajax.php?action=FullCalendar&type=tf_events retorna json mas no camaravinhedo.sp.gov.br não
+
+https://prodweb.input.com.vc:347
+
+https://prodweb.input.com.vc:347/wp-content/themes/haras/library/bootstrap.min.css
+
+***
+webmaster-input waF
+*eb@24iNpuT2  / *rlDQW5DxHlEmRY / *4z%0NdYA(Tndm7(B3
+
+chefiadegabinete
+75xPr3*s26
+
+imprensa
+75xPr3*s13
+
+***
+Liberar
+
+https://support.google.com
+http://www.uxbooth.com
+http://wpengineer.com/
+https://mydevice.io
+
+woocommerce.com
+ecommerce-platforms.com
+wp-types.com/documentation/user-guide
+wpbeginner.com
+wordpress.org/support
+webcache.googleusercontent.com
+plugins.jquery.com
+docs.jquery.com
+jqueryvalidation.org
+1000hz.github.io/bootstrap-validator
+microsoft.com/net/tutorials
+getpelican.com
+healthvault.com
+
+***
+SBIS
+
+https://prog1.input.com.vc:9443/
+\\prodweb\wwwroot_homologa\WinHospBroker\assets\global.head.css
+
+http://winhosp38.input.com.vc/
+\\srv-web\WinHosp\assets\global.head.css
+
+***
+MAILCHIMP
+daniloinput
+f**1717!M
+
+Host: 172.16.5.25
+Port: 587
+SSL: TLS (conexão criptografada)
+Smtp Autenticado
+Conta: newsletter_test@input-center.com
+Senha: VinH1Test1
+
+***
+Cache google geral
+<link rel='stylesheet' href='https://cdn.sstatic.net/Sites/webmasters/all.css'>
+
+Para o support
+<link rel='stylesheet' href='https://s.w.org/style/codex-wp4.css?'>
+<style>
+.bbp-topic-content, .bbp-reply-content { font-size: 1.5em; line-height: 2em; display: inline-block; }
+.bbp-topic-author, .bbp-reply-author  { display: inline-block; vertical-align: top; padding-right: 20px}
+</style>
+
+***
+Vinhedo: banner plano plurianual
+
+header.php: tirar o link e voltar para 
+col-sm-12 col-md-8 col-md-offset-4 col-lg-9 col-lg-offset-3
+
+style.css: 
+.top-right-links a margin-left volta para 20px para todos os casos (não só media query min width)
+.top-right-links #acesso-info voltar para margin-left: 0
+#banner-extra-01 margin-left deve ser eliminado
+.top-right-lihks #banner-extra-01 img em media query deve ser elimnado
+voltar @media (min-width: 768px) and (max-width: 992px) { .masthead .social { magin-top:-66px } para min-width: 481px) and (max-width: 1003px)
+voltar @media (max-width: 376px) { .top-right-links a, e .social { text-align: center; } e .social a { padding: 5px 15px;
+tirar @media (max-width: 376px) { .top-right-links #acesso-info {} e também @media (max-width: 376px) .top-right-links #banner-extra-01p  {}
+tirar @media (min-width: 481px) and (max-width: 768px) { .masthead .social{text-align:center} 
+tirar de @media (max-width: 568px) o { .social a { padding: 5px 10px
+tirar de @media (min-width: 481px) and (max-width: 767px) o .top-right-links a img  { width: auto; 
+tirar tudo de @media (max-width: 481px) { /* extra banner */ e @media(max-width: 421px) { /* extra banner */
+tirar @media(min-width:381px) and (max-width: 420px) { /* extra banner */
+
+***
+FEITO:
+(ver Excel)
+
+FAZENDO:
+4B- Ferramente totalmente nova de Newsletter (MailPoet com Formidable) - 60 + 300 ?
+60- Impedir upload de imagens com acento - 60?
+
+PARA FAZER:
+54B - Corrigir DE VEZ erro de distância do lightbox por conteúdo (títulos longos) - 90 minutos + 60? 
+56- Mudar e-mail de notificação de comentário - 20 ?
+58- Bug de update do Duplicator Pro - 5 minutos + infinito (insolúvel: sem acesso ao Pro)?
+
+FAZER OU NÃO:
+16- Tirar hardcode dos nomes da mesa diretiva e listagem de partidos - 60 ?
+30- Bônus: LSightbox na area de post do Wordpress - 1500 ?
+32- Bônus: Não permitir um vereador em dois partidos - 60 ?
+43- Seleção inteligente de recorte da imagem do carrossel (como no Facebook) - 600 ?
+
+***
+sem ftp
+<?php
+
+$myfile = fopen(dirname(__FILE__)."/home.php", "w") or die("Unable to open file!");
+$txt = "\<?php ?>\n";
+fwrite($myfile, $txt);
+fclose($myfile);
+
+?>  
+
+***
+1- Devemos pensar o projeto mobile first? No mínimo, pra ter essa resposta talvez fosse melhor ter dados do Analytics dos sites dos hospitais. E idealmente fazer um levantamento etnográfico (mesmo que breve), pra entender os usuários finais.
+> Mobile first sim. 
+> Analytics não sabe de onde.
+> Sem acesso ao usuário final, mas as diretores de cada especilidade. Não vale o custo do cognitive walkthrough.
+
+2- O usuário final irá ter uso exclusivo do sistema/app? Como ficam usuários menores de idade?
+> Só visuzalização de dados, alguns dados pelo rececptionista, outros pelo médico, outros pelo usuário.
+
+3- Ele mostra alguma coisa para médicos em consultas? Seria interessante deixar guardado medicações tomadas no passado e alergias?
+> Médico enxerga sistema pela número da carteirinha.
+
+4- De onde veio a linguagem visual do .doc? Qual a necessidade de um logo do lado esquerdo?
+>  Um por hospital
+
+5- Qual a razão do Fale Conosco ser um iframe com o site do hospital? 
+> Nenhuma.
+
+***
+SUGESTÕES
+Poderia haver na Input algumas práticas interessantes:
+1 - Algum evento, como almoço, de integração de todas as áreas (mensalmente ou bimestralmente);
+2 - Seminários e/ou debates entre áreas próximas, com potencial de sinergia, para melhor conhecimento dos projetos da empresa e possível surgimento de melhorias e novas ideias; highlights
+3 - Avaliaçao 360° com cada colaborador, pelo menos a cada 6 meses;
+4 - Possiblidade de compensação de emendas em blocos de 30min ou 1h30 e não apenas 1h ou 2h;
+5 - Possibilidade de compensar atrasos (ou adiantamentos) de até 15 minutos no mesmo dia;
+
+Poderia haver algumas melhorias no WinSuporte, com relação à UX. Um caso comum, ao menos para mim, é ver no histórico de incidentes o encaminhamento para grupos errados. Daí ficam vários incidentes (resolvidos ou não) listados. Problema similar surge na hora de criar o incidente. Tenho bastante dúvida de que o código usar na abertura do incidente. Seria extremamente interessante ser claro quem está em qual grupo/código. Uma ideia é algo como um tooltip com os nomes das pessoas no grupo.
+
+Ainda com relação ao WinSuporte podia ser possível copiar o número de protocolo ao abrir o incidente (ou em qualquer outro lugar).
