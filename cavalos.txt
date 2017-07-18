@@ -1,15 +1,1 @@
-Centus
-
-Centus demonstrates impressive jumping technique and scope and was very convincing from the first selection right up to the approvals. 
-
-Candidatus
- 
-Candidatus is a dynamic, intelligent son of 
-the highly-regarded Holsteiner stallion Carthago Z. Carthago Z has been in second place on the German national federation’s breeding premium rankings for several years now. The consolidated Holsteiner mare bloodlines are combined in direct succession in Candidatus’ pedigree. With the three most popular performance producers Carthago Z, Caletto and Calypso, he has the best ingredients required for an exceptional breeding and sporting career. Up until now, Candidatus has been very impressive at all his appearances, from the approvals to his first jumping competitions under saddle, which he won. We hope that he will have a successful performance at this year’s National Young Horse Championships. He has an ideal character and is a real charmer. With this attitude he achieved the top score of 10.00 several times at his 30 day test. His first foals are long-legged and elegant with a classy elastic movement.
-
-Dr. Doolittle
-
-A dressage specialist with a shiny black coat, Dr. Doolittle possesses three exquisite basic paces and top-class rideability values. The results of his first saddle tests have given reason to set hopes high. The blending of two of the most significant dressage makers of our day--Donnerhall and Lauries Crusador xx--support this hope for even the most demanding. Argument, a black Trakehner in the third generation, well-known as the sire of the top dressage horse, Antony FRH / Isabell Werth, adds special bloodlines. The dam line is based on the mare, Jägerherz (by Jägersmann - Lorlot). Dr. Doolittle is closely related to the stallions, Acaro and For Paragon and also the 1980 DLG Champion Mare, Ascona (by Argentan I - Seefischer). This performance-oriented dam line also produced the sires, April-Scherz, Dagobert, Don Vino, Gold Dollar, Rheingau, Servus, Vagabund, Van Eyck, Van Gogh, Vasall, Volltreffer, Weinstock and Westgote as well as the internationally successful jumpers, G-Line and Werra 24 (both Nick Skelton / GB) and Dünenelfe / Gerd Wiltfang and Luigi / Otto Becker.
-
-
-
+<body <?php if(!is_search()) { body_class(isset($class) ? $class : ''); } else { ?>class="search search-results"<?php } ?>>
