@@ -1,1 +1,10 @@
 <body <?php if(!is_search()) { body_class(isset($class) ? $class : ''); } else { ?>class="search search-results"<?php } ?>>
+
+8/01/2012 09h00 - Atualizado em 05/06/2012 15h50
+Input Center abre mais de 200 vagas
+Os salários vão de R$ 1.000,00 a R$ 8.000,00 mais benefícios.
+Entre cargos estão secretária bilíngue, consultor de negócios e vendedor.
+
+A Input Center, empresa de tecnologia da informação, está com mais de 200 vagas de emprego em São Paulo para profissionais de diversas áreas. Os salários vão de R$ 1.000,00 a R$ 8.000,00 mais benefícios.
+
+ As vagas disponíveis são para cargos de secretária executiva de diretoria (bilíngue), consultor de negócios, vendedor externo, analista de sistemas, telefonista (bilíngue), analista de segurança da informação, analista de cargos e salários Jr., analista de custos Jr., analista de P&D Jr, arquiteto da Informação Jr, analista de qualidade (ISO), técnico de Informática Jr., assistente financeiro, programador trainee, assistente de benefícios, técnico de Implantação nas áreas: ciências contábeis, logística, RH, TI e Administração.
