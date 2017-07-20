@@ -1,4 +1,12 @@
-<body <?php if(!is_search()) { body_class(isset($class) ? $class : ''); } else { ?>class="search search-results"<?php } ?>>
+IBAN	BR6490400888011640130002310C1
+BANK	BANCO SANTANDER (BRASIL) S.A.
+BRANCH	001-1164 PCA JACOMO ZANELLA-SP-SP
+BIC	BSCHBRSP
+ADDRESS	AV ERMANO MARQUETTI, 909
+CITY	SAO PAULO
+ZIP	5038001
+PHONE	11 36125900
+WEBSITE	www.santander.com.br
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam sit amet metus et urna aliquam cursus sed vel ante. Sed id quam ut lorem ultrices molestie. Praesent finibus finibus ornare. Ut eu ligula at turpis condimentum ullamcorper. Mauris euismod mauris ut dictum venenatis. Nunc quis ante augue. Vestibulum aliquam ipsum eleifend nisi tincidunt, a eleifend nisi fringilla. Pellentesque vel dapibus dui. Fusce lacinia augue at malesuada placerat. Cras odio ligula, laoreet nec turpis ut, pulvinar volutpat mi. Maecenas accumsan placerat facilisis.
 
