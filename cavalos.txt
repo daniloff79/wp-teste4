@@ -1,12 +1,10 @@
-IBAN	BR6490400888011640130002310C1
-BANK	BANCO SANTANDER (BRASIL) S.A.
-BRANCH	001-1164 PCA JACOMO ZANELLA-SP-SP
-BIC	BSCHBRSP
-ADDRESS	AV ERMANO MARQUETTI, 909
-CITY	SAO PAULO
-ZIP	5038001
-PHONE	11 36125900
-WEBSITE	www.santander.com.br
+// tira width e height automático das imagens
+function remove_img_attribute( $html ) {
+   $html = preg_replace( '/(width|height)="\d*"\s/', "", $html );
+   return $html;
+}
+add_filter( 'post_thumbnail_html', 'remove_img_attribute', 10 );
+add_filter( 'image_send_to_editor', 'remove_img_attribute', 10 );
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam sit amet metus et urna aliquam cursus sed vel ante. Sed id quam ut lorem ultrices molestie. Praesent finibus finibus ornare. Ut eu ligula at turpis condimentum ullamcorper. Mauris euismod mauris ut dictum venenatis. Nunc quis ante augue. Vestibulum aliquam ipsum eleifend nisi tincidunt, a eleifend nisi fringilla. Pellentesque vel dapibus dui. Fusce lacinia augue at malesuada placerat. Cras odio ligula, laoreet nec turpis ut, pulvinar volutpat mi. Maecenas accumsan placerat facilisis.
 
@@ -17,3 +15,4 @@ In hac habitasse platea dictumst. Donec mattis nulla id euismod malesuada. Sed u
 Quisque vel dignissim neque. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Quisque dapibus magna volutpat fringilla pellentesque. Phasellus varius urna at tortor condimentum cursus. Proin dictum imperdiet lobortis. Pellentesque cursus erat et libero aliquet porta. Nunc venenatis nibh dui, eu posuere lorem cursus vitae. Cras malesuada tempus sem, euismod semper est interdum id. Mauris euismod a massa in accumsan. Aliquam commodo, nisi vel facilisis semper, ligula felis auctor dolor, vitae feugiat nisi ipsum in libero.
 
 Donec laoreet lorem tempus magna consectetur porttitor nec vitae mauris. Pellentesque condimentum vestibulum justo sed accumsan. Cras eleifend non velit non porttitor. Interdum et malesuada fames ac ante ipsum primis in faucibus. Cras posuere accumsan metus, et efficitur risus porta ac. Nullam aliquet pellentesque metus eget feugiat. Quisque at dictum elit, in tincidunt magna. Aenean in finibus nulla, vitae rhoncus lacus. Integer elementum nulla vitae turpis dapibus, nec maximus lectus tempor. Morbi viverra sem maximus arcu malesuada, eu consequat mi aliquet. Mauris eu ex arcu. Donec convallis condimentum condimentum. Vivamus molestie sit amet augue eget tempus.
+
