@@ -6,6 +6,16 @@ function remove_img_attribute( $html ) {
 add_filter( 'post_thumbnail_html', 'remove_img_attribute', 10 );
 add_filter( 'image_send_to_editor', 'remove_img_attribute', 10 );
 
+IBAN	BR8400000000035590000341762C1
+BANK	BANCO DO BRASIL S.A.
+BRANCH	UNIV.DE SAO PAULO
+BIC	BRASBRRJ
+ADDRESS	AV.PROF.LUCIANO GUALBERTO,594
+CITY	SAO PAULO
+ZIP	5508010
+PHONE	11 38135604
+WEBSITE	www.bb.com.br
+
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam sit amet metus et urna aliquam cursus sed vel ante. Sed id quam ut lorem ultrices molestie. Praesent finibus finibus ornare. Ut eu ligula at turpis condimentum ullamcorper. Mauris euismod mauris ut dictum venenatis. Nunc quis ante augue. Vestibulum aliquam ipsum eleifend nisi tincidunt, a eleifend nisi fringilla. Pellentesque vel dapibus dui. Fusce lacinia augue at malesuada placerat. Cras odio ligula, laoreet nec turpis ut, pulvinar volutpat mi. Maecenas accumsan placerat facilisis.
 
 Duis varius egestas orci. Nunc sed egestas lacus, sed dapibus arcu. Sed gravida risus vel augue fringilla auctor. Pellentesque rutrum posuere nulla sit amet maximus. Phasellus quam quam, pellentesque aliquet dui ac, eleifend pellentesque ex. Etiam tincidunt diam sagittis euismod luctus. Cras sed malesuada quam, sed sollicitudin diam. Suspendisse potenti. Nunc faucibus, ipsum a mattis pellentesque, mauris arcu pellentesque lorem, id aliquam ipsum erat vitae turpis. Nullam at lorem sed quam volutpat aliquet ac vitae lectus. Cras at nulla ac nunc porttitor faucibus. Donec quis diam molestie, tempus mi et, euismod urna. Donec nec laoreet urna.
