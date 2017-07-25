@@ -1,0 +1,338 @@
+﻿<!DOCTYPE html>
+<html>
+
+<head>
+
+<title>PagSeguro para Woo Commerce - Módulo para checkout - PagSeguro Desenvolvedores</title>
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta name="description" content="Integre o módulo Woo Commerce PagSeguro em sua loja. Veja como incluir o checkout padrão, lightbox ou transparente em sua tela de pagamento. Baixe agora!">
+		<meta name="robots" content="index, follow">
+		
+		
+
+		
+		<link rel="canonical" href="http://dev.pagseguro.uol.com.br/modulos/woo-commerce">
+		<link rel="Shortcut Icon" href="/images/favicon.ico" type="image/x-icon" />
+
+<link rel="stylesheet" href="pagseguro.css" />
+
+</head>
+
+<body>
+		<div class="hidden-sm hidden-xs">
+			<div class="ecommerce-nav-placeholder" style="background-color: #262626; height: 28px;">
+				<div id="append-ecommerce-nav">
+					<div id="barrauolecommerce" style="background-color: rgb(38, 38, 38); height: 28px; max-height: 28px; color: rgb(255, 255, 255); font-style: normal; font-variant: normal; font-weight: 400; font-stretch: normal; font-size: 14px; line-height: normal; font-family: UOLText; width: 100%; position: relative; margin: 0px; padding: 0px; z-index: 1;">
+						<div id="barrawidth" style="position: relative; height: 100%; max-width: 960px; margin: 0px auto;">
+							<ul style="height: 100%; margin: 0px; padding: 0px; list-style: none; background: rgb(38, 38, 38); z-index: 6000000; float: left; display: inline-block;">
+								<li style="height: 100%; background-color: rgb(38, 38, 38); display: inline-block;">
+									<a href="http://click.uol.com.br/?rf=barraecommerce&amp;u=http://clicklogger.rm.uol.com.br/?prd=16&amp;grp=src:210;chn:117;thm:barrauol-host;creative:barrauol-ecommerce&amp;msr=Cliques%20de%20Origem:1&amp;oper=11&amp;redir=http://www.uolhost.com.br/" style="font-family: UOLText; text-decoration: none; color: rgb(255, 255, 255); padding: 0px 18px; vertical-align: middle; line-height: 28px; font-size: 15px; display: block; height: 100%;">UOL HOST</a>
+								</li>
+								<li style="height: 100%; background-color: rgb(79, 119, 67); display: inline-block;">
+									<a href="http://click.uol.com.br/?rf=barraecommerce&amp;u=http://clicklogger.rm.uol.com.br/?prd=32&amp;oper=11&amp;grp=src:210;chn:117;thm:barrauol-pagseguro;creative:barrauol-ecommerce&amp;msr=Cliques%20de%20Origem:1&amp;redir=http://pagseguro.uol.com.br" style="font-family: UOLText; text-decoration: none; color: rgb(255, 255, 255); padding: 0px 18px; vertical-align: middle; line-height: 28px; font-size: 15px; display: block; height: 100%;">PagSeguro</a>
+								</li>
+							</ul>
+							<a class="logouol" href="http://www.uol.com.br/" style="line-height: 28px; font-size: 36px; width: 62px; position: absolute; top: 0px; left: 50%; color: rgb(255, 255, 255); text-decoration: none; text-align: right; margin-left: -37px; height: 28px; opacity: 10;">
+								<i style="font-family: UOLIcons; font-style: normal; display: inline-block; padding-top: 1px; padding-left: 15px;">Ç</i>
+								<img src="data:image/png;base64,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" style="border: none; position: absolute; width: 20px; height: 20px; top: 4px; left: 0px;"></a>
+								<ul style="height: 100%; margin: 0px; padding: 0px; list-style: none; background: rgb(38, 38, 38); z-index: 6000000; float: right; display: inline-block;">
+									<li style="height: 100%; background-color: rgb(38, 38, 38); display: inline-block;">
+										<a href="http://click.uol.com.br/?rf=barraecommerce&amp;u=https://clicklogger.rm.uol.com.br/?prd=32&amp;oper=11&amp;grp=src:210;chn:117;thm:barrauol-moderninha;creative:barrauol-ecommerce&amp;msr=Cliques%20de%20Origem:1&amp;oper=11&amp;redir=https://pagseguro.uol.com.br/venda-presencial/moderninha.html" style="font-family: UOLText; text-decoration: none; color: rgb(255, 255, 255); padding: 0px 18px; vertical-align: middle; line-height: 28px; font-size: 15px; display: block; height: 100%;">Moderninha</a>
+									</li>
+									<li style="height: 100%; background-color: rgb(38, 38, 38); display: inline-block;">
+										<a href="http://click.uol.com.br/?rf=barraecommerce&amp;u=http://clicklogger.rm.uol.com.br/?prd=7&amp;grp=src:210;chn:117;thm:barrauol-cliques;creative:barrauol-ecommerce&amp;msr=Cliques%20de%20Origem:1&amp;oper=11&amp;redir=http://cliques.uol.com.br/" style="font-family: UOLText; text-decoration: none; color: rgb(255, 255, 255); padding: 0px 18px; vertical-align: middle; line-height: 28px; font-size: 15px; display: block; height: 100%;">UOL Cliques</a>
+									</li>
+									<li style="height: 100%; background-color: rgb(38, 38, 38); display: inline-block;">
+										<a href="http://click.uol.com.br/?rf=barraecommerce&amp;u=http://clicklogger.rm.uol.com.br/?prd=16&amp;oper=11&amp;grp=src:210;chn:117;thm:barrauol-crieseusite;creative:barrauol-ecommerce&amp;msr=Cliques%20de%20Origem:1&amp;redir=http://www.uolhost.uol.com.br/site-pronto/" style="font-family: UOLText; text-decoration: none; color: rgb(255, 255, 255); padding: 0px 18px; vertical-align: middle; line-height: 28px; font-size: 15px; display: block; height: 100%;">Crie seu site</a>
+									</li>
+								</ul>
+								<div id="dropDown" style="position: absolute; height: 100%; margin: 0px; list-style: none; float: left; display: none; cursor: pointer; z-index: 2;">
+									<img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAIAAAACACAYAAADDPmHLAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyZpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuNS1jMDIxIDc5LjE1NTc3MiwgMjAxNC8wMS8xMy0xOTo0NDowMCAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENDIDIwMTQgKFdpbmRvd3MpIiB4bXBNTTpJbnN0YW5jZUlEPSJ4bXAuaWlkOjIyMDdBMjZFOUY3RDExRTU5RTBGQjUyNUE1REE1MkFCIiB4bXBNTTpEb2N1bWVudElEPSJ4bXAuZGlkOjIyMDdBMjZGOUY3RDExRTU5RTBGQjUyNUE1REE1MkFCIj4gPHhtcE1NOkRlcml2ZWRGcm9tIHN0UmVmOmluc3RhbmNlSUQ9InhtcC5paWQ6MjIwN0EyNkM5RjdEMTFFNTlFMEZCNTI1QTVEQTUyQUIiIHN0UmVmOmRvY3VtZW50SUQ9InhtcC5kaWQ6MjIwN0EyNkQ5RjdEMTFFNTlFMEZCNTI1QTVEQTUyQUIiLz4gPC9yZGY6RGVzY3JpcHRpb24+IDwvcmRmOlJERj4gPC94OnhtcG1ldGE+IDw/eHBhY2tldCBlbmQ9InIiPz6TOfVYAAACQUlEQVR42uzcvU3DQBiA4YSCnzGYADEAQqKCOZBCyyYUEX+ZBApALABCVFBEGQMqcxdc0cSRHcXH9zzSLXD3co4t8Q2rqhoQ14YtEAACQAAIAAEgAASAABAAAkAACAABIAAEgAAQAAJAAAgAASAAogWwn9ZNWp9pfadVWWtd+Qw+0rpOa2/Zwxwu8Y8hO2mN0zr1d9Nb+TAnaZ2n9dVlAPnw79M6sMdFeE7ruEkETR8BY4dflMO0Lrq6AfIz/8WeFvk4yGf31vYGOLOXRRqmNeriEXBkL4u18OyaPALya8amvSxSPrvtrr8D8I80CWBmm4o17SKAR/tYrIcufgPkz4uv9a9KynoNzGf33vYGyO+RE/tZnKtFh9/0BhjUvyTvBr9fmOi/p7RO6reA1r8BsvxNOX9bvq2vFvp77V82PfxlboC/vwlG9UeG3bS27Pva3/Wn9Q++SZNrv20ABPsOgAAQAAJAAAgAASAABIAAEAACQAAIAAEQIgDzAcwHoKfMB2DOfIDgzAfAfIDozAfAfIDozAeg/SNgZpuKZT5AcOYDBH8NNB8gMPMBAjMfIPC1bz5AwHd98wFY3XcABIAAEAACQAAIAAEgAASAABAAAkAACIAQAZgPYD4APWU+AHPmAwRnPgDmA0RnPgDmA0RnPgDtHwEz21Qs8wGCMx8g+Gug+QCBmQ8QmPkAga998wECvuubD8DqvgMgAASAABAAAkAACAABIAAEgAAQAAJAAAgAASAABIAAEAACQAD01o8AAwA2r+sp4cwcRgAAAABJRU5ErkJggg==" style="height: 18px; padding: 5px;">
+								</div>
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		<header class="header">
+			<div class="container">
+				<div class="header__navigation">
+					<button type="button" class="header__toggle toggle collapsed" data-toggle="collapse" data-target=".header__menu" aria-expanded="false">
+						<span class="sr-only">Toggle navigation</span>
+						<span class="toggle__bar"></span>
+						<span class="toggle__bar"></span>
+						<span class="toggle__bar"></span>
+					</button>
+		
+					<a href="/" class="header__logo logo">
+						<img class="logo__image" src="/images/logo.png" alt="PagSeguro Developers" />
+					</a>
+				</div>
+		
+				<div class="header__menu menu collapse">
+					<ul class="menu__links">
+						<li>
+							<a class="menu__link" href="https://comunidade.pagseguro.uol.com.br" target="_blank">Comunidade <span class="glyphicon glyphicon glyphicon-new-window"></span></a>
+						</li>
+						<li>
+							<a class="menu__link" href="https://sandbox.pagseguro.uol.com.br" target="_blank" rel="nofollow">Sandbox <span class="glyphicon glyphicon glyphicon-new-window"></span></a>
+						</li>
+					</ul>
+		
+		
+				</div>
+			</div>
+		</header>
+		<div class="breadcrumb">
+			<div class="container">
+				<h1 class="breadcrumb__title">Módulos</h1>
+		
+				<form action="/busca" method="get" role="search" class="search">
+					<input type="search" class="search__input" name="query" id="query" placeholder="Busque em nossa documentação" value="" autocomplete="off" data-documentations-suggestions="[{&quot;id&quot;:&quot;/documentacao/pagamento-online&quot;,&quot;title&quot;:&quot;Pagamento Online&quot;,&quot;url&quot;:&quot;https://dev.pagseguro.uol.com.br/documentacao/pagamento-online&quot;},{&quot;id&quot;:&quot;/documentacao/pagamento-online/pagamentos&quot;,&quot;title&quot;:&quot;Pagamentos&quot;,&quot;url&quot;:&quot;https://dev.pagseguro.uol.com.br/documentacao/pagamento-online/pagamentos&quot;},{&quot;id&quot;:&quot;/documentacao/pagamento-online/pagamentos/pagamento-padrao&quot;,&quot;title&quot;:&quot;Pagamento Padrão&quot;,&quot;url&quot;:&quot;https://dev.pagseguro.uol.com.br/documentacao/pagamento-online/pagamentos/pagamento-padrao&quot;},{&quot;id&quot;:&quot;/documentacao/pagamento-online/pagamentos/pagamento-lightbox&quot;,&quot;title&quot;:&quot;Pagamento Lightbox&quot;,&quot;url&quot;:&quot;https://dev.pagseguro.uol.com.br/documentacao/pagamento-online/pagamentos/pagamento-lightbox&quot;},{&quot;id&quot;:&quot;/documentacao/pagamento-online/pagamentos/pagamento-lightbox/api-de-pagamentos-lightbox&quot;,&quot;title&quot;:&quot;Api de Pagamentos Lightbox&quot;,&quot;url&quot;:&quot;https://dev.pagseguro.uol.com.br/documentacao/pagamento-online/pagamentos/pagamento-lightbox/api-de-pagamentos-lightbox&quot;},{&quot;id&quot;:&quot;/documentacao/pagamento-online/pagamentos/pagamento-transparente&quot;,&quot;title&quot;:&quot;Pagamento Transparente&quot;,&quot;url&quot;:&quot;https://dev.pagseguro.uol.com.br/documentacao/pagamento-online/pagamentos/pagamento-transparente&quot;},{&quot;id&quot;:&quot;/documentacao/pagamento-online/pagamentos/pagamento-recorrente-transparente&quot;,&quot;title&quot;:&quot;Pagamento Recorrente Transparente&quot;,&quot;url&quot;:&quot;https://dev.pagseguro.uol.com.br/documentacao/pagamento-online/pagamentos/pagamento-recorrente-transparente&quot;},{&quot;id&quot;:&quot;/documentacao/pagamento-online/pagamentos/botao-de-pagamento&quot;,&quot;title&quot;:&quot;Botão de Pagamento&quot;,&quot;url&quot;:&quot;https://dev.pagseguro.uol.com.br/documentacao/pagamento-online/pagamentos/botao-de-pagamento&quot;},{&quot;id&quot;:&quot;/documentacao/pagamento-online/pagamentos/checkout-de-servico&quot;,&quot;title&quot;:&quot;Checkout de Serviço&quot;,&quot;url&quot;:&quot;https://dev.pagseguro.uol.com.br/documentacao/pagamento-online/pagamentos/checkout-de-servico&quot;},{&quot;id&quot;:&quot;/documentacao/pagamento-online/pagamentos/consultando-por-codigo-de-referencia&quot;,&quot;title&quot;:&quot;Consultando por código de Referência&quot;,&quot;url&quot;:&quot;https://dev.pagseguro.uol.com.br/documentacao/pagamento-online/pagamentos/consultando-por-codigo-de-referencia&quot;},{&quot;id&quot;:&quot;/documentacao/pagamento-online/pagamentos/consultando-por-codigo-de-transacao&quot;,&quot;title&quot;:&quot;Consultando por código de Transação&quot;,&quot;url&quot;:&quot;https://dev.pagseguro.uol.com.br/documentacao/pagamento-online/pagamentos/consultando-por-codigo-de-transacao&quot;},{&quot;id&quot;:&quot;/documentacao/pagamento-online/pagamentos/desabilitar-recuperacao-de-carrinho&quot;,&quot;title&quot;:&quot;Desabilitar recuperação de Carrinho&quot;,&quot;url&quot;:&quot;https://dev.pagseguro.uol.com.br/documentacao/pagamento-online/pagamentos/desabilitar-recuperacao-de-carrinho&quot;},{&quot;id&quot;:&quot;/documentacao/pagamento-online/pagamentos/desconto-por-meio-de-pagamento&quot;,&quot;title&quot;:&quot;Desconto por meio de pagamento&quot;,&quot;url&quot;:&quot;https://dev.pagseguro.uol.com.br/documentacao/pagamento-online/pagamentos/desconto-por-meio-de-pagamento&quot;},{&quot;id&quot;:&quot;/documentacao/pagamento-online/pagamentos/parcelamento-sem-acrescimo&quot;,&quot;title&quot;:&quot;Parcelamento sem acréscimo&quot;,&quot;url&quot;:&quot;https://dev.pagseguro.uol.com.br/documentacao/pagamento-online/pagamentos/parcelamento-sem-acrescimo&quot;},{&quot;id&quot;:&quot;/documentacao/pagamento-online/pagamentos/timeout-para-checkout&quot;,&quot;title&quot;:&quot;Timeout para checkout&quot;,&quot;url&quot;:&quot;https://dev.pagseguro.uol.com.br/documentacao/pagamento-online/pagamentos/timeout-para-checkout&quot;},{&quot;id&quot;:&quot;/documentacao/pagamento-online/pagamentos/consulta-de-transacoes-abandonadas&quot;,&quot;title&quot;:&quot;Consulta de Transações Abandonadas&quot;,&quot;url&quot;:&quot;https://dev.pagseguro.uol.com.br/documentacao/pagamento-online/pagamentos/consulta-de-transacoes-abandonadas&quot;},{&quot;id&quot;:&quot;/documentacao/pagamento-online/pagamentos/consulta-de-transacoes-por-intervalo-de-datas&quot;,&quot;title&quot;:&quot;Consulta de Transações por Intervalo de Datas&quot;,&quot;url&quot;:&quot;https://dev.pagseguro.uol.com.br/documentacao/pagamento-online/pagamentos/consulta-de-transacoes-por-intervalo-de-datas&quot;},{&quot;id&quot;:&quot;/documentacao/pagamento-online/pagamentos/cancelamento&quot;,&quot;title&quot;:&quot;Cancelamento&quot;,&quot;url&quot;:&quot;https://dev.pagseguro.uol.com.br/documentacao/pagamento-online/pagamentos/cancelamento&quot;},{&quot;id&quot;:&quot;/documentacao/pagamento-online/pagamentos/configuracoes&quot;,&quot;title&quot;:&quot;Configurações&quot;,&quot;url&quot;:&quot;https://dev.pagseguro.uol.com.br/documentacao/pagamento-online/pagamentos/configuracoes&quot;},{&quot;id&quot;:&quot;/documentacao/pagamento-online/pagamentos/configuracoes/grupos-e-meios-de-pagamento&quot;,&quot;title&quot;:&quot;Grupos e meios de Pagamento&quot;,&quot;url&quot;:&quot;https://dev.pagseguro.uol.com.br/documentacao/pagamento-online/pagamentos/configuracoes/grupos-e-meios-de-pagamento&quot;},{&quot;id&quot;:&quot;/documentacao/pagamento-online/pagamentos/configuracoes/meios-de-pagamento-aceitos&quot;,&quot;title&quot;:&quot;Meios de pagamento Aceitos&quot;,&quot;url&quot;:&quot;https://dev.pagseguro.uol.com.br/documentacao/pagamento-online/pagamentos/configuracoes/meios-de-pagamento-aceitos&quot;},{&quot;id&quot;:&quot;/documentacao/pagamento-online/pagamentos/configuracoes/meios-de-pagamento-com-cartao-de-credito&quot;,&quot;title&quot;:&quot;Meios de pagamento com Cartão de Crédito&quot;,&quot;url&quot;:&quot;https://dev.pagseguro.uol.com.br/documentacao/pagamento-online/pagamentos/configuracoes/meios-de-pagamento-com-cartao-de-credito&quot;},{&quot;id&quot;:&quot;/documentacao/pagamento-online/pagamentos/configuracoes/pagamento-com-frete&quot;,&quot;title&quot;:&quot;Pagamento com Frete&quot;,&quot;url&quot;:&quot;https://dev.pagseguro.uol.com.br/documentacao/pagamento-online/pagamentos/configuracoes/pagamento-com-frete&quot;},{&quot;id&quot;:&quot;/documentacao/pagamento-online/pagamentos/configuracoes/redirecionando-apos-pagamento&quot;,&quot;title&quot;:&quot;Redirecionando após Pagamento&quot;,&quot;url&quot;:&quot;https://dev.pagseguro.uol.com.br/documentacao/pagamento-online/pagamentos/configuracoes/redirecionando-apos-pagamento&quot;},{&quot;id&quot;:&quot;/documentacao/pagamento-online/notificacoes&quot;,&quot;title&quot;:&quot;Notificações&quot;,&quot;url&quot;:&quot;https://dev.pagseguro.uol.com.br/documentacao/pagamento-online/notificacoes&quot;},{&quot;id&quot;:&quot;/documentacao/pagamento-online/notificacoes/api-de-notificacoes&quot;,&quot;title&quot;:&quot;API de Notificações&quot;,&quot;url&quot;:&quot;https://dev.pagseguro.uol.com.br/documentacao/pagamento-online/notificacoes/api-de-notificacoes&quot;},{&quot;id&quot;:&quot;/documentacao/pagamento-online/modelo-de-aplicacoes&quot;,&quot;title&quot;:&quot;Modelo de Aplicações&quot;,&quot;url&quot;:&quot;https://dev.pagseguro.uol.com.br/documentacao/pagamento-online/modelo-de-aplicacoes&quot;},{&quot;id&quot;:&quot;/documentacao/pagamento-online/modelo-de-aplicacoes/modelo-de-aplicacoes-com-token&quot;,&quot;title&quot;:&quot;Modelo de Aplicações Com Token&quot;,&quot;url&quot;:&quot;https://dev.pagseguro.uol.com.br/documentacao/pagamento-online/modelo-de-aplicacoes/modelo-de-aplicacoes-com-token&quot;},{&quot;id&quot;:&quot;/documentacao/pagamento-online/modelo-de-aplicacoes/modelo-de-aplicacoes-mobile&quot;,&quot;title&quot;:&quot;Modelo de Aplicações Mobile&quot;,&quot;url&quot;:&quot;https://dev.pagseguro.uol.com.br/documentacao/pagamento-online/modelo-de-aplicacoes/modelo-de-aplicacoes-mobile&quot;},{&quot;id&quot;:&quot;/documentacao/pagamento-online/modelo-de-aplicacoes/consulta-de-autorizacoes-por-codigo-de-referencia&quot;,&quot;title&quot;:&quot;Consulta de Autorizações por código de referência&quot;,&quot;url&quot;:&quot;https://dev.pagseguro.uol.com.br/documentacao/pagamento-online/modelo-de-aplicacoes/consulta-de-autorizacoes-por-codigo-de-referencia&quot;},{&quot;id&quot;:&quot;/documentacao/pagamento-online/aplicativo-pagseguro&quot;,&quot;title&quot;:&quot;Aplicativo PagSeguro&quot;,&quot;url&quot;:&quot;https://dev.pagseguro.uol.com.br/documentacao/pagamento-online/aplicativo-pagseguro&quot;},{&quot;id&quot;:&quot;/documentacao/pagamento-online/aplicativo-pagseguro/checkout-in-app&quot;,&quot;title&quot;:&quot;Checkout in App&quot;,&quot;url&quot;:&quot;https://dev.pagseguro.uol.com.br/documentacao/pagamento-online/aplicativo-pagseguro/checkout-in-app&quot;},{&quot;id&quot;:&quot;/documentacao/pagamento-online/aplicativo-pagseguro/checkout-in-app/checkout-in-app-transparente-ios&quot;,&quot;title&quot;:&quot;Checkout in App Transparente iOS&quot;,&quot;url&quot;:&quot;https://dev.pagseguro.uol.com.br/documentacao/pagamento-online/aplicativo-pagseguro/checkout-in-app/checkout-in-app-transparente-ios&quot;},{&quot;id&quot;:&quot;/documentacao/pagamento-online/aplicativo-pagseguro/checkout-in-app/checkout-in-app-transparente-ios/configuracao-objective-transparente&quot;,&quot;title&quot;:&quot;Configuração Objective Transparente&quot;,&quot;url&quot;:&quot;https://dev.pagseguro.uol.com.br/documentacao/pagamento-online/aplicativo-pagseguro/checkout-in-app/checkout-in-app-transparente-ios/configuracao-objective-transparente&quot;},{&quot;id&quot;:&quot;/documentacao/pagamento-online/aplicativo-pagseguro/checkout-in-app/checkout-in-app-transparente-ios/configuracao-swift-transparente&quot;,&quot;title&quot;:&quot;Configuração Swift Transparente&quot;,&quot;url&quot;:&quot;https://dev.pagseguro.uol.com.br/documentacao/pagamento-online/aplicativo-pagseguro/checkout-in-app/checkout-in-app-transparente-ios/configuracao-swift-transparente&quot;},{&quot;id&quot;:&quot;/documentacao/pagamento-online/aplicativo-pagseguro/checkout-in-app/checkout-in-app-transparente-android&quot;,&quot;title&quot;:&quot;Checkout in App Transparente Android&quot;,&quot;url&quot;:&quot;https://dev.pagseguro.uol.com.br/documentacao/pagamento-online/aplicativo-pagseguro/checkout-in-app/checkout-in-app-transparente-android&quot;},{&quot;id&quot;:&quot;/documentacao/pagamento-online/aplicativo-pagseguro/checkout-in-app/checkout-in-app-carteira-ios&quot;,&quot;title&quot;:&quot;Checkout in App Carteira iOS&quot;,&quot;url&quot;:&quot;https://dev.pagseguro.uol.com.br/documentacao/pagamento-online/aplicativo-pagseguro/checkout-in-app/checkout-in-app-carteira-ios&quot;},{&quot;id&quot;:&quot;/documentacao/pagamento-online/aplicativo-pagseguro/checkout-in-app/checkout-in-app-carteira-ios/configuracao-objective-carteira&quot;,&quot;title&quot;:&quot;Configuração Objective Carteira&quot;,&quot;url&quot;:&quot;https://dev.pagseguro.uol.com.br/documentacao/pagamento-online/aplicativo-pagseguro/checkout-in-app/checkout-in-app-carteira-ios/configuracao-objective-carteira&quot;},{&quot;id&quot;:&quot;/documentacao/pagamento-online/aplicativo-pagseguro/checkout-in-app/checkout-in-app-carteira-ios/configuracao-swift-carteira&quot;,&quot;title&quot;:&quot;Configuração Swift Carteira&quot;,&quot;url&quot;:&quot;https://dev.pagseguro.uol.com.br/documentacao/pagamento-online/aplicativo-pagseguro/checkout-in-app/checkout-in-app-carteira-ios/configuracao-swift-carteira&quot;},{&quot;id&quot;:&quot;/documentacao/pagamento-online/aplicativo-pagseguro/checkout-in-app/checkout-in-app-carteira-android&quot;,&quot;title&quot;:&quot;Checkout in App Carteira Android&quot;,&quot;url&quot;:&quot;https://dev.pagseguro.uol.com.br/documentacao/pagamento-online/aplicativo-pagseguro/checkout-in-app/checkout-in-app-carteira-android&quot;},{&quot;id&quot;:&quot;/documentacao/pagamento-online/aplicativo-pagseguro/app2app&quot;,&quot;title&quot;:&quot;App2App&quot;,&quot;url&quot;:&quot;https://dev.pagseguro.uol.com.br/documentacao/pagamento-online/aplicativo-pagseguro/app2app&quot;},{&quot;id&quot;:&quot;/documentacao/pagamento-online/aplicativo-pagseguro/web2app&quot;,&quot;title&quot;:&quot;Web2App&quot;,&quot;url&quot;:&quot;https://dev.pagseguro.uol.com.br/documentacao/pagamento-online/aplicativo-pagseguro/web2app&quot;},{&quot;id&quot;:&quot;/documentacao/pagamento-presencial&quot;,&quot;title&quot;:&quot;Pagamento Presencial&quot;,&quot;url&quot;:&quot;https://dev.pagseguro.uol.com.br/documentacao/pagamento-presencial&quot;},{&quot;id&quot;:&quot;/documentacao/pagamento-presencial/moderninha-pro&quot;,&quot;title&quot;:&quot;Moderninha PRO&quot;,&quot;url&quot;:&quot;https://dev.pagseguro.uol.com.br/documentacao/pagamento-presencial/moderninha-pro&quot;},{&quot;id&quot;:&quot;/documentacao/pagamento-presencial/moderninha-pro/android&quot;,&quot;title&quot;:&quot;Android&quot;,&quot;url&quot;:&quot;https://dev.pagseguro.uol.com.br/documentacao/pagamento-presencial/moderninha-pro/android&quot;},{&quot;id&quot;:&quot;/documentacao/pagamento-presencial/moderninha-pro/windows&quot;,&quot;title&quot;:&quot;Windows&quot;,&quot;url&quot;:&quot;https://dev.pagseguro.uol.com.br/documentacao/pagamento-presencial/moderninha-pro/windows&quot;},{&quot;id&quot;:&quot;/documentacao/pagamento-presencial/moderninha-pro/ios&quot;,&quot;title&quot;:&quot;iOS&quot;,&quot;url&quot;:&quot;https://dev.pagseguro.uol.com.br/documentacao/pagamento-presencial/moderninha-pro/ios&quot;},{&quot;id&quot;:&quot;/documentacao/pagamento-presencial/moderninha-pro/windows&quot;,&quot;title&quot;:&quot;Windows&quot;,&quot;url&quot;:&quot;https://dev.pagseguro.uol.com.br/documentacao/pagamento-presencial/moderninha-pro/windows&quot;},{&quot;id&quot;:&quot;/documentacao/pagamento-presencial/moderninha-wifi&quot;,&quot;title&quot;:&quot;Moderninha WIFI&quot;,&quot;url&quot;:&quot;https://dev.pagseguro.uol.com.br/documentacao/pagamento-presencial/moderninha-wifi&quot;},{&quot;id&quot;:&quot;/documentacao/pagamento-presencial/moderninha-wifi/android&quot;,&quot;title&quot;:&quot;Android&quot;,&quot;url&quot;:&quot;https://dev.pagseguro.uol.com.br/documentacao/pagamento-presencial/moderninha-wifi/android&quot;},{&quot;id&quot;:&quot;/documentacao/pagamento-presencial/moderninha-wifi/windows&quot;,&quot;title&quot;:&quot;Windows&quot;,&quot;url&quot;:&quot;https://dev.pagseguro.uol.com.br/documentacao/pagamento-presencial/moderninha-wifi/windows&quot;},{&quot;id&quot;:&quot;/documentacao/pagamento-presencial/moderninha-wifi/ios&quot;,&quot;title&quot;:&quot;iOS&quot;,&quot;url&quot;:&quot;https://dev.pagseguro.uol.com.br/documentacao/pagamento-presencial/moderninha-wifi/ios&quot;},{&quot;id&quot;:&quot;/documentacao/pagamento-presencial/moderninha-wifi/windows&quot;,&quot;title&quot;:&quot;Windows&quot;,&quot;url&quot;:&quot;https://dev.pagseguro.uol.com.br/documentacao/pagamento-presencial/moderninha-wifi/windows&quot;},{&quot;id&quot;:&quot;/documentacao/pagamento-presencial/minizinha&quot;,&quot;title&quot;:&quot;Minizinha&quot;,&quot;url&quot;:&quot;https://dev.pagseguro.uol.com.br/documentacao/pagamento-presencial/minizinha&quot;},{&quot;id&quot;:&quot;/documentacao/pagamento-presencial/mini&quot;,&quot;title&quot;:&quot;Mini&quot;,&quot;url&quot;:&quot;https://dev.pagseguro.uol.com.br/documentacao/pagamento-presencial/mini&quot;}]" data-libraries-suggestions="[{&quot;id&quot;:&quot;/bibliotecas/php&quot;,&quot;title&quot;:&quot;PHP&quot;,&quot;url&quot;:&quot;https://dev.pagseguro.uol.com.br/bibliotecas/php&quot;},{&quot;id&quot;:&quot;/bibliotecas/java&quot;,&quot;title&quot;:&quot;Java&quot;,&quot;url&quot;:&quot;https://dev.pagseguro.uol.com.br/bibliotecas/java&quot;},{&quot;id&quot;:&quot;/bibliotecas/net&quot;,&quot;title&quot;:&quot;.NET&quot;,&quot;url&quot;:&quot;https://dev.pagseguro.uol.com.br/bibliotecas/net&quot;},{&quot;id&quot;:&quot;/bibliotecas/ruby&quot;,&quot;title&quot;:&quot;Ruby&quot;,&quot;url&quot;:&quot;https://dev.pagseguro.uol.com.br/bibliotecas/ruby&quot;},{&quot;id&quot;:&quot;/bibliotecas/android&quot;,&quot;title&quot;:&quot;Android&quot;,&quot;url&quot;:&quot;https://dev.pagseguro.uol.com.br/bibliotecas/android&quot;},{&quot;id&quot;:&quot;/bibliotecas/ios&quot;,&quot;title&quot;:&quot;iOS&quot;,&quot;url&quot;:&quot;https://dev.pagseguro.uol.com.br/bibliotecas/ios&quot;}]" data-modules-suggestions="[{&quot;id&quot;:&quot;/modulos/magento-2x&quot;,&quot;title&quot;:&quot;Magento 2.x&quot;,&quot;url&quot;:&quot;https://dev.pagseguro.uol.com.br/modulos/magento-2x&quot;},{&quot;id&quot;:&quot;/modulos/magento-1x&quot;,&quot;title&quot;:&quot;Magento 1.x&quot;,&quot;url&quot;:&quot;https://dev.pagseguro.uol.com.br/modulos/magento-1x&quot;},{&quot;id&quot;:&quot;/modulos/joomla&quot;,&quot;title&quot;:&quot;Joomla&quot;,&quot;url&quot;:&quot;https://dev.pagseguro.uol.com.br/modulos/joomla&quot;},{&quot;id&quot;:&quot;/modulos/oscommerce&quot;,&quot;title&quot;:&quot;OsCommerce&quot;,&quot;url&quot;:&quot;https://dev.pagseguro.uol.com.br/modulos/oscommerce&quot;},{&quot;id&quot;:&quot;/modulos/zen-cart&quot;,&quot;title&quot;:&quot;Zen Cart&quot;,&quot;url&quot;:&quot;https://dev.pagseguro.uol.com.br/modulos/zen-cart&quot;},{&quot;id&quot;:&quot;/modulos/opencart&quot;,&quot;title&quot;:&quot;OpenCart&quot;,&quot;url&quot;:&quot;https://dev.pagseguro.uol.com.br/modulos/opencart&quot;},{&quot;id&quot;:&quot;/modulos/woo-commerce&quot;,&quot;title&quot;:&quot;Woo Commerce&quot;,&quot;url&quot;:&quot;https://dev.pagseguro.uol.com.br/modulos/woo-commerce&quot;},{&quot;id&quot;:&quot;/modulos/wp-e-commerce&quot;,&quot;title&quot;:&quot;WP e-commerce&quot;,&quot;url&quot;:&quot;https://dev.pagseguro.uol.com.br/modulos/wp-e-commerce&quot;},{&quot;id&quot;:&quot;/modulos/prestashop&quot;,&quot;title&quot;:&quot;Prestashop&quot;,&quot;url&quot;:&quot;https://dev.pagseguro.uol.com.br/modulos/prestashop&quot;}]" />
+					<button type="submit" class="search__submit submit"><img class="submit__image" src="/images/search.png" alt="Enviar" /></button>
+				</form>	</div>
+		</div>
+		<div id="root" class="container root">
+			<nav class="sidebar">
+				<div class="sidebar__sticky">
+					<div class="sidebar__toggle toggle">
+						<div class="toggle__label">Woo Commerce</div>
+					</div>
+			
+					<ul class="sidebar__nav sidebar__nav--root">
+									<li class="sidebar__item">
+											<a class="sidebar__link" href="/como-comecar">Como começar</a>
+									</li>
+									<li class="sidebar__item active">
+											<a class="sidebar__link" href="/modulos">Módulos</a>
+												<ul class="sidebar__nav">
+														<li class="sidebar__item">
+																	<a class="sidebar__link" href="/modulos/magento-2x">Magento 2.x</a>
+														</li>
+														<li class="sidebar__item">
+																	<a class="sidebar__link" href="/modulos/magento-1x">Magento 1.x</a>
+														</li>
+														<li class="sidebar__item">
+																	<a class="sidebar__link" href="/modulos/joomla">Joomla</a>
+														</li>
+														<li class="sidebar__item">
+																	<a class="sidebar__link" href="/modulos/oscommerce">OsCommerce</a>
+														</li>
+														<li class="sidebar__item">
+																	<a class="sidebar__link" href="/modulos/zen-cart">Zen Cart</a>
+														</li>
+														<li class="sidebar__item">
+																	<a class="sidebar__link" href="/modulos/opencart">OpenCart</a>
+														</li>
+														<li class="sidebar__item active">
+																	<a class="sidebar__link" href="/modulos/woo-commerce">Woo Commerce</a>
+														</li>
+														<li class="sidebar__item">
+																	<a class="sidebar__link" href="/modulos/wp-e-commerce">WP e-commerce</a>
+														</li>
+														<li class="sidebar__item">
+																	<a class="sidebar__link" href="/modulos/prestashop">Prestashop</a>
+														</li>
+												</ul>
+									</li>
+									<li class="sidebar__item">
+											<a class="sidebar__link" href="/bibliotecas">Bibliotecas</a>
+									</li>
+									<li class="sidebar__item">
+											<a class="sidebar__link" href="/documentacao">Documentação</a>
+									</li>
+									<li class="sidebar__item">
+											<a class="sidebar__link" href="/referencia-da-api">Referências da API</a>
+									</li>
+					</ul>
+				</div>
+			</nav>
+<main class="main">
+	<section class="content">
+	<h1>
+		<img src="/images/modules/woocommerce.png" alt="Woo Commerce" title="Woo Commerce" />
+		Woo Commerce
+	</h1>
+
+	<h6>Site: <a href="https://github.com/pagseguro/woocommerce" alt="Site do módulo" target="_blank">https://github.com/pagseguro/woocommerce</a></h6>
+	<h1 id="m-dulo-de-integra-o-pagseguro-para-woocommerce">Módulo de integração PagSeguro para WooCommerce</h1>
+<h2 id="requisitos">Requisitos</h2>
+<hr>
+<ul>
+<li><a href="http://wordpress.org/">WordPress</a> 3.5.2</li>
+<li><a href="http://www.woothemes.com/woocommerce/">WooCommerce</a> 2.0.13</li>
+<li><a href="http://www.php.net/">PHP</a> 5.3.9+</li>
+<li><a href="http://php.net/manual/en/book.spl.php">SPL</a></li>
+<li><a href="http://php.net/manual/en/book.curl.php">cURL</a></li>
+<li><a href="http://php.net/manual/en/book.dom.php">DOM</a></li>
+</ul>
+<h2 id="instala-o">Instalação</h2>
+<hr>
+<ul>
+<li>Certifique-se de que não há instalação de outros módulos para o PagSeguro em seu sistema;</li>
+<li>Baixe o repositório como arquivo zip ou faça um clone;</li>
+<li>Na área administrativa de seu WordPress acesse o menu Plugins -&gt; Adicionar Novo -&gt; Enviar -&gt; aponte para o caminho do arquivo wpwcpagseguro.zip e selecione Instalar Agora;</li>
+<li>Após a instalação selecione <em>Ativar plugin</em>;</li>
+</ul>
+<h2 id="configura-o">Configuração</h2>
+<hr>
+<p>Para acessar e configurar o módulo acesse, na área administrativa de seu WordPress, o menu WooCommerce -&gt; Configurações -&gt; Portais de Pagamento -&gt; PagSeguro. As opções disponíveis estão descritas abaixo.</p><ul>
+<li><strong>ativar/desativar</strong>: ativa/desativa o módulo.</li>
+<li><strong>título</strong>: Título a ser exibido na tela de pagamento.</li>
+<li><strong>descrição</strong>: Descrição a ser exibida na tela de pagamento.</li>
+<li><strong>e-mail</strong>: e-mail cadastrado no PagSeguro.</li>
+<li><strong>token</strong>: token gerado no PagSeguro.</li>
+<li><strong>url de redirecionamento</strong>: ao final do fluxo de pagamento no PagSeguro, seu cliente será redirecionado automaticamente para a página de confirmação em sua loja ou então para a URL que você informar neste campo. Para ativar o redirecionamento ao final do pagamento é preciso ativar o serviço de <a href="https://pagseguro.uol.com.br/integracao/pagamentos-via-api.jhtml">Pagamentos via API</a>. Obs.: Esta URL é informada automaticamente e você só deve alterá-la caso deseje que seus clientes sejam redirecionados para outro local.</li>
+<li><strong>url de notificação</strong>: sempre que uma transação mudar de status, o PagSeguro envia uma notificação para sua loja ou para a URL que você informar neste campo. Obs.: Esta URL é informada automaticamente e você só deve alterá-la caso deseje receber as notificações em outro local.</li>
+<li><strong>prefixo dos pedidos</strong>: informe um prefixo para diferenciar a origem de suas vendas caso utilize a mesma conta PagSeguro em múltiplas lojas.</li>
+<li><strong>charset</strong>: codificação do seu sistema (ISO-8859-1 ou UTF-8).</li>
+<li><strong>log</strong>: ativa/desativa a geração de logs.</li>
+<li><strong>diretório</strong>: informe o local a partir da raíz de instalação do WordPress onde se deseja criar o arquivo de log. Ex.: /logs/ps.log. Caso não informe nada, o log será gravado dentro da pasta ../PagSeguroLibrary/PagSeguro.log.</li>
+</ul>
+<h2 id="licen-a">Licença</h2>
+<hr>
+<p>Copyright 2013 PagSeguro Internet LTDA.</p><p>Licensed under the Apache License, Version 2.0 (the &quot;License&quot;); you may not use this file except in compliance with the License. You may obtain a copy of the License at</p><p><a href="http://www.apache.org/licenses/LICENSE-2.0">http://www.apache.org/licenses/LICENSE-2.0</a></p><p>Unless required by applicable law or agreed to in writing, software distributed under the License is distributed on an &quot;AS IS&quot; BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the License for the specific language governing permissions and limitations under the License.</p><h2 id="notas">Notas</h2>
+<hr>
+<ul>
+<li>O PagSeguro somente aceita pagamento utilizando a moeda Real brasileiro (BRL).</li>
+<li>Certifique-se que o email e o token informados estejam relacionados a uma conta que possua o perfil de vendedor ou empresarial.</li>
+<li>Certifique-se que tenha definido corretamente o charset de acordo com a codificação (ISO-8859-1 ou UTF-8) do seu sistema. Isso irá prevenir que as transações gerem possíveis erros ou quebras ou ainda que caracteres especiais possam ser apresentados de maneira diferente do habitual.</li>
+<li>Para que ocorra normalmente a geração de logs, certifique-se que o diretório e o arquivo de log tenham permissões de leitura e escrita.</li>
+</ul>
+
+</section>
+</main>		</div>
+
+			<div class="banner banner--footer">
+				<div class="container">
+					<p class="banner__title">Ainda tem <strong>dúvidas?</strong></p>
+					<p class="banner__description">Consulte nossas comunidades para encontrar o que precisa</p>
+					<div class="communities">
+						<div class="communities__item communities__item--comunidade">
+							<img class="communities__icon" src="/images/banners/footer/comunidade.png" alt="Comunidade" />
+							<div class="caption">
+								<strong class="caption__title">Comunidade</strong>
+								<p class="caption__description">Participe das discussões<br />e tire suas dúvidas.</p>
+								<p class="caption__actions">
+									<a class="caption__action" href="http://comunidade.pagseguro.uol.com.br" target="_blank" rel="nofollow">Saiba mais <span class="glyphicon glyphicon glyphicon-new-window"></span></a>
+								</p>
+							</div>
+						</div>
+		
+						<div class="communities__item communities__item--github">
+							<img class="communities__icon" src="/images/banners/footer/github.png" alt="GitHub" />
+							<div class="caption">
+								<strong class="caption__title">GitHub</strong>
+								<p class="caption__description">Encontre bibliotecas e módulos para facilitar sua integração.</p>
+								<p class="caption__actions">
+									<a class="caption__action" href="https://github.com/pagseguro/" target="_blank" rel="nofollow">Saiba mais <span class="glyphicon glyphicon glyphicon-new-window"></span></a>
+								</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		
+		<footer class="footer">
+			<div class="container">
+				<section class="footer__top">
+					<div class="footer__links">
+						<ul class="footer__column footer__column--links footer__column--main">
+							<li class="footer__item">
+								<a class="footer__link" href="https://pagseguro.uol.com.br/vender/" target="_blank" rel="nofollow">Vender</a>
+							</li>
+							<li class="footer__item">
+								<a class="footer__link" href="https://pagseguro.uol.com.br/comprar/" target="_blank" rel="nofollow">Comprar</a>
+							</li>
+						</ul>
+		
+						<ul class="footer__column footer__column--links footer__column--about">
+							<li class="footer__item">
+								<a class="footer__link" href="https://pagseguro.uol.com.br/sobre_o_pagseguro.jhtml" target="_blank" rel="nofollow">Sobre o PagSeguro</a>
+							</li>
+		
+							<li class="footer__item">
+								<a class="footer__link" href="https://pagseguro.uol.com.br/taxas-e-tarifas.jhtml" target="_blank" rel="nofollow">Taxas e tarifas</a>
+							</li>
+		
+							<li class="footer__item">
+								<a class="footer__link" href="https://pagseguro.uol.com.br/venda-presencial/politica-de-troca.jhtml" target="_blank" rel="nofollow">Política de troca</a>
+							</li>
+						</ul>
+		
+						<ul class="footer__column footer__column--links footer__column--terms">
+							<li class="footer__item">
+								<a class="footer__link" href="https://pagseguro.uol.com.br/contrato_de_servicos.jhtml" target="_blank" rel="nofollow">Contrato</a>
+							</li>
+		
+							<li class="footer__item">
+								<a class="footer__link" href="https://pagseguro.uol.com.br/regras-de-uso.jhtml" target="_blank" rel="nofollow">Termos de uso</a>
+							</li>
+		
+							<li class="footer__item">
+								<a class="footer__link" href="https://sac.uol.com.br/info/protecao_privacidade/normas_protecao_privacidade.jhtm" target="_blank" rel="nofollow">Segurança e privacidade</a>
+							</li>
+						</ul>
+		
+						<ul class="footer__column footer__column--links footer__column--integration">
+							<li class="footer__item">
+								<a class="footer__link" href="https://pagseguro.uol.com.br/para_seu_negocio/parceiros_integradores.jhtml" target="_blank" rel="nofollow">Parceiros de integração</a>
+							</li>
+		
+							<li class="footer__item">
+								<a class="footer__link" href="https://pagseguro.uol.com.br/atendimento/ligue-para-o-pagseguro.jhtml" target="_blank" rel="nofollow">Fale com o PagSeguro</a>
+							</li>
+		
+							<li class="footer__item">
+								<a class="footer__link" href="https://pagseguro.uol.com.br/dicas-de-seguranca-online.jhtml" target="_blank" rel="nofollow">Dicas de segurança</a>
+							</li>
+						</ul>
+					</div>
+		
+					<div class="footer__column footer__column--social social">
+						<div class="social__links">
+							<a class="social__link" href="https://www.facebook.com/pagseguro/" target="_blank" rel="nofollow">
+								<img src="/images/footer/facebook.png" alt="Facebook" title="Facebook" />
+							</a>
+							<a class="social__link" href="https://www.youtube.com/user/PagSeguro/" target="_blank" rel="nofollow">
+								<img src="/images/footer/youtube.png" alt="YouTube" title="YouTube" />
+							</a>
+							<a class="social__link" href="https://br.linkedin.com/company/pagseguro-uol" target="_blank" rel="nofollow">
+								<img src="/images/footer/linkedin.png" alt="LinkedIn" title="LinkedIn" />
+							</a>
+							<a class="social__link" href="http://blogpagseguro.com.br" target="_blank" rel="nofollow">
+								<img src="/images/footer/rss.png" alt="RSS" title="RSS" />
+							</a>
+						</div>
+		
+						<div class="social__portal">
+							<img class="portal__image" src="/images/footer/portal.png" alt="PagSeguro.dev" title="PagSeguro.dev" />
+							<div class="caption portal__caption">
+								<strong class="caption__title">PagSeguro.dev</strong>
+								<p class="caption__description">Espaço para desenvolvedores</p>
+							</div>
+						</div>
+					</div>
+		
+					<div class="footer__security">
+						<img class="image" src="/images/footer/pci.png" alt="PCI" title="PCI" /> <span>Todas as páginas do PagSeguro estão em ambiente de segurança</span>
+					</div>
+				</section>
+		
+				<section class="footer__bottom">
+					<p><a class="footer__logo" href="https://pagseguro.uol.com.br" target="_blank" rel="nofollow">
+						<img src="/images/footer/logo.png" alt="PagSeguro UOL" title="PagSeguro UOL" />
+					</a></p>
+					<p>© 1996-2016 O melhor conteúdo. Todos os direitos reservados.</p>
+					<p>PAGSEGURO INTERNET LTDA - CNPJ/MF 08.561.701/0001-01 - Av. Brigadeiro Faria Lima, 1.384,</p>
+					<p>São Paulo - SP - CEP 01452-002</p>
+				</section>
+			</div>
+		</footer>
+			<script type="text/javascript" src="/javascripts/vendor/jquery.js"></script>
+
+</body>
+</html>
