@@ -1,9 +1,6 @@
-[gallery link="file" ids="136"]
-
-https://www.youtube.com/embed/mQR6Le48-JY ?loop=1&playlist=S6hBQJIn7VQ&rel=0
+https://www.google.com.br/maps/dir/-23.5041933,-46.7063775/-23.4882543,-46.6276826/@-23.5022786,-46.7021403,13z/data=!3m1!4b1!4m2!4m1!3e0
 
 ***
-
 Limit Login Attempts
 7MPRZSH
 
@@ -13,17 +10,9 @@ PROXY
 prodweb;prodweb.input.com.vc;winhosp38.input.com.vc;prog1.input.com.vc;172.16.5.*;192.167.0.*
 
 ***
-ERRO 500 e site fora do ar
-
-https://stackoverflow.com/questions/24935325/php-cgi-crash-on-iis
-http://prodweb:343/wp-admin/admin-ajax.php?action=FullCalendar&type=tf_events retorna json mas no camaravinhedo.sp.gov.br não
-
-https://prodweb.input.com.vc:347
-
-https://prodweb.input.com.vc:347/wp-content/themes/haras/library/bootstrap.min.css
-
-***
-webmaster-input waF
+webmaster-input
+Vinhedo Haras Input
+343w 347a 348F
 *eb@24iNpuT2  / *rlDQW5DxHlEmRY / *4z%0NdYA(Tndm7(B3
 
 chefiadegabinete
@@ -33,12 +22,32 @@ imprensa
 75xPr3*s13
 
 ***
+IBAN	BR6490400888011640130002310C1
+BANK	BANCO SANTANDER (BRASIL) S.A.
+BRANCH	001-1164 PCA JACOMO ZANELLA-SP-SP
+BIC	BSCHBRSP
+ADDRESS	AV ERMANO MARQUETTI, 909
+
+* Nós recomendamos utilizar pelo menos a versão 5.6 do MySQL e requisição remota 
+
+*** 
 Liberar
 
-https://support.google.com
-http://www.uxbooth.com
-http://wpengineer.com/
-https://mydevice.io
+docs.woocommerce.com/document/pci-dss-compliance-and-woocommerce
+www.mercadopago.com.br/developers/pt/tools/modules/woocommerce
+dev.pagseguro.uol.com.br/modulos/wp-e-commerce
+
+itau.com.br/empresas/recebimentos
+www.santander.com.br/br/pessoa-juridica/negocios-empresas
+pagseguro.uol.com.br
+woocommerce.com.br
+www.paypal.com/br/home
+www.paypalobjects.com
+support.google.com
+uxbooth.com
+wpengineer.com
+alistapart.com
+mydevice.io
 
 woocommerce.com
 ecommerce-platforms.com
