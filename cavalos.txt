@@ -1,12 +1,37 @@
-O que é um intermediador de pagamento?
-O intermediador de pagamento é uma plataforma que faz a ponte entre o e-commerce e as instituições financeiras que oferecem os serviços de pagamento, como cartões de crédito e débito, boletos bancários e assim por diante. Como o próprio nome sugere, ele funciona mesmo como um intermediador das transações financeiras do seu e-commerce, tirando essa responsabilidade da sua empresa.
 
-E como esse sistema funciona?
-É no momento em que o cliente fecha o pedido e é direcionado para o checkout que o intermediador de pagamento entra em ação. Assim, em vez de a compra ser efetivada diretamente na sua plataforma do e-commerce, o cliente é direcionado para o sistema do intermediador, onde será possível escolher a forma de pagamento e concluir a transação.
+.supsystic-table {
+	margin: -5px 0 15px 0;
+}
+.supsystic-table .bg-222222 {
+	background-color: #222 !important;
+	color: white;
+}
+.supsystic-table tbody  tr td{
+	padding: 5px;
+	background-color: #eee
+}
+.supsystic-table tbody tr {
+	border-bottom: 1px solid white;
+}
+.supsystic-table tbody  tr:first-of-type {
+	border-bottom: none;
+}
+.supsystic-table tbody tr:first-of-type td {
+	height: 35px;
+	padding-top: 10px;
+}
+.supsystic-table .btn {
+	text-decoration: none !important;
+	background-color: #0085ba;
+	color: white;
+	border-color: transparent;
+    padding: 4px 12px;
+}
+.supsystic-table .btn:hover, .supsystic-table .btn:active {
+	background-color: #0073aa;
+}
 
-Nesse cenário, toda a análise de crédito é feita pelo intermediador de pagamento no momento em que o cliente insere seus dados (salvo se a opção de pagamento for boleto bancário) e, dessa forma, qualquer risco inerente à venda fica sob a responsabilidade do intermediador.
-
-Para o e-commerce, o pior que pode ocorrer é a venda não ser finalizada no intermediador, seja pela reprovação da transação pela operadora do cartão, por exemplo, ou pela simples desistência do consumidor. Entretanto, se a negociação é aprovada pelo intermediador de pagamento, o gestor da loja virtual tem a garantia do recebimento pela venda, independentemente de outros fatores que podem se apresentar posteriormente (como a identificação de fraude).
+***
 
 Por que usar um intermediador de pagamento?
 Investir em um intermediador de pagamento pode trazer diversas vantagens para seu e-commerce, como:
@@ -63,6 +88,8 @@ Checkout
 Você também deve se assegurar de que o intermediador de pagamento oferece Checkout Transparente completamente integrado a seu e-commerce, evitando a saída do cliente para outra plataforma. Esse é um dos requisitos básicos para não afetar sua taxa de conversão e a credibilidade do seu negócio.
 
 Viu como ter um intermediador de pagamento confiável é a ponte para o sucesso do seu e-commerce? No momento da contratação desse tipo de serviço, fique atento a essas dicas e faça uma boa análise da relação entre custo e benefício, optando pela solução que possa efetivamente alavancar suas vendas sem complicação.
+
+***
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam sit amet metus et urna aliquam cursus sed vel ante. Sed id quam ut lorem ultrices molestie. Praesent finibus finibus ornare. Ut eu ligula at turpis condimentum ullamcorper. Mauris euismod mauris ut dictum venenatis. Nunc quis ante augue. Vestibulum aliquam ipsum eleifend nisi tincidunt, a eleifend nisi fringilla. Pellentesque vel dapibus dui. Fusce lacinia augue at malesuada placerat. Cras odio ligula, laoreet nec turpis ut, pulvinar volutpat mi. Maecenas accumsan placerat facilisis.
 
