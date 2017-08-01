@@ -1,4 +1,8 @@
+Barrar spam bots
 https://codex.wordpress.org/Combating_Comment_Spam/Denying_Access#Deny_Access_to_No_Referrer_Requests
+
+Botão customizado
+https://wordpress.stackexchange.com/questions/72394/how-to-add-a-shortcode-button-to-the-tinymce-editor
 
 ***
 
