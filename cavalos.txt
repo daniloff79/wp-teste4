@@ -1,4 +1,7 @@
+contato-buyer@harasrosamystica.com.br
+Password: 7EEC89FA9F5J3JGE
 
+***
 Botão customizado
 https://wordpress.stackexchange.com/questions/72394/how-to-add-a-shortcode-button-to-the-tinymce-editor
 https://code.tutsplus.com/tutorials/guide-to-creating-your-own-wordpress-editor-buttons--wp-30182
