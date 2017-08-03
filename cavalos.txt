@@ -1,6 +1,14 @@
 contato-buyer@harasrosamystica.com.br
 Password: 7EEC89FA9F5J3JGE
 
+Visa
+4929850467632160
+4485030003507467
+
+Master
+5288247142653517
+5522432555034951
+
 ***
 Botão customizado
 https://wordpress.stackexchange.com/questions/72394/how-to-add-a-shortcode-button-to-the-tinymce-editor
