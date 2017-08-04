@@ -1,6 +1,9 @@
 contato-buyer@harasrosamystica.com.br
 Password: 7EEC89FA9F5J3JGE
 
+c94602727606137682831@sandbox.pagseguro.com.br
+F201112952016L92
+
 13.137.053/0001-09
 Rm Agronegocios - Eireli - ME
 Tv Da Avenida Petronio Portela, 1477
@@ -10,6 +13,7 @@ Quadro Societário Jozias Da Silva Leite
 Visa
 4929850467632160
 4485030003507467
+4111111111111111 val 12/2030 cvv 123
 
 Master
 5288247142653517
