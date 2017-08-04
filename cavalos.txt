@@ -1,14 +1,19 @@
+***
+Botão customizado
+https://wordpress.stackexchange.com/questions/72394/how-to-add-a-shortcode-button-to-the-tinymce-editor
+https://code.tutsplus.com/tutorials/guide-to-creating-your-own-wordpress-editor-buttons--wp-30182
+
+Barrar spam bots
+https://codex.wordpress.org/Combating_Comment_Spam/Denying_Access#Deny_Access_to_No_Referrer_Requests
+
+***
 contato-buyer@harasrosamystica.com.br
-Password: 7EEC89FA9F5J3JGE
 
 c94602727606137682831@sandbox.pagseguro.com.br
-F201112952016L92
 
 13.137.053/0001-09
 Rm Agronegocios - Eireli - ME
 Tv Da Avenida Petronio Portela, 1477
-18160-000 3976-8000
-Quadro Societário Jozias Da Silva Leite
 
 Visa
 4929850467632160
@@ -20,15 +25,6 @@ Master
 5522432555034951
 
 ***
-Botão customizado
-https://wordpress.stackexchange.com/questions/72394/how-to-add-a-shortcode-button-to-the-tinymce-editor
-https://code.tutsplus.com/tutorials/guide-to-creating-your-own-wordpress-editor-buttons--wp-30182
-
-Barrar spam bots
-https://codex.wordpress.org/Combating_Comment_Spam/Denying_Access#Deny_Access_to_No_Referrer_Requests
-
-***
-
 Por que usar um intermediador de pagamento?
 Investir em um intermediador de pagamento pode trazer diversas vantagens para seu e-commerce, como:
 
@@ -112,13 +108,6 @@ Quadro Societário
 Jozias Da Silva Leite
 
 ***
-
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam sit amet metus et urna aliquam cursus sed vel ante. Sed id quam ut lorem ultrices molestie. Praesent finibus finibus ornare. Ut eu ligula at turpis condimentum ullamcorper. Mauris euismod mauris ut dictum venenatis. Nunc quis ante augue. Vestibulum aliquam ipsum eleifend nisi tincidunt, a eleifend nisi fringilla. Pellentesque vel dapibus dui. Fusce lacinia augue at malesuada placerat. Cras odio ligula, laoreet nec turpis ut, pulvinar volutpat mi. Maecenas accumsan placerat facilisis.
-
-Duis varius egestas orci. Nunc sed egestas lacus, sed dapibus arcu. Sed gravida risus vel augue fringilla auctor. Pellentesque rutrum posuere nulla sit amet maximus. Phasellus quam quam, pellentesque aliquet dui ac, eleifend pellentesque ex. Etiam tincidunt diam sagittis euismod luctus. Cras sed malesuada quam, sed sollicitudin diam. Suspendisse potenti. Nunc faucibus, ipsum a mattis pellentesque, mauris arcu pellentesque lorem, id aliquam ipsum erat vitae turpis. Nullam at lorem sed quam volutpat aliquet ac vitae lectus. Cras at nulla ac nunc porttitor faucibus. Donec quis diam molestie, tempus mi et, euismod urna. Donec nec laoreet urna.
-
-In hac habitasse platea dictumst. Donec mattis nulla id euismod malesuada. Sed ultrices ligula ante, eu sagittis neque fermentum eget. Sed at est malesuada, interdum leo quis, aliquet lectus. Proin bibendum vehicula ligula a tempus. Cras eu luctus urna, et fermentum nisl. Vivamus vel nisi porttitor, ullamcorper est quis, pellentesque tortor. Vestibulum mattis porta pretium. Morbi viverra tristique mauris. Sed sed condimentum urna, vel ullamcorper dolor. Aliquam eu elementum metus. Donec pellentesque aliquet ante et egestas. Donec a nibh purus. Suspendisse potenti. Donec in pellentesque diam.
-
 Quisque vel dignissim neque. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Quisque dapibus magna volutpat fringilla pellentesque. Phasellus varius urna at tortor condimentum cursus. Proin dictum imperdiet lobortis. Pellentesque cursus erat et libero aliquet porta. Nunc venenatis nibh dui, eu posuere lorem cursus vitae. Cras malesuada tempus sem, euismod semper est interdum id. Mauris euismod a massa in accumsan. Aliquam commodo, nisi vel facilisis semper, ligula felis auctor dolor, vitae feugiat nisi ipsum in libero.
 
 Donec laoreet lorem tempus magna consectetur porttitor nec vitae mauris. Pellentesque condimentum vestibulum justo sed accumsan. Cras eleifend non velit non porttitor. Interdum et malesuada fames ac ante ipsum primis in faucibus. Cras posuere accumsan metus, et efficitur risus porta ac. Nullam aliquet pellentesque metus eget feugiat. Quisque at dictum elit, in tincidunt magna. Aenean in finibus nulla, vitae rhoncus lacus. Integer elementum nulla vitae turpis dapibus, nec maximus lectus tempor. Morbi viverra sem maximus arcu malesuada, eu consequat mi aliquet. Mauris eu ex arcu. Donec convallis condimentum condimentum. Vivamus molestie sit amet augue eget tempus.
