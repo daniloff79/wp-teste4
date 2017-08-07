@@ -37,3 +37,31 @@ Saeco Go Blinking lights
 
 Hi, the problem with your machine is with the grinder motor (not working).As soon as you press the coffee the CPU senses the motor is out of circuit and the lights start flashing alternately.
 You can test it by doing this. Press and hold the steam button and switch on the machine, you will see the lights going around in anticlockwise direction. Release the button then turn the dial to left (Min) and press the steam button the grinder should work. The dial on the right (Max) the brew group will come up..and half way it will come back to normal position. Press the coffee button in that position will work the pump. Servicecenter can fix this if the machine is less than 2 year old FOC.
+
+***
+Após devidamente preenchida, a carta deverá ser impressa em duas vias e, então, assinada pela parte que deseja rescindir o contrato, seja ela o trabalhador ou o empregador. Quando se tratar de pessoa jurídica empregadora - ou seja, empresas, associações, etc. -, ela será assinada pela pessoa que é formalmente sua representante.
+
+Em seguida, deve-se entregar à outra parte uma das vias. Para comprovar o devido aviso de demissão, é recomendável que se peça à parte contrária que assine a outra via, no local reservado ao comprovante de recebimento, a qual permanecerá na posse da pessoa que rescindiu o contrato...
+
+Prezados Senhores,
+
+Venho, por meio desta carta, comunicar-lhes que, a partir do dia ____/09/2017, não mais prestarei os meus serviços nesta casa, na função de Programador Multiplataforma Pleno. A contar desta data, estará rescindido o contrato de trabalho por nós firmado e extinto, portanto, o vínculo empregatício deste decorrente.
+
+Em respeito aos dispositivos legais contidos na Consolidação das Leis do Trabalho (Decreto-Lei n. 5.452, de 1º de maio de 1943), especialmente em seu art. 487, e na Lei Federal n. 12.506, de 11 de outubro de 2011, informo aos Srs. que continuarei prestando os meus serviços ainda por 30 (trinta) dias, contados do recebimento desta carta, em cumprimento ao prazo de aviso prévio.
+
+Lembro-lhes que, durante o cumprimento do aviso prévio, são mantidas as nossas respectivas obrigações contratuais e que, pela prática de condutas que justifiquem a rescisão imediata do contrato, os Srs. se sujeitam ao pagamento da remuneração correspondente ao prazo do referido aviso, sem prejuízo da respectiva indenização.
+
+
+Atenciosamente,
+
+
+_________________________________________
+
+Danilo Fernandes Ferreira
+
+
+
+Confirmo que no dia ___/08/17 a pessoa jurídica ______________ foi notificada inteiramente sobre o teor desta carta, tendo recebido, na ocasião, uma cópia fiel da mesma.
+
+Ciente da rescisão contratual,
+
