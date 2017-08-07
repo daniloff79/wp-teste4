@@ -1,0 +1,32 @@
+// block WP enum scans
+if (!is_admin()) {
+        // default URL format
+        if (preg_match('/author=([0-9]*)/i', $_SERVER['QUERY_STRING'])) { 
+			status_header(404);
+			header('Location: http://www.harasrosamystica.com.br');
+			die();
+		}
+        add_filter('redirect_canonical', 'shapeSpace_check_enum', 10, 2);
+}
+function shapeSpace_check_enum($redirect, $request) {
+        // permalink URL format
+        if (preg_match('/\?author=([0-9]*)(\/*)/i', $request)) die();
+        else return $redirect;
+}
+function disable_author_archives() {
+	if (is_author()) {
+		if (!is_admin()) {
+			status_header(404);
+			header('Location: http://www.harasrosamystica.com.br');
+			die();
+		}
+	}
+}
+remove_filter('template_redirect', 'redirect_canonical');
+add_action('template_redirect', 'disable_author_archives');
+
+***
+Saeco Go Blinking lights
+
+Hi, the problem with your machine is with the grinder motor (not working).As soon as you press the coffee the CPU senses the motor is out of circuit and the lights start flashing alternately.
+You can test it by doing this. Press and hold the steam button and switch on the machine, you will see the lights going around in anticlockwise direction. Release the button then turn the dial to left (Min) and press the steam button the grinder should work. The dial on the right (Max) the brew group will come up..and half way it will come back to normal position. Press the coffee button in that position will work the pump. Servicecenter can fix this if the machine is less than 2 year old FOC.
