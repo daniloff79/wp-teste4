@@ -1,0 +1,75 @@
+https://www.ecommercebrasil.com.br/artigos/lei-e-commerce-legislacao-para-abrir-uma-loja-virtual/
+
+Decreto Federal 7.962/13 – A Lei do E-commerce
+
+No ano de 2013 foi publicado o texto do Código de Defesa do Consumidor voltado para o comércio eletrônico, entrando em vigor em maio do mesmo ano. Ele é valido para todos os e-commerces, independente do tamanho do negócio, todos devem seguir a mesma legislação.
+
+Pontos de atenção na nova Lei
+
+Você precisa se atentar às três frentes prioritárias da Lei do e-commerce:
+
+- Informações claras e visíveis;
+- Atendimento ágil e eficaz;
+- Direito de arrependimento
+
+Mas o que precisa ser apresentado de forma clara e visível?
+
+Endereço físico da empresa: O endereço onde a empresa está registrada comercialmente deve ficar visível no rodapé de todas as páginas.
+
+Razão Social: Também no rodapé, a Razão Social (aquela registrada na Receita) deve estar visível.
+CNPJ: Assim como a Razão Social, o CNPJ deve ser posicionado no rodapé de todas as páginas.
+Telefone: O telefone da organização deve ficar visível no topo ou rodapé do seu site. Independente da legislação, expor o número de telefone é uma boa prática, pois deixa o usuário mais tranquilo na hora da compra.
+
+E-mail ou formulário de contato: Da mesma maneira que o telefone é fundamental e obrigatório, expor o email (ou um formulário de contato) vai manter sua loja dentro dos requisitos da lei e deixará seu potencial cliente mais confiante da existência da loja.
+
+Descrição detalhada dos produtos: O cliente deve ser informado em detalhes sobre o produto que está comprando. Já que não pode pegar o produto e experimentar é importante que ele saiba as medidas, os materiais, como manusear, como efetuar a limpeza/lavagem/manutenção e outras informações que sejam relevantes na hora da compra.
+
+As formas de pagamento: As formas de pagamentos também têm de ser claras. Você deve indicar quais cartões aceitará e, se houver algum problema com a transação, é essencial que informe o cliente deste imprevisto.
+
+Despesas e taxas adicionais na compra: Os valores do frete, seguro do produto ou qualquer outra taxa adicional não devem ficar “obscuros”. O cliente não pode ficar condicionado a pagar algo que não foi informado.
+
+Prazo de entrega: A política de entrega adotada pelo seu e-commerce precisa ser clara e os prazos bem explicados.
+
+Linguagem universal e acessível: Nada de termos técnicos, tudo tem de estar em linguagem acessiva a qualquer tipo de público. Essa dica é válida para estar dentro dos requisitos legais, mas também ajuda a vender mais: o cliente que não entende, não compra!
+
+Contrato de compra: O contrato da compra deve ser apresentado integralmente ao cliente em alguma página do site.
+
+Descrição e condições de uma oferta: Caso exista uma oferta, ela deve ser detalhada com todas as condições e limitações que possa ter, como período de validade, regiões atendidas e número máximo de unidades por cliente.
+
+Resumo da compra no carrinho: O objetivo é mostrar ao cliente exatamente o que ele está comprado, oferecendo a possibilidade de se excluir algum dos itens selecionados.
+
+Confirmação de compra: Após o pagamento é preciso informar ao cliente que a compra foi realizada com sucesso, pelo próprio site ou via e-mail (recomendamos fazer ambos).
+
+Condições de troca e devolução: Devem estar visíveis e bem explícitos, para o cliente não ser surpreendido.
+
+Atendimento ágil e eficaz
+
+Quando falamos em agilidade e eficácia, temos que deixar claro que o suporte ao cliente deve ser imediato. A lei determina que o cliente deve receber algum tipo de auxílio 24 horas por dia, durante 7 dias na semana.
+
+Para grandes e-commerces, manter uma Central de Relacionamento com o Cliente (ou um SAC) durante todo esse tempo pode ser uma tarefa mais fácil do que para quem está começando agora; ainda assim, o custo é bastante elevado.
+
+Como a lei obriga que alguma forma de suporte seja prestada, uma das ações tomadas para atender ao cliente é a criação de páginas dentro do site que explicam os procedimentos básicos, regras de compra e outras informações sobre sua loja virtual. O objetivo é criar uma página de Dúvidas Frequentes (FAQ) em que o cliente possa realizar um autoatendimento a qualquer hora do dia.
+
+Ou seja, essa lei determina que as lojas virtuais precisam ter ao menos um canal que funcione 24 horas, mas pode ser um atendimento automatizado no estilo “ Fale Conosco”. O importante é amparar o cliente de alguma maneira!
+
+Ressaltamos que, dentro do site, o cliente precisa encontrar facilmente o local para consultar e alterar suas informações pessoais como número do cartão de crédito, endereço e telefone.
+
+Direito de Arrependimento
+
+Uma das mais “conturbadas” – pelo menos na opinião dos empresários – normas da Lei do E-Commerce é a que diz respeito ao direito de arrependimento.
+
+Segundo a Lei, o cliente tem até 7 (sete) dias úteis após o recebimento do produto para solicitar o cancelamento da compra. O lojista não pode questionar nem descontar algum valor na hora de realizar o estorno, apenas deve realizar a logística reversa para recuperar o produto e devolver o dinheiro.
+
+O cliente não deve pagar por nada nessa operação, nem mesmo o frete referente à devolução do produto indesejado.
+
+A Lei ainda explicita que a opção de devolver o produto e receber o dinheiro de volta precisa ficar bastante visível no site.
+
+Outras informações importantes
+
+A empresa deve possuir um certificado digital quando for necessária inclusão de dados do cliente em qualquer formulário no site.
+
+A Lei da Transparência – Lei 12.741/2012 – que se aplica a todos os segmentos e também para o e-commerce, regulamenta que os comércios precisam detalhar nas notas fiscais nota todas as tributações do produto.
+
+O não cumprimento da legislação vigente pode acarretar em multa, apreensão de produtos ou ainda em pesadas intervenções de cunho administrativo.
+
+Assim, falando um pouco sobre a legislação do e-commerce no Brasil, finalizamos nossa série com os principais passos para se montar um e-commerce.
