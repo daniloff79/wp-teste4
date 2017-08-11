@@ -33,31 +33,37 @@ remove_filter('template_redirect', 'redirect_canonical');
 add_action('template_redirect', 'disable_author_archives');
 
 ***
-SEÇÃO 1 - O QUE FAZEMOS COM AS SUAS INFORMAÇÕES?
+O QUE FAZEMOS COM AS SUAS INFORMAÇÕES?
 
 Quando você compra alguma coisa na nossa loja, como parte do processo de compra e venda, coletamos as informações pessoais que você nos fornece, tais como seu nome, endereço e e-mail. Quando você navega pela nossa loja, recebemos também automaticamente o protocolo de internet do seu computador (endereço de IP) a fim de obter informações que nos ajudam a saber mais sobre seu navegador e sistema operacional. Marketing por e-mail (quando aplicável): Com sua permissão, podemos lhe enviar e-mails sobre nossa loja, novos produtos e outras atualizações.
 
-SEÇÃO 2 - CONSENTIMENTO
+***
+http://boxesandarrows.com/pdf-prototypes-mistakenly-disregarded-and-underutilized/
 
-Como vocês obtêm meu consentimento?
+Creating a PDF Prototype
 
-Quando você nos fornece as suas informações pessoais para completar uma transação, verificar seu cartão de crédito, fazer um pedido, providenciar uma entrega ou retornar uma compra, você está concordando com a nossa coleta e uso de informações pessoais apenas para esses fins específicos. Se pedirmos suas informações pessoais por uma razão secundária, como marketing, vamos pedir seu consentimento, ou te dar a oportunidade de dizer não.
+Creating a clickable PDF to prototype a new design is not a new concept, but it is a valuable tool that is often overlooked and underutilized. You will need to install Adobe Acrobat to convert your existing documents into PDFs. If you want to create interactive forms you would need Adobe Acrobat Professional.
 
-Como posso retirar o meu consentimento?
+There are multiple ways that you can create a PDF. You can start by working from your preferred wireframing program. Once you open up your wireframe file, simply choose to print your document and select the Adobe PDF printer. Once your document is converted, you can begin adding your desired level of interactivity into your PDF prototype using Adobe’s advanced editing tools (choose Tools > Advanced Editing).
 
-Caso depois de fornecer seus dados você mude de ideia, você pode retirar o seu consentimento quando quiser e assim evitar que entremos em contato para obter ou divulgar informações. Entre em contato conosco através do danilo.ferreira@input.com.vc ou por correio: Tv Da Avenida Petronio Portela, 1477, Salto de Pirapora, SP, CEP 18160-000, Brasil.
+***
+https://www.humaneinterface.net/article/best-prototyping-tools
 
-SEÇÃO 3 - DIVULGAÇÃO
+Axure RP Pro
 
-Podemos divulgar suas informações pessoais se formos obrigados por lei a fazê-lo ou se você violar nossos Termos de serviço.
+Axure is still my election prototyping tool, essentially for two reasons: 1) It's an extremely efficient UX tool and allows designers to create very advanced interactive prototypes quickly and without any knowledge of front-end coding. 2) It's an all-in-one package, and the latest release (Axure RP 8) also includes graphic vectorial tools. 
 
-SEÇÃO 4 - IDADE DE CONSENTIMENTO
+Building static wireframes is very straightforward, adding interactivity on top of that is relatively easy, and widgets can be styled so that changes can easily be applied globally. I know the tool very well – I’ve been using it extensively since the earliest releases, and I’ve been training companies on how to use it at the most advanced level. Below I discuss more in detail the pros and cons.
 
-Ao usar esse site, você confirma que você é maior de idade em seu estado ou província de residência e que você nos deu seu consentimento para permitir que qualquer um dos seus dependentes menores de idade usem esse site.
+Justinmind Prototyper
 
-PERGUNTAS E INFORMAÇÕES DE CONTATO
+Also very good, I’ve been using Axure in the last few years and I came across Justinmind only recently. I don’t have much experience building projects with this tool, but after spending enough hours playing with it and taking a close look at the functionality, I have no doubt it is a very valid piece of software. Axure and Justinmind are similar in price and features, but also complementary to some extent, so it’s difficult to say which is better, and the answer might change with time, as the two tools keep evolving in parallel. Depending on which aspects you want to consider, each one offers certain advantages over the other.
 
-Se você gostaria de acessar, corrigir, alterar ou excluir quaisquer informações pessoais que temos sobre você, registre uma queixa, ou simplesmente peça mais informações de contato a(o) nosso(a) Diretor(a) de privacidade através do contato@harasrosamystica.com.br ou pelo correio: Tv Da Avenida Petronio Portela, 1477, Salto de Pirapora, SP, CEP 18160-000, Brasil.
+Sketchflow (Expression Blend, Microsoft)
+
+This software was marketed as a valid alternative to Axure. I am not very familiar with it, the presentation never convinced me to try it out, and from what I heard so far, it’s not as flexible and effective as Axure and Justinmind.
+
+In addition to that, Microsoft has never been quick and efficient at making their products better by listening to the end users, so why invest on that? And silverlight based, naaaah! (note: at the time of writing this review, the link to “Learn more” leads to a page that says:“We are sorry, the page you requested cannot be found”. Does it still exist?).
 
 ***
 Após devidamente preenchida, a carta deverá ser impressa em duas vias e, então, assinada pela parte que deseja rescindir o contrato, seja ela o trabalhador ou o empregador. Quando se tratar de pessoa jurídica empregadora - ou seja, empresas, associações, etc. -, ela será assinada pela pessoa que é formalmente sua representante.
