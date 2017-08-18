@@ -1,5 +1,3 @@
-http://link.webdesignernews.com/?xul=1svlejlndxlyucbep1ca5lou1ib017wv6zstsb77h1ya5kvwq9jbfgd719vwg1nea2datg5ptbx3lu1knlafw
-
 //  remover versão, remover emojis
 remove_action( 'wp_head', 'wp_generator' );	
 remove_action( 'wp_head', 'print_emoji_detection_script', 7);
