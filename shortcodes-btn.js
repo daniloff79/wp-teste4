@@ -43,7 +43,11 @@
 				
 				document.addEventListener('copy', function(e) {
 					setTimeout(function () {
-						opa();
+						if (jQuery("#__wp-uploader-id-2").css('display') == 'block') {
+							opa();
+						} else {
+							console.log("copy sem janela de mídia");
+						}
 					}, 100);
 				});
 				document.removeEventListener('copy',opa);
