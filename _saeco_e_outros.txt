@@ -1,3 +1,5 @@
+http://link.mightydeals.com/?xul=cyivm8x9gyusvvdypx7nci1juobj5bpve8v2z2g4nl024h197mxkble3qpmhqazj8jd3a922q6lvt3&xi=danilo.ferreira@input.com.vc
+
 //  remover versão, remover emojis
 remove_action( 'wp_head', 'wp_generator' );	
 remove_action( 'wp_head', 'print_emoji_detection_script', 7);
