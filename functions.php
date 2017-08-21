@@ -313,7 +313,7 @@ function my_header_links() {
 }
 
 // Botão para shortcodes (botão colchetes)
-/*add_action('init', 'wpse72394_shortcode_button_init');
+add_action('init', 'wpse72394_shortcode_button_init');
 function wpse72394_shortcode_button_init() {
 	if ( ! current_user_can('edit_posts') && ! current_user_can('edit_pages') && get_user_option('rich_editing') == 'true')
            return; 
@@ -327,7 +327,7 @@ function wpse72394_register_tinymce_plugin($plugin_array) {
 function wpse72394_add_tinymce_button($buttons) {
    $buttons[] = "wpse72394_button";
    return $buttons;
-}*/
+}
 
 // Botão para accordion visual
 add_action('init', 'wpse72395_shortcode_button_init');
