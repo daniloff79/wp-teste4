@@ -1,5 +1,7 @@
 https://alistapart.com/article/user-research-when-you-cant-talk-to-your-users
 
+https://www.udemy.com/ultimate-guide-to-ux/
+
 //  remover versão, remover emojis
 remove_action( 'wp_head', 'wp_generator' );	
 remove_action( 'wp_head', 'print_emoji_detection_script', 7);
