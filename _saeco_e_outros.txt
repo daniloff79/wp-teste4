@@ -2,72 +2,28 @@ https://alistapart.com/article/user-research-when-you-cant-talk-to-your-users
 
 https://www.udemy.com/ultimate-guide-to-ux/
 
-//  remover versão, remover emojis
-remove_action( 'wp_head', 'wp_generator' );	
-remove_action( 'wp_head', 'print_emoji_detection_script', 7);
-remove_action( 'wp_print_styles', 'print_emoji_styles');
-remove_action( 'admin_print_scripts', 'print_emoji_detection_script' );
-remove_action( 'admin_print_styles', 'print_emoji_styles' );
+> Licença-não remunerada é vantajosa para profissionais e empresas - InfoMoney
+http://www.infomoney.com.br/carreira/emprego/noticia/2169594/licenca-nao-remunerada-vantajosa-para-profissionais-empresas
 
+De acordo com o especialista, este tipo de licença pode ser concedido em três situações. A primeira é para realização de curso e programa de qualificação >profissional. A segunda é quando o funcionário é eleito para a direção do sindicato de sua categoria.
+
+A última é quando a pessoa pede para resolver assuntos particulares. Nesta situação, é importante que o empregador avalie os motivos, o período e a finalidade da licença, que somente poderá ser concedida com a sua anuência.
+
+***
 // block WP enum scans
-if (!is_admin()) {
-        // default URL format
-        if (preg_match('/author=([0-9]*)/i', $_SERVER['QUERY_STRING'])) { 
-			status_header(404);
-			header('Location: http://www.harasrosamystica.com.br');
-			die();
-		}
-        add_filter('redirect_canonical', 'shapeSpace_check_enum', 10, 2);
-}
 function shapeSpace_check_enum($redirect, $request) {
-        // permalink URL format
-        if (preg_match('/\?author=([0-9]*)(\/*)/i', $request)) die();
-        else return $redirect;
 }
 function disable_author_archives() {
-	if (is_author()) {
-		if (!is_admin()) {
-			status_header(404);
-			header('Location: http://www.harasrosamystica.com.br');
-			die();
-		}
-	}
 }
-remove_filter('template_redirect', 'redirect_canonical');
-add_action('template_redirect', 'disable_author_archives');
-
-***
-O QUE FAZEMOS COM AS SUAS INFORMAÇÕES?
-
-Quando você compra alguma coisa na nossa loja, como parte do processo de compra e venda, coletamos as informações pessoais que você nos fornece, tais como seu nome, endereço e e-mail. Quando você navega pela nossa loja, recebemos também automaticamente o protocolo de internet do seu computador (endereço de IP) a fim de obter informações que nos ajudam a saber mais sobre seu navegador e sistema operacional. Marketing por e-mail (quando aplicável): Com sua permissão, podemos lhe enviar e-mails sobre nossa loja, novos produtos e outras atualizações.
-
-***
-http://boxesandarrows.com/pdf-prototypes-mistakenly-disregarded-and-underutilized/
-
-Creating a PDF Prototype
-
-Creating a clickable PDF to prototype a new design is not a new concept, but it is a valuable tool that is often overlooked and underutilized. You will need to install Adobe Acrobat to convert your existing documents into PDFs. If you want to create interactive forms you would need Adobe Acrobat Professional.
-
-There are multiple ways that you can create a PDF. You can start by working from your preferred wireframing program. Once you open up your wireframe file, simply choose to print your document and select the Adobe PDF printer. Once your document is converted, you can begin adding your desired level of interactivity into your PDF prototype using Adobe’s advanced editing tools (choose Tools > Advanced Editing).
 
 ***
 https://www.humaneinterface.net/article/best-prototyping-tools
 
 Axure RP Pro
 
-Axure is still my election prototyping tool, essentially for two reasons: 1) It's an extremely efficient UX tool and allows designers to create very advanced interactive prototypes quickly and without any knowledge of front-end coding. 2) It's an all-in-one package, and the latest release (Axure RP 8) also includes graphic vectorial tools. 
-
-Building static wireframes is very straightforward, adding interactivity on top of that is relatively easy, and widgets can be styled so that changes can easily be applied globally. I know the tool very well – I’ve been using it extensively since the earliest releases, and I’ve been training companies on how to use it at the most advanced level. Below I discuss more in detail the pros and cons.
-
 Justinmind Prototyper
 
-Also very good, I’ve been using Axure in the last few years and I came across Justinmind only recently. I don’t have much experience building projects with this tool, but after spending enough hours playing with it and taking a close look at the functionality, I have no doubt it is a very valid piece of software. Axure and Justinmind are similar in price and features, but also complementary to some extent, so it’s difficult to say which is better, and the answer might change with time, as the two tools keep evolving in parallel. Depending on which aspects you want to consider, each one offers certain advantages over the other.
-
 Sketchflow (Expression Blend, Microsoft)
-
-This software was marketed as a valid alternative to Axure. I am not very familiar with it, the presentation never convinced me to try it out, and from what I heard so far, it’s not as flexible and effective as Axure and Justinmind.
-
-In addition to that, Microsoft has never been quick and efficient at making their products better by listening to the end users, so why invest on that? And silverlight based, naaaah! (note: at the time of writing this review, the link to “Learn more” leads to a page that says:“We are sorry, the page you requested cannot be found”. Does it still exist?).
 
 ***
 Após devidamente preenchida, a carta deverá ser impressa em duas vias e, então, assinada pela parte que deseja rescindir o contrato, seja ela o trabalhador ou o empregador. Quando se tratar de pessoa jurídica empregadora - ou seja, empresas, associações, etc. -, ela será assinada pela pessoa que é formalmente sua representante.
