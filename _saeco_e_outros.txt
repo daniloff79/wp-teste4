@@ -1,13 +1,5 @@
-https://alistapart.com/article/user-research-when-you-cant-talk-to-your-users
-
-https://www.udemy.com/ultimate-guide-to-ux/
-
-> Licença-não remunerada é vantajosa para profissionais e empresas - InfoMoney
-http://www.infomoney.com.br/carreira/emprego/noticia/2169594/licenca-nao-remunerada-vantajosa-para-profissionais-empresas
-
-De acordo com o especialista, este tipo de licença pode ser concedido em três situações. A primeira é para realização de curso e programa de qualificação >profissional. A segunda é quando o funcionário é eleito para a direção do sindicato de sua categoria.
-
-A última é quando a pessoa pede para resolver assuntos particulares. Nesta situação, é importante que o empregador avalie os motivos, o período e a finalidade da licença, que somente poderá ser concedida com a sua anuência.
+Um problema grave é que as restrições e burocracias só me foram informadas no momento de assinatura do contrato. Todas tem alguma explicação razoável, embora não concorde com todas. 
+De fato, é uma empresa com menos de 300 funcionários, mas tem a rigidez burocrática de uma com mais de 3000. Há momentos que não é possivel trabalhar por falta de acesso ou permissão. Para alguns projetos deveria trabalhar com células de inovação para ser mais ágil. Ou seja, ter um grupo que fica sob menos regras, em outra estrutura computacional, pra poder gerar e testar mais ideias de forma rápida. Para mitigar possíveis problemas por ir mais rápido, pode-se utilizar testes A/B para validar alguns conceitos novos junto aos clientes, testando em pequenas doses a efetividade das alterações. 
 
 ***
 // block WP enum scans
@@ -15,39 +7,3 @@ function shapeSpace_check_enum($redirect, $request) {
 }
 function disable_author_archives() {
 }
-
-***
-https://www.humaneinterface.net/article/best-prototyping-tools
-
-Axure RP Pro
-
-Justinmind Prototyper
-
-Sketchflow (Expression Blend, Microsoft)
-
-***
-Após devidamente preenchida, a carta deverá ser impressa em duas vias e, então, assinada pela parte que deseja rescindir o contrato, seja ela o trabalhador ou o empregador. Quando se tratar de pessoa jurídica empregadora - ou seja, empresas, associações, etc. -, ela será assinada pela pessoa que é formalmente sua representante.
-
-Em seguida, deve-se entregar à outra parte uma das vias. Para comprovar o devido aviso de demissão, é recomendável que se peça à parte contrária que assine a outra via, no local reservado ao comprovante de recebimento, a qual permanecerá na posse da pessoa que rescindiu o contrato...
-
-Prezados Senhores,
-
-Venho, por meio desta carta, comunicar-lhes que, a partir do dia ____/09/2017, não mais prestarei os meus serviços nesta casa, na função de Analista Programador Multiplataforma Pleno. A contar desta data, estará rescindido o contrato de trabalho por nós firmado e extinto, portanto, o vínculo empregatício deste decorrente.
-
-Em respeito aos dispositivos legais contidos na Consolidação das Leis do Trabalho (Decreto-Lei n. 5.452, de 1º de maio de 1943), especialmente em seu art. 487, e na Lei Federal n. 12.506, de 11 de outubro de 2011, informo aos Srs. que continuarei prestando os meus serviços ainda por 30 (trinta) dias, contados do recebimento desta carta, em cumprimento ao prazo de aviso prévio.
-
-Atenciosamente,
-
-
-_________________________________________
-Danilo Fernandes Ferreira
-
-
-
-Confirmo que no dia ___/08/17 a pessoa jurídica Input Center Informática Eireli foi notificada inteiramente sobre o teor desta carta, tendo recebido, na ocasião, uma cópia fiel da mesma.
-
-Ciente da rescisão contratual,
-
-
-_________________________________________
-
