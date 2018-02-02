@@ -1,9 +1,0 @@
-Um problema grave é que as restrições e burocracias só me foram informadas no momento de assinatura do contrato. Todas tem alguma explicação razoável, embora não concorde com todas. 
-De fato, é uma empresa com menos de 300 funcionários, mas tem a rigidez burocrática de uma com mais de 3000. Há momentos que não é possivel trabalhar por falta de acesso ou permissão. E não se tratava de um problema só meu ou do meu setor. Para alguns projetos deveria trabalhar com células de inovação para ser mais ágil. Ou seja, ter um grupo que fica sob menos regras, em outra rede e estrutura computacional, pra poder trabalhar com eficiência. E também poder gerar e testar mais ideias de forma rápida. Para mitigar possíveis problemas por ir mais rápido, pode-se utilizar testes A/B para validar alguns conceitos novos junto aos clientes, testando em pequenas doses a efetividade das alterações. 
-
-***
-// block WP enum scans
-function shapeSpace_check_enum($redirect, $request) {
-}
-function disable_author_archives() {
-}
